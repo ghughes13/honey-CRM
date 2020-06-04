@@ -2,9 +2,11 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -620,3 +622,283 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+h1 {
+  font-size: 81px;
+  color: #7e5dff;
+  font-weight: 800;
+  font-family: "Nunito", sans-serif;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 68px;
+  color: white;
+  font-weight: 800;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+h5 {
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-subtext {
+  font-size: 30px;
+  color: #382153;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding: 15px 45px;
+  font-weight: bold;
+}
+
+.btn.pink {
+  background: #f30070;
+}
+
+.btn.blue {
+  background: #18aeff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.transparent-background {
+  background: transparent;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: col;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.white-text {
+  color: white;
+}
+
+.purple-text {
+  color: #7e5dff;
+}
+
+.pink-gradient-background {
+  background: linear-gradient(to bottom, #ff899d, #f7329c);
+}
+
+.purple-gradient-background {
+  background: linear-gradient(to bottom, #e38dee, #7a5bff);
+}
+
+.deep-purple-background {
+  background: linear-gradient(to bottom, #5718a5, #2d2437);
+}
+
+.one-fourth {
+  width: 25%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+.one-third {
+  width: 33.33%;
+}
+
+.padding-top-125px {
+  padding-top: 125px;
+}
+
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.margin-left-25 {
+  margin-left: 25px;
+}
+
+.margin-bottom-50 {
+  margin-bottom: 50px;
+}
+
+.margin-bottom-100 {
+  margin-bottom: 100px;
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-500 {
+  max-width: 500px;
+}
+
+.max-width-650 {
+  max-width: 650px;
+}
+
+.z-index-9 {
+  z-index: 9;
+  position: relative;
+}
+
+.z-index-99 {
+  z-index: 99;
+  position: relative;
+}
+
+.z-index-999 {
+  z-index: 999;
+  position: relative;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~BTN ANIMATION END ~~~~~~~~~~~~~~~~*/
+
+// $anim-text-offset: 1em;
+
+// .btn.pink {
+//   touch-callout: none;
+//   user-select: none;
+//   display: inline-block;
+//   border: 0.2em solid;
+//   position: relative;
+//   cursor: pointer;
+//   overflow: hidden;
+//   opacity: 0.6;
+//   color: #fff;
+//   &__text {
+//     display: block;
+//     padding: 1em 2em;
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     &:before {
+//       content: attr(title);
+//     }
+//     &--bis {
+//       display: block;
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       bottom: 0;
+//       transform: translateX(-1 * $anim-text-offset);
+//       opacity: 0;
+//     }
+//   }
+//   &__mask {
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: white;
+//     transform: translateX(-100%) rotate(45deg);
+//     transition: all 0.3s;
+//   }
+// }
+
+// .button:hover {
+//   opacity: 1;
+//   .button__text {
+//     animation: fx-text 0.3s ease-out;
+//     &--bis {
+//       animation: fx-text-bis 0.3s ease-out;
+//     }
+//   }
+//   .button__mask {
+//     animation: fx-mask 0.3s ease-out;
+//   }
+// }
+
+// .button:active {
+//   opacity: 1;
+//   background: white;
+//   color: inherit;
+// }
+
+// @keyframes fx-mask {
+//   0% {
+//     transform: translateX(-100%) rotate(45deg);
+//   }
+//   100% {
+//     transform: translateX(100%) rotate(45deg);
+//   }
+// }
+
+// @keyframes fx-text {
+//   0% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: translateX($anim-text-offset);
+//     opacity: 0;
+//   }
+// }
+// @keyframes fx-text-bis {
+//   0% {
+//     transform: translateX(-1 * $anim-text-offset);
+//     opacity: 0;
+//   }
+//   100% {
+//     transform: translateX(0);
+//     opacity: 1;
+//   }
+// }
+
+/*~~~~~~~~~~~~~~~~~~~~~~BTN ANIMATION END ~~~~~~~~~~~~~~~~*/

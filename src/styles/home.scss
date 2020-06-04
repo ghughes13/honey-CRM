@@ -1,0 +1,257 @@
+.home-page {
+  h1 {
+    text-align: center;
+  }
+
+  .container-1 {
+    padding-top: 70px;
+    background: transparent;
+    min-height: 700px;
+    background: #ff899d;
+  }
+
+  .container-1 h1,
+  .container-1 p,
+  .container-1 div {
+    z-index: 9;
+    position: relative;
+  }
+
+  .hero-subtext {
+    text-align: center;
+  }
+
+  .grey-swish-top:after {
+    content: "";
+    background: url("../svgs/home/grey-hero-background.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: -15vw;
+    right: 0;
+    top: -29vw;
+    bottom: 0;
+    z-index: 0;
+    width: 120vw;
+    height: 200%;
+  }
+
+  .container-2 {
+    height: 500px;
+    background: transparent;
+    z-index: 0;
+    position: relative;
+    margin-top: -400px;
+  }
+
+  .container-3 {
+    padding-top: 300px;
+    margin-top: -100px;
+    padding-bottom: 800px;
+  }
+
+  .container-3:before {
+    content: "";
+    background: url("../svgs/home/ping-shadow.svg");
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 500px;
+  }
+
+  .stats-view-box .stat-img {
+    position: absolute;
+  }
+
+  .stats-view-box img {
+    transform: scale(0);
+  }
+
+  .stats-view-box .img-1 {
+    right: -1000px;
+    left: 0;
+    margin: auto;
+    transition-duration: 0.5s;
+  }
+
+  .stats-view-box .img-2 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition-duration: 0.25s;
+  }
+
+  .stats-view-box .img-3 {
+    top: 150px;
+    left: 10px;
+    right: 16px;
+    margin: auto;
+  }
+
+  .stats-view-box .img-4 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    right: -450px;
+    top: 315px;
+  }
+
+  .stats-view-box .img-5 {
+    bottom: -185px;
+    left: 0;
+    right: -190px;
+    margin: auto;
+  }
+
+  .stats-view-box .img-6 {
+    bottom: -300px;
+    left: -1030px;
+    right: 0;
+    margin: auto;
+  }
+
+  .stats-view-box .img-7 {
+    top: 310px;
+    left: -500px;
+    right: 0;
+    margin: auto;
+  }
+
+  .phone-img-col {
+    position: relative;
+  }
+
+  .phone-img-col:before {
+    content: url("../images/home/circle-small.png");
+    position: absolute;
+    right: -200px;
+    top: -100px;
+    z-index: 0;
+  }
+
+  .phone-img-col:after {
+    content: url("../images/home/circle-large.png");
+    position: absolute;
+    right: -350px;
+    top: -200px;
+    z-index: 0;
+  }
+
+  .phone-img {
+    position: relative;
+    right: -200px;
+    top: 150px;
+  }
+
+  .grey-swish-mid {
+    position: relative;
+    padding-top: 150px;
+    margin-top: -400px;
+    z-index: 9;
+    overflow: visible;
+    background: #ecf0f3;
+  }
+
+  .grey-swish-mid:before {
+    content: "";
+    background: url("../svgs/home/grey-slide-top.svg") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    width: 120vw;
+    left: 0;
+    right: 0;
+    top: -400px;
+    height: 500px;
+  }
+
+  .grey-swish-mid:after {
+    content: "";
+    background: url("../svgs/home/grey-slide-bottom.svg") no-repeat bottom;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    width: 120vw;
+    height: 450px;
+    bottom: -300px;
+  }
+
+  .layered-images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .layered-images div {
+    position: absolute;
+  }
+
+  .logos-container {
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 23px;
+    padding: 60px 50px;
+  }
+
+  .logo-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feat-card {
+    max-width: 540px;
+    margin: auto;
+    text-align: center;
+    background: #eef0f3;
+    border-radius: 23px;
+    margin-bottom: 50px;
+    padding: 33px 50px 50px;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  .feat-card.abs {
+    position: absolute;
+  }
+
+  .feat-card h4 {
+    color: #f30070;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .feat-card img {
+    margin-bottom: 0;
+  }
+
+  .circle-image-container {
+    margin-left: -100px;
+  }
+
+  .margin-top-50 {
+    margin-top: 50px;
+  }
+
+  .purple-gradient-background {
+    padding-top: 700px;
+  }
+
+  // .purple-gradient-background:before {
+  //   content: "";
+  //   background: url("../svgs/home/bottom-left-blob.svg") no-repeat;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   bottom: 0;
+  // }
+
+  // .purple-gradient-background:after {
+  //   content: "";
+  //   background: url("../svgs/home/bottom-right-blob.svg");
+  //   position: absolute;
+  // }
+}

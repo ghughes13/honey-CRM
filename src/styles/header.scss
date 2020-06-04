@@ -1,0 +1,17 @@
+header {
+  z-index: 999;
+  position: relative;
+
+  .mainHeader {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+  }
+}

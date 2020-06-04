@@ -13,6 +13,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -24,22 +25,17 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/nav/favicon.png`, // This path is relative to the root of the site.  src\images\home\nav\favicon.png
       },
     },
     {
       resolve: `gatsby-source-wordpress`,
       options: {
-        // your WordPress source
         baseUrl: `https://honeycrmbuild.wpengine.com/`,
         protocol: `https`,
         hostingWPCOM: false,
-        // does your site use the Advanced Custom Fields Plugin?
         useACF: true,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
