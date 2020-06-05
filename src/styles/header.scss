@@ -1,6 +1,7 @@
 header {
   z-index: 999;
   position: relative;
+  padding: 25px 50px;
 
   .mainHeader {
     position: relative;
@@ -11,7 +12,40 @@ header {
   .navbar-menu {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 93%;
     margin-left: auto;
+  }
+
+  #navbarBasicExample {
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .navbar-start {
+    width: 35%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar-start a {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+  }
+
+  .btn {
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
   }
 }

@@ -1,0 +1,40 @@
+#footer {
+  .row {
+    align-items: flex-start;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  h6 {
+    color: #59486e;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+
+  .col {
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: #877d88;
+    font-size: 16px;
+  }
+
+  .footer-col-5 a {
+    display: flex;
+  }
+
+  .footer-col-5 a img {
+    margin-right: 10px;
+  }
+}

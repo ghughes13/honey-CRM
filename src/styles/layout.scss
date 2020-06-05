@@ -655,6 +655,7 @@ h5 {
 
 p {
   font-family: "Roboto", sans-serif;
+  line-height: 30px;
 }
 
 .hero-subtext {
@@ -696,6 +697,14 @@ p {
 
 .centered-text {
   text-align: center;
+}
+
+.rel {
+  position: relative;
+}
+
+.abs {
+  position: absolute;
 }
 
 .inline-block {
@@ -742,6 +751,10 @@ p {
   background: linear-gradient(to bottom, #5718a5, #2d2437);
 }
 
+.one-half {
+  width: 50%;
+}
+
 .one-fourth {
   width: 25%;
 }
@@ -768,6 +781,10 @@ p {
 
 .margin-left-25 {
   margin-left: 25px;
+}
+
+.margin-left-50 {
+  margin-left: 50px;
 }
 
 .margin-bottom-50 {

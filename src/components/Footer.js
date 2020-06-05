@@ -1,49 +1,123 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
+import "../styles/footer.scss"
 
 const Footer = () => (
-  <footer className="fixed">
+  <footer className="fixed" id="footer">
     <Row>
-      <Col>
-        <h2>Address</h2>
-        <a
-          href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <p>101 E Park Blvd. Suite 101</p>
-          <p>Plano, TX 75074</p>
-        </a>
-        <p>
-          <a href="tel:2142997399" target="_blank" rel="noopener noreferrer">
-            Phone: (214) 299-7399
-          </a>
-        </p>
-        <p>
-          <a
-            href="mailto:info@tridigitalmarketing.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Email: info@tridigitalmarketing.com
-          </a>
-        </p>
+      <Col className="footer-col-1">
+        <h6>Contact Us</h6>
+        <ul>
+          <li>
+            <a
+              href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              101 E Park Blvd. Suite 101
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://goo.gl/maps/9KwWjzXNR7a4tNsK7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Plano, TX 75074
+            </a>
+          </li>
+          <li>
+            <a href="tel:2142997399" target="_blank" rel="noopener noreferrer">
+              Phone: (214) 299-7399
+            </a>
+          </li>
+          <li>
+            <a
+              href="mailto:info@honeycrm.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Email: info@honeycrm.com
+            </a>
+          </li>
+        </ul>
         <img
           className="certGraphic"
-          src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/google-partners.jpg"
+          src={require("../images/nav/Group 2516.png")}
           alt="google partners"
         ></img>
-        <img
-          className="certGraphic"
-          src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/2019/10/honey-cert.jpg"
-          alt="honey partner"
-        ></img>
       </Col>
-      <Col>
-        <h2>Connect</h2>
-        <p>
-          <a href="/contact-us">Contact Us</a>
-        </p>
+      <Col className="footer-col-2">
+        <h6>About Us</h6>
+        <ul>
+          <li>
+            <a href="">Events</a>
+          </li>
+          <li>
+            <a href="">Media/Press</a>
+          </li>
+          <li>
+            <a href="">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="">Terms of Use</a>
+          </li>
+        </ul>
+      </Col>
+      <Col className="footer-col-3">
+        <h6>Site Map</h6>
+        <ul>
+          <li>
+            <a href="">Homepage</a>
+          </li>
+          <li>
+            <a href="">Sales</a>
+          </li>
+          <li>
+            <a href="">Marketing</a>
+          </li>
+          <li>
+            <a href="">Managers</a>
+          </li>
+          <li>
+            <a href="">Agencies</a>
+          </li>
+          <li>
+            <a href="">Vendors</a>
+          </li>
+          <li>
+            <a href="">Pricing</a>
+          </li>
+          <li>
+            <a href="">Log In</a>
+          </li>
+          <li>
+            <a href="">Create Free Account</a>
+          </li>
+        </ul>
+      </Col>
+      <Col className="footer-col-4">
+        <h6>Training</h6>
+        <ul>
+          <li>
+            <a href="">Blog</a>
+          </li>
+          <li>
+            <a href="">White Papers</a>
+          </li>
+          <li>
+            <a href="">eBooks</a>
+          </li>
+          <li>
+            <a href="">Podcasts/Videos</a>
+          </li>
+          <li>
+            <a href="">Webinars</a>
+          </li>
+        </ul>
+      </Col>
+      <Col className="footer-col-5">
+        <h6>Social Links</h6>
         <ul>
           <li>
             <a
@@ -52,10 +126,10 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/twitter.svg"
-                alt="twitter"
+                src={require("../svgs/nav/facebook.svg")}
+                alt="facebook"
               ></img>
-              Twitter
+              Facebook
             </a>
           </li>
           <li>
@@ -65,10 +139,10 @@ const Footer = () => (
               rel="noopener noreferrer"
             >
               <img
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/fb.svg"
-                alt="facebook"
+                src={require("../svgs/nav/linkedin.svg")}
+                alt="linkedin"
               ></img>
-              Facebook
+              Linkedin
             </a>
           </li>
           <li>
@@ -77,10 +151,7 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/instagram.svg"
-                alt="instagram"
-              ></img>
+              <img src={require("../svgs/nav/IG.svg")} alt="instagram"></img>
               Instagram
             </a>
           </li>
@@ -90,72 +161,12 @@ const Footer = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src="https://encrypted.tridigitalmarketing.com/wp-content/uploads/svg/youtube.svg"
-                alt="youtube"
-              ></img>
-              Youtube
+              <img src={require("../svgs/nav/twitter.svg")} alt="twitter"></img>
+              Twitter
             </a>
           </li>
         </ul>
       </Col>
-      <Col>
-        <h2>Join Our Newsletter</h2>
-        <div className="form-container">
-          <form
-            id="newsletter-form"
-            className="Newsletter"
-            onSubmit={e => {
-              e.preventDefault()
-              document.querySelector("#newsletter-form").style.display = "none"
-              document.querySelector(".footer-thank-you").style.display =
-                "block"
-              return false
-            }}
-          >
-            <div className="field email-field">
-              <input
-                type="email"
-                placeholder="Email"
-                className="theInput"
-                required
-              ></input>
-            </div>
-            <div className="hide-me field">
-              <input
-                defaultValue="Newsletter"
-                data-value="Newsletter"
-                className="theInput formcat"
-              ></input>
-            </div>
-            <div className="form-footer">
-              <button className="pink-button" type="submit">
-                Send
-              </button>
-            </div>
-          </form>
-          <div className="footer-thank-you">
-            <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
-          </div>
-        </div>
-      </Col>
-    </Row>
-
-    <Row className="socket">
-      <p>
-        © 2020 - TRIdigital | <a href="/terms-of-service">Terms of Service</a> |{" "}
-        <a href="/privacy-policy">Privacy Policy</a>
-      </p>
-      <p>
-        <a href="/site-map">Sitemap</a> |{" "}
-        <a
-          href="http://training.tridigitalmarketing.com/?password-protected=login&redirect_to=http%3A%2F%2Ftraining.tridigitalmarketing.com%2F"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Employee Training{" "}
-        </a>
-      </p>
     </Row>
   </footer>
 )
