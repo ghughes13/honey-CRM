@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import Image from "../components/ParallaxImageHandler"
 import SEO from "../components/seo"
-import Blob from "../components/animated-blob"
+import NewBlob from "../components/animated-blob"
 import { Container, Row, Col } from "react-bootstrap"
 import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 import FeatureCard from "../components/Feature-Card"
@@ -29,14 +29,22 @@ const IndexPage = () => {
             </p>
             <div className="flex justify-center hero-btns margin-top-50">
               <a href="#" className="btn pink">
-                Try Honey for Free
+                <span class="btn__mask"></span>
+                <span class="btn__text">Try Honey for Free</span>
               </a>
               <a href="#" className="btn blue margin-left-25">
-                Watch Demo
+                <span class="btn__mask"></span>
+                <span class="btn__text arrow-btn">
+                  Watch Demo
+                  <img src={require("../images/home/right-arrow.png")} />
+                </span>
               </a>
             </div>
           </Container>
           <Container className="container-2">
+            <div className="mobile-stats-view">
+              <img src={require("../images/home/stats-mobile.png")} />
+            </div>
             <div className="stats-view-box">
               <img
                 className="stat-img img-1"
@@ -68,8 +76,8 @@ const IndexPage = () => {
               />
             </div>
           </Container>
-          <Container className="pink-gradient-background container-3">
-            <Row>
+          <Container className="pink-gradient-background container-3 ">
+            <Row className="flexed-mobile">
               <Col className="max-width-500">
                 <h3 className="white-text">
                   Overcome your
@@ -105,6 +113,10 @@ const IndexPage = () => {
             </Row>
             <Row className="padding-top-125px z-index-999">
               <Col className="layered-img-col two-thirds rel">
+                <img
+                  className="mobile-img"
+                  src={require("../images/home/parallax-imgs.png")}
+                />
                 <Parallax
                   y={[-30, 150]}
                   tagOuter="div"
@@ -153,11 +165,11 @@ const IndexPage = () => {
                   team with automation. It’s our turn to make them jealous.
                 </p>
               </Col>
-              <img
-                className="pink-shadow"
-                src={require("../svgs/home/ping-shadow.svg")}
-              />
             </Row>
+            <img
+              className="pink-shadow"
+              src={require("../svgs/home/ping-shadow.svg")}
+            />
           </Container>
           <Container className="grey-swish-mid transparent-background">
             <Row>
@@ -239,6 +251,10 @@ const IndexPage = () => {
               />
               <Col className="one-half circle-image-container">
                 <img
+                  className="mobile-img-2"
+                  src={require("../images/home/cir.png")}
+                />
+                <img
                   className="main-circle"
                   src={require("../images/home/circles/Ellipse 2058.png")}
                 />
@@ -319,7 +335,7 @@ const IndexPage = () => {
                   src={require("../images/home/circles/Rectangle 3138.png")}
                 />
               </Col>
-              <Col className="one-third">
+              <Col className="one-third lose-the-migration">
                 {" "}
                 <h3 className="white-text">
                   Lose the migration
@@ -391,7 +407,8 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <Blob />
+            <NewBlob cls="canvas-1" />
+            <NewBlob cls="canvas-2" />
           </Container>
         </div>
       </Layout>

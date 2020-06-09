@@ -23,6 +23,10 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
 
   return (
     <header className={`fixed ${opaque ? "end-transparency" : ""}`}>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,600&display=swap"
+        rel="stylesheet"
+      ></link>
       <CookieConsent
         cookieName="myAwesomeCookieName2"
         style={{ background: "#fff", justifyContent: "Center" }}
@@ -76,10 +80,12 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
             <div className="navbar-item">
               <div className="buttons">
                 <a href="/marketing-warmup" className="btn blue first">
-                  Log in
+                  <span class="btn__mask"></span>
+                  <span class="btn__text">Log in</span>
                 </a>
                 <a href="/custom-marketing" className="btn pink margin-left-50">
-                  Create Free Account
+                  <span class="btn__mask"></span>
+                  <span class="btn__text">Create Free Account</span>
                 </a>
               </div>
             </div>

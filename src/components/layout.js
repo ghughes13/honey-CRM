@@ -5,9 +5,10 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { useEffect, useState } from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import MobileBtns from "./Mobile-Btns"
 
 import Header from "./header"
 import Footer from "./Footer"
@@ -24,6 +25,14 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    if (window.innerWidth < 767) {
+      setIsMobile(true)
+    }
+  })
+
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -31,6 +40,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer></footer>
       </div>
+      {isMobile && <MobileBtns />}
       <Footer />
     </>
   )

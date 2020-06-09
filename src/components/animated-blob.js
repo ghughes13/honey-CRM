@@ -1,126 +1,23 @@
 import React, { useEffect } from "react"
 import "../styles/animated-blob.scss"
-
-const Blob = () => {
-  useEffect(() => {
-    const script = document.createElement("script")
-
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"
-    script.async = true
-
-    document.body.appendChild(script)
-
-    var radius = 8
-    TweenMax.staggerFromTo(
-      ".blob",
-      4,
-      {
-        cycle: {
-          attr: function (i) {
-            var r = i * 90
-            return {
-              transform:
-                "rotate(" +
-                r +
-                ") translate(" +
-                radius +
-                ",0.1) rotate(" +
-                -r +
-                ")",
-            }
-          },
-        },
-      },
-      {
-        cycle: {
-          attr: function (i) {
-            var r = i * 90 + 360
-            return {
-              transform:
-                "rotate(" +
-                r +
-                ") translate(" +
-                radius +
-                ",0.1) rotate(" +
-                -r +
-                ")",
-            }
-          },
-        },
-        ease: Linear.easeNone,
-        repeat: -1,
-      }
-    )
-  })
+const NewBlob = props => {
+  useEffect(() => {})
 
   return (
-    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="loader">
-      <defs>
-        <filter id="goo">
-          <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
-          <feColorMatrix
-            in="blur"
-            mode="matrix"
-            values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-            result="goo"
-          />
-          <feBlend in2="goo" in="SourceGraphic" result="mix" />
-        </filter>
-        <linearGradient id="MyGradient">
-          <stop offset="0%" stopColor="#ff899d" />
-          <stop offset="100%" stopColor="#f7329c" />
-        </linearGradient>
-      </defs>
-      <mask id="maska">
-        <g class="blobs">
-          <circle
-            class="blob"
-            cx="440"
-            cy="250"
-            r="30"
-            transform="rotate(0) translate(0, 0) rotate(0)"
-          />
-          <circle
-            class="blob"
-            cx="500"
-            cy="320"
-            r="70"
-            transform="rotate(0) translate(0, 0) rotate(0)"
-          />
-          <circle
-            class="blob"
-            cx="300"
-            cy="390"
-            r="40"
-            transform="rotate(0) translate(0, 0) rotate(0)"
-          />
-          <circle
-            class="blob"
-            cx="380"
-            cy="390"
-            r="80"
-            transform="rotate(0) translate(0, 0) rotate(0)"
-          />
-          <circle
-            class="blob"
-            cx="470"
-            cy="450"
-            r="20"
-            transform="rotate(0) translate(0, 0) rotate(0)"
-          />
-        </g>
-      </mask>
-      <rect
-        x="200"
-        y="200"
-        mask="url(#maska)"
-        fill="url(#MyGradient)"
-        width="400"
-        height="400"
-      />
+    <svg
+      className="blob"
+      id={props.cls}
+      viewBox="0 0 600 600"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g transform="translate(300,300)">
+        <path
+          d="M120,-157.6C152.7,-141.5,174.3,-102.6,194.8,-58.8C215.3,-14.9,234.6,33.8,228.4,80.8C222.2,127.8,190.4,173.1,148.1,184C105.8,195,52.9,171.5,-2.4,174.8C-57.8,178.2,-115.6,208.4,-137.5,190.9C-159.3,173.3,-145.3,108,-153,56.3C-160.7,4.6,-190.2,-33.4,-178.3,-54.2C-166.4,-75.1,-113.2,-78.8,-76.6,-93.6C-40,-108.3,-20,-134.2,11.9,-150.5C43.7,-166.8,87.4,-173.6,120,-157.6Z"
+          fill="rgba(251, 96, 157, .25)"
+        />
+      </g>
     </svg>
   )
 }
 
-export default Blob
+export default NewBlob

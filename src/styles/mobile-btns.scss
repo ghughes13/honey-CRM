@@ -1,0 +1,15 @@
+.mobile-btns {
+  position: fixed;
+  bottom: 0;
+  background: #f0f2f4;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  z-index: 999;
+  .btn {
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+    box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+  }
+}

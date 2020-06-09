@@ -1,7 +1,13 @@
 header {
-  z-index: 999;
+  z-index: 99999;
   position: relative;
   padding: 25px 50px;
+  position: fixed;
+  width: 100vw;
+
+  &.end-transparency {
+    background: #ecf0f3;
+  }
 
   .mainHeader {
     position: relative;
@@ -12,8 +18,8 @@ header {
   .navbar-menu {
     display: flex;
     justify-content: space-between;
-    width: 93%;
-    margin-left: auto;
+    width: 100%;
+    margin-left: 0px;
   }
 
   #navbarBasicExample {
@@ -42,10 +48,108 @@ header {
     display: inline-block;
     text-align: center;
     font-size: 16px;
+    -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.16);
+    -moz-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  .btn.blue {
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+    box-shadow: 0px 3px 12px 0px rgba(24, 124, 255, 0.27);
+  }
+
+  .btn.red {
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(225, 24, 24, 0.27);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(225, 24, 24, 0.27);
+    box-shadow: 0px 3px 12px 0px rgba(225, 24, 24, 0.27);
   }
 
   .navbar-brand {
     display: flex;
     align-items: center;
+  }
+
+  .bm-burger-button,
+  .bm-menu-wrap {
+    display: none;
+  }
+
+  @media screen and (max-width: 1500px) {
+    .navbar-start {
+      width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 1224px) {
+    .bm-burger-button,
+    .bm-menu-wrap {
+      display: initial;
+    }
+
+    .bm-item-list {
+      padding-top: 50px;
+    }
+
+    .bm-item-list a {
+      color: black;
+      padding: 25px;
+      border-left: 0;
+      border-right: 0;
+    }
+
+    .mainHeader .navbar-burger .bm-cross {
+      top: calc(50% - 3px);
+      height: 20px !important;
+    }
+
+    .navbar-menu {
+      display: none;
+    }
+
+    .bm-burger-button > span {
+      position: fixed;
+      right: 50px;
+      top: 30px;
+      height: 25px;
+      width: 35px;
+    }
+
+    .bm-burger-button button {
+      position: fixed !important;
+      right: 50px;
+      top: 40px !important;
+      height: 25px !important;
+      width: 35px !important;
+      left: initial !important;
+    }
+
+    .bm-burger-bars {
+      background: #707070;
+    }
+
+    .end-transparency .bm-burger-bars {
+      background: #707070;
+      height: 5px;
+    }
+
+    .bm-cross-button > span {
+      height: 0 !important;
+    }
+
+    .bm-overlay {
+      top: 0;
+      left: 0;
+    }
+
+    .bm-menu-wrap,
+    .navbar-burger:hover {
+      top: 0;
+      background: white !important;
+    }
+
+    #navbarBasicExample {
+      display: none;
+    }
   }
 }
