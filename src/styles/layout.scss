@@ -678,10 +678,12 @@ p {
 
 .btn.pink {
   background: #f30070;
+  border: solid 3px #f30070;
 }
 
 .btn.blue {
   background: #18aeff;
+  border: solid 3px #18aeff;
 }
 
 .row {
@@ -929,6 +931,17 @@ $anim-text-offset: 1em;
   }
   .btn__mask {
     animation: fx-mask 0.3s ease-out;
+  }
+}
+
+.btn {
+  &.blue:hover {
+    background: linear-gradient(to bottom, #4bc9fe, #5052fe);
+    border: solid white 3px;
+  }
+  &.pink:hover {
+    background: linear-gradient(to bottom, #eb7e0a, #f30070);
+    border: solid white 3px;
   }
 }
 
