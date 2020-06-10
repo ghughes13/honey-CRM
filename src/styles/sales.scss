@@ -421,5 +421,11 @@
       width: 100%;
       max-width: 100%;
     }
+
+    .pink-blob:before {
+      background-position: -3vw 0vw;
+      height: 75vh;
+      background-size: 200vw;
+    }
   }
 }
