@@ -5,6 +5,7 @@
 
   .container-1 {
     padding: 245px 0 115px;
+    position: relative;
   }
 
   .container-2 {
@@ -315,6 +316,21 @@
   @media screen and (max-width: 1024px) {
     .purple-container {
       padding: 46px 25px;
+    }
+
+    .slide-in-container {
+      transform: scale(0.75);
+      z-index: 999;
+    }
+
+    h1 {
+      font-size: 55px;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .slide-in-container {
+      transform: scale(0.6);
     }
   }
 

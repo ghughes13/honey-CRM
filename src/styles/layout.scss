@@ -1,3 +1,13 @@
+* {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+// * {
+//   border: solid 2px red;
+// }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -103,7 +113,6 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
@@ -191,15 +200,7 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
+
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: georgia, serif;
@@ -238,6 +239,7 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+  word-wrap: normal;
 }
 h2 {
   margin-left: 0;
