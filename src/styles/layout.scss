@@ -651,11 +651,18 @@ h4 {
 }
 
 h5 {
+  font-size: 25px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
 }
 
 p {
   font-family: "Roboto", sans-serif;
   line-height: 30px;
+}
+
+h3.big-h3 {
+  font-size: 50px;
 }
 
 .hero-subtext {
@@ -684,6 +691,11 @@ p {
 .btn.blue {
   background: #18aeff;
   border: solid 3px #18aeff;
+}
+
+.btn.white {
+  background: #fff;
+  color: #7e5dff;
 }
 
 .row {
@@ -734,8 +746,16 @@ p {
   justify-content: center;
 }
 
+.light-weight {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 .white-text {
-  color: white;
+  color: white !important;
 }
 
 .purple-text {
@@ -755,11 +775,15 @@ p {
 }
 
 .one-half {
-  width: 50%;
+  width: 48%;
 }
 
 .one-fourth {
   width: 25%;
+}
+
+.three-fourth {
+  width: 75%;
 }
 
 .two-thirds {
@@ -768,6 +792,10 @@ p {
 
 .one-third {
   width: 33.33%;
+}
+
+.second-col {
+  margin-left: 10%;
 }
 
 .padding-top-125px {
@@ -782,12 +810,32 @@ p {
   margin-top: 50px;
 }
 
+.margin-right-100-neg {
+  margin-right: -100px;
+}
+
+.margin-left-10-perc {
+  margin-left: 10%;
+}
+
 .margin-left-25 {
   margin-left: 25px;
 }
 
 .margin-left-50 {
   margin-left: 50px;
+}
+
+.margin-bottom-125-neg {
+  margin-bottom: -125px;
+}
+
+.margin-bottom-50-neg {
+  margin-bottom: -50px;
+}
+
+.margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 .margin-bottom-50 {
@@ -803,12 +851,28 @@ p {
   margin-right: auto;
 }
 
+.max-width-420 {
+  max-width: 420px;
+}
+
+.max-width-480 {
+  max-width: 480px;
+}
+
 .max-width-500 {
   max-width: 500px;
 }
 
+.max-width-550 {
+  max-width: 550px;
+}
+
 .max-width-650 {
   max-width: 650px;
+}
+
+.max-width-900 {
+  max-width: 900px;
 }
 
 .z-index-9 {
@@ -880,6 +944,14 @@ p {
 
   .flexed-mobile {
     flex-direction: column-reverse;
+  }
+
+  .second-col {
+    margin-left: 0% !important;
+  }
+
+  .margin-bottom-125-neg {
+    margin-bottom: 0px;
   }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~BTN ANIMATION END ~~~~~~~~~~~~~~~~*/

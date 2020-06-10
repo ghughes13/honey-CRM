@@ -180,12 +180,6 @@ const IndexPage = () => {
             </Row>
             <Row>
               <Col>
-                <FeatureCard
-                  title="Email Marketing Management"
-                  body="From a simple intuitive email builder that enables you to compose beautiful emails campaigns to fully automated marketing plans and journeys. Honey helps you master email marketing."
-                  src={require("../images/home/Drag and Drop.png")}
-                  class="first-card"
-                />{" "}
                 <Waypoint
                   onEnter={() => {
                     document
@@ -193,6 +187,12 @@ const IndexPage = () => {
                       .classList.add("animate")
                   }}
                 />
+                <FeatureCard
+                  title="Email Marketing Management"
+                  body="From a simple intuitive email builder that enables you to compose beautiful emails campaigns to fully automated marketing plans and journeys. Honey helps you master email marketing."
+                  src={require("../images/home/Drag and Drop.png")}
+                  class="first-card"
+                />{" "}
                 <FeatureCard
                   title="Automated activity tracking"
                   body="Everybody loves Outlook, We use it all day to send emails and schedule meetings. Honey will automatically grab those activities and enter them to Honey for you."
@@ -208,12 +208,6 @@ const IndexPage = () => {
                 />
               </Col>
               <Col>
-                <FeatureCard
-                  title="Tried and Tested MSP Marketing Content"
-                  body="Honey offers a large library of marketing resources that cover the full gamut of IT services. All of it is automatically branded for your company so you can go to market in minutes."
-                  src={require("../images/home/Group 5761.png")}
-                  class="margin-top-50 third-card"
-                />
                 <Waypoint
                   onEnter={() => {
                     document
@@ -221,6 +215,13 @@ const IndexPage = () => {
                       .classList.add("animate")
                   }}
                 />
+                <FeatureCard
+                  title="Tried and Tested MSP Marketing Content"
+                  body="Honey offers a large library of marketing resources that cover the full gamut of IT services. All of it is automatically branded for your company so you can go to market in minutes."
+                  src={require("../images/home/Group 5761.png")}
+                  class="margin-top-50 third-card"
+                />
+
                 <FeatureCard
                   title="Bulk sales actions"
                   body="Honey takes the grunt work out of sales follow up. Use Honey’s powerful bulk actions to follow up 1,000’s of leads in under 5 minutes. "
