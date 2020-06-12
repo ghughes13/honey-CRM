@@ -805,7 +805,7 @@
     }
 
     .container-3 {
-      padding-top: 200px;
+      padding-top: 65px;
       padding-bottom: 250px;
     }
 
@@ -813,14 +813,14 @@
       right: 0;
     }
 
-    .phone-img-col.animate:before {
+    .phone-img-col:before {
       content: url("../images/home/mobile-circles.png");
       right: -50%;
       top: -10%;
       z-index: 0;
     }
 
-    .phone-img-col.animate:after {
+    .phone-img-col:after {
       content: none;
     }
 
@@ -850,6 +850,11 @@
 
     .feat-card.margin-top-50 {
       margin-top: 0;
+    }
+
+    .feat-card {
+      bottom: 0;
+      opacity: 1;
     }
 
     .grey-swish-mid {
@@ -889,6 +894,21 @@
     .hero-btns {
       flex-direction: column;
       align-items: center;
+    }
+
+    .phone-img-col .phone-img {
+      transform: translateX(0) translatey(0);
+      opacity: 1;
+      margin-bottom: 50px;
+    }
+
+    .phone-img-col:before {
+      transform: scale(1);
+    }
+
+    .logo-images img {
+      opacity: 1;
+      bottom: 0;
     }
   }
 }
