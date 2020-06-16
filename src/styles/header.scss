@@ -80,6 +80,34 @@ header {
     color: #59486e;
   }
 
+  .light .navbar-item {
+    color: #fff;
+    transition-duration: 0.25s;
+  }
+
+  .light .logo.light {
+    position: absolute;
+    transition-duration: 0.25s;
+  }
+
+  .light .logo.dark {
+    opacity: 0;
+    transition-duration: 0.25s;
+  }
+
+  &.end-transparency .light {
+    .logo.light {
+      opacity: 0;
+    }
+    .logo.dark {
+      opacity: 1;
+    }
+
+    .navbar-item {
+      color: #59486e;
+    }
+  }
+
   @media screen and (max-width: 1500px) {
     .navbar-start {
       width: 50%;
@@ -172,6 +200,15 @@ header {
       position: fixed !important;
       right: 25px;
       top: 20px !important;
+    }
+
+    .light {
+      .logo.light {
+        opacity: 0;
+      }
+      .logo.dark {
+        opacity: 1;
+      }
     }
   }
 }

@@ -14,7 +14,7 @@ import Header from "./header"
 import Footer from "./Footer"
 import "../styles/layout.scss"
 
-const Layout = ({ children }) => {
+const Layout = ({ navTheme = "default", children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -35,7 +35,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={data.site.siteMetadata.title} navTheme={navTheme} />
       <div>
         <main>{children}</main>
         <footer></footer>

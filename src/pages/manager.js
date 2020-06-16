@@ -14,11 +14,8 @@ const IndexPage = () => {
 
   return (
     <ParallaxProvider>
-      <Layout>
-        <SEO
-          title="Your IT Marketing Hive - Honey CRM"
-          headerFontColor="white"
-        />
+      <Layout navTheme="light">
+        <SEO title="Your IT Marketing Hive - Honey CRM" />
         <div className="manager-page">
           <Container className="purple-blob container-1">
             <Row>

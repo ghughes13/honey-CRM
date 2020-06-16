@@ -4,7 +4,7 @@ import Burger from "./HamburgerMenu.js"
 import CookieConsent from "react-cookie-consent"
 import "../styles/header.scss"
 
-const Header = ({ siteTitle, opaque, headerVersion }) => {
+const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
     window.addEventListener("scroll", function () {
       if (!opaque) {
@@ -50,14 +50,31 @@ const Header = ({ siteTitle, opaque, headerVersion }) => {
         This website uses cookies to enhance the user experience.
       </CookieConsent> */}
 
-      <div className="mainHeader navbar" role="navigation">
+      <div className={"mainHeader navbar " + navTheme} role="navigation">
         <div href="/" className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img
-              className="logo"
-              src={require("../images/nav/HoneyLogo.png")}
-              alt="Honey Logo"
-            />
+            {
+              (navTheme = "light" ? (
+                <>
+                  <img
+                    className="logo light"
+                    src={require("../images/nav/HoneyLogoWhite.png")}
+                    alt="Honey Logo"
+                  />
+                  <img
+                    className="logo dark"
+                    src={require("../images/nav/HoneyLogo.png")}
+                    alt="Honey Logo"
+                  />
+                </>
+              ) : (
+                <img
+                  className="logo"
+                  src={require("../images/nav/HoneyLogo.png")}
+                  alt="Honey Logo"
+                />
+              ))
+            }
           </a>
           <Burger className="burger-container" />
         </div>
