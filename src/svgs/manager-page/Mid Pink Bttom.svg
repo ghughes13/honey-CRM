@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1459" height="361" viewBox="0 0 1459 361">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3146" data-name="Rectangle 3146" width="1459" height="361" transform="translate(-59 3642)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.747" y1="0.475" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fa4a9d"/>
+      <stop offset="1" stop-color="#fa4a9d"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_96" data-name="Mask Group 96" transform="translate(59 -3642)" clip-path="url(#clip-path)">
+    <path id="LogIn_BG_svg" d="M718.1,311.847,1476.987,39.434s316.782-1.121,400.766,473.672,530.759,780.406,530.759,780.406l-1270.76,396.811C1082.438,481.049,718.1,311.847,718.1,311.847Z" transform="matrix(0.326, -0.946, 0.946, 0.326, -583.448, 4511.05)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

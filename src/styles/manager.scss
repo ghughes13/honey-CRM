@@ -1,0 +1,551 @@
+.manager-page {
+  h3 {
+    color: #7e5dff;
+  }
+
+  .purple-blob {
+    padding: 205px 0 240px;
+  }
+
+  .purple-blob:before {
+    content: "";
+    background: url("../svgs/manager-page/top-purple.svg");
+    position: absolute;
+    top: -30vw;
+    left: 0;
+    right: 0;
+    height: 80vw;
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position: 0vw 0;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .stats-img {
+    position: relative;
+    z-index: 9;
+    margin-top: 100px;
+    left: -50px;
+  }
+
+  .stats-img img {
+    position: absolute;
+    transform: scale(0);
+    transition-duration: 0.5s;
+  }
+
+  img.grey-block {
+    position: static;
+    width: 100%;
+  }
+
+  .stats-img.animate {
+    img {
+      transform: scale(1);
+    }
+    .img-1 {
+      transition-delay: 0.5s;
+    }
+
+    .img-2 {
+      transition-delay: 0.25s;
+    }
+
+    .img-3 {
+      transition-delay: 0;
+    }
+
+    .img-4 {
+      transition-delay: 0.15s;
+    }
+
+    .img-5 {
+      transition-delay: 0.45s;
+    }
+
+    .img-6 {
+      transition-delay: 0.35s;
+    }
+
+    .img-7 {
+      transition-delay: 0.55s;
+    }
+
+    .img-8 {
+      transition-delay: 0.3s;
+    }
+
+    .img-9 {
+      transition-delay: 0.2s;
+    }
+
+    .img-10 {
+      transition-delay: 0.1s;
+    }
+
+    .img-11 {
+      transition-delay: 0.4s;
+    }
+
+    .img-12 {
+      transition-delay: 0.46s;
+    }
+
+    .img-13 {
+      transition-delay: 0.24s;
+    }
+
+    .img-14 {
+      transition-delay: 0.44s;
+    }
+
+    .img-15 {
+      transition-delay: 0.34s;
+    }
+  }
+
+  .img-1 {
+    top: -66px;
+    left: 30px;
+  }
+
+  .img-2 {
+    left: 200px;
+    top: -85px;
+  }
+
+  .img-4 {
+    left: 0;
+    top: 0;
+  }
+
+  .img-5 {
+    left: 200px;
+  }
+
+  .img-6 {
+    left: 400px;
+  }
+
+  .img-7 {
+    left: 600px;
+  }
+
+  .img-8 {
+    left: 80px;
+    top: 100px;
+  }
+
+  .img-9 {
+    left: 70px;
+    top: 250px;
+  }
+
+  .img-10 {
+    left: 280px;
+    top: 242px;
+  }
+
+  .img-11 {
+    left: 620px;
+    top: 242px;
+  }
+
+  .img-12 {
+    left: 790px;
+    top: 242px;
+  }
+
+  .img-13 {
+    left: 620px;
+    top: 327px;
+  }
+
+  .img-14 {
+    left: 790px;
+    top: 327px;
+  }
+
+  .img-15 {
+    left: 77px;
+    top: 448px;
+  }
+
+  .pink-swish-section {
+    position: relative;
+    background: #fa4a9d;
+  }
+
+  .pink-swish-section:before {
+    content: "";
+    background: url("../svgs/manager-page/Mid Pink Top.svg");
+    position: absolute;
+    top: -30vw;
+    left: -10vw;
+    right: 0;
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position: 0vw 0vw;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .pink-swish-section:after {
+    content: "";
+    background: url("../svgs/manager-page/Mid Pink Bttom.svg");
+    position: absolute;
+    left: -15px;
+    right: 0;
+    height: 500px;
+    bottom: -300px;
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position: 0vw 0vw;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .calendar-img {
+    position: relative;
+  }
+
+  .calendar-img img {
+    position: absolute;
+  }
+
+  img.calendar {
+    position: static;
+    margin-top: 50px;
+  }
+
+  .small-square {
+    transform: scale(0);
+    left: 300px;
+    top: 230px;
+  }
+
+  .large-square {
+    transform: scale(0);
+    top: 160px;
+    right: -280px;
+  }
+
+  .calendar-img.animate .small-square {
+    transform: scale(1);
+    transition-duration: 0.5s;
+  }
+
+  .calendar-img.animate .large-square {
+    transform: scale(1);
+    transition-duration: 0.5s;
+    transition-delay: 0.55s;
+  }
+
+  .fan-1 {
+    bottom: -400px;
+    transform: rotate(-15deg);
+    left: -92px;
+    transition-property: bottom, transform, left;
+    transition-delay: 0s, 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+  }
+
+  .fan-2 {
+    left: -140px;
+    bottom: -800px;
+    transition-property: bottom, transform;
+    transition-delay: 0s, 0.5s;
+    transition-duration: 0.5s, 0.5s;
+  }
+
+  .fan-3 {
+    left: -200px;
+    bottom: -400px;
+    z-index: -1;
+    transform: rotate(15deg);
+    left: -95px;
+    transition-property: bottom, transform, left;
+    transition-delay: 0s, 0.5s, 0.5s;
+    transition-duration: 0.5s, 0.5s, 0.5s;
+  }
+
+  .calendar-img.animate {
+    .fan-1 {
+      transform: rotate(0deg);
+      left: 0;
+      bottom: -40px;
+    }
+
+    .fan-2 {
+      bottom: -80px;
+    }
+
+    .fan-3 {
+      transform: rotate(0deg);
+      left: -200px;
+      bottom: -40px;
+    }
+  }
+
+  .container-2 {
+    padding-bottom: 100px;
+  }
+
+  .container-2 img {
+    position: relative;
+    transform: scale(1.25);
+    z-index: -2;
+  }
+
+  .container-3 {
+    padding-bottom: 50px;
+  }
+
+  .container-4 {
+    padding-bottom: 50px;
+  }
+
+  .container-7 {
+    padding-top: 100px;
+    margin-top: -50px;
+  }
+
+  .container-8 {
+    padding-top: 200px;
+    padding-bottom: 80px;
+  }
+
+  .container-10 {
+    margin-top: -100px;
+    padding-bottom: 150px;
+  }
+
+  .container-10 img {
+    transform: scale(1.25);
+  }
+
+  .container-12 {
+    padding-top: 300px;
+  }
+
+  .container-13 {
+    padding-top: 110px;
+  }
+
+  .container-15 {
+    padding-top: 50px;
+    padding-bottom: 150px;
+    overflow: hidden;
+  }
+
+  .grey-swish {
+    position: relative;
+  }
+
+  .grey-swish:before {
+    content: "";
+    background: url("../svgs/manager-page/grey-swish.svg");
+    position: absolute;
+    left: -15px;
+    right: -100px;
+    height: 2000px;
+    top: 0vw;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0vw 0vw;
+    overflow-x: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .tablet-img {
+    display: none;
+  }
+
+  @media screen and (max-width: 1600px) {
+    .purple-blob:before {
+      top: -25vw;
+    }
+
+    .pink-swish-section:after {
+      bottom: -380px;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    .purple-blob:before {
+      top: -20vw;
+    }
+
+    .container-10 {
+      margin-top: -50px;
+    }
+
+    .calendar-img {
+      left: -50px;
+    }
+  }
+
+  @media screen and (max-width: 1224px) {
+    .purple-blob:before {
+      top: -15vw;
+    }
+
+    .stats-img img {
+      display: none;
+    }
+
+    .stats-img .tablet-img,
+    .calendar-img .tablet-img {
+      display: block;
+      position: static;
+    }
+
+    .stats-img {
+      left: 0;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .container-10 {
+      margin-top: 0px;
+    }
+
+    .calendar-img {
+      left: 0;
+      margin-top: 50px;
+    }
+
+    .calendar-img img {
+      display: none;
+    }
+
+    .purple-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .purple-blob:before {
+      top: -5vw;
+    }
+  }
+
+  @media screen and (max-width: 925px) {
+    .purple-blob {
+      padding: 125px 0 240px;
+    }
+
+    .purple-blob:before {
+      top: -0vw;
+    }
+
+    .pink-swish-section:after {
+      bottom: -425px;
+    }
+
+    .container-10 {
+      margin-top: 50px;
+    }
+
+    .container-14 {
+      padding-top: 100px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    h1 {
+      font-size: 40px;
+    }
+
+    .purple-blob:before {
+      top: 0vw;
+      left: 0;
+      right: 0;
+      height: 200vw;
+      background-repeat: no-repeat;
+      background-size: 800px;
+      background-position: 0vw 0;
+      overflow-x: hidden;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .purple-blob {
+      padding: 124px 0 90px;
+    }
+
+    .container-2 {
+      padding-bottom: 10px;
+    }
+
+    .container-3 {
+      padding-bottom: 0;
+    }
+
+    .stats-img {
+      margin-top: 35px;
+      transform: scale(1.25);
+    }
+
+    .container-8 {
+      padding-top: 105px;
+      padding-bottom: 0;
+    }
+
+    .container-10 img {
+      position: relative;
+      left: -35px;
+    }
+
+    .container-10 {
+      margin-top: 0px;
+      padding-bottom: 20px;
+      h3 {
+        margin-top: 15px;
+      }
+    }
+
+    .container-12 {
+      padding-top: 100px;
+    }
+
+    .container-12 .tablet-img {
+      transform: scale(1.15);
+    }
+
+    .container-14 {
+      padding-top: 50px;
+    }
+
+    .purple-container {
+      flex-wrap: wrap;
+      text-align: center;
+      border-radius: 0;
+      padding: 45px 10px;
+      .white {
+        margin-top: 25px;
+      }
+    }
+    .container-15 .row {
+      max-width: 100%;
+    }
+
+    .container-15 {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .pink-swish-section:after {
+      bottom: -500px;
+    }
+  }
+}
