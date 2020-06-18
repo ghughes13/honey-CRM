@@ -119,7 +119,7 @@ const IndexPage = () => {
               <Col className="one-half centered-text rel width-55-perc">
                 <img
                   className="transform-scale-1x25"
-                  src={require("../images/agencies/lappy.png")}
+                  src={require("../images/agencies/Lappy.png")}
                 />
               </Col>
               <Col className="one-half max-width-480 margin-top-75-neg z-index-999">
