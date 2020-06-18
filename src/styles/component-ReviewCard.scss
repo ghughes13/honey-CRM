@@ -1,0 +1,61 @@
+.reviewcard {
+  -webkit-box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+  -moz-box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+  box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+
+  .text {
+    padding: 24px 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+    color: #ff2c53;
+    margin-bottom: 10px;
+    position: relative;
+
+    &:after {
+      content: url("../images/agencies/quote.png");
+      position: absolute;
+      right: 0;
+      top: -20px;
+    }
+
+    @media screen and (max-width: 1300px) {
+      &:after {
+        content: none;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      &:after {
+        content: url("../images/agencies/quote.png");
+        z-index: -1;
+        right: -20px;
+        top: -40px;
+      }
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    color: #59486e;
+  }
+
+  p {
+    color: #59486e;
+    font-size: 20px;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    border-radius: 0;
+  }
+}

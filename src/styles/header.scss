@@ -80,6 +80,10 @@ header {
     color: #59486e;
   }
 
+  .default .logo.light {
+    display: none;
+  }
+
   .light .navbar-item {
     color: #fff;
     transition-duration: 0.25s;

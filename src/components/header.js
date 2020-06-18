@@ -53,28 +53,16 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
       <div className={"mainHeader navbar " + navTheme} role="navigation">
         <div href="/" className="navbar-brand">
           <a className="navbar-item" href="/">
-            {
-              (navTheme = "light" ? (
-                <>
-                  <img
-                    className="logo light"
-                    src={require("../images/nav/HoneyLogoWhite.png")}
-                    alt="Honey Logo"
-                  />
-                  <img
-                    className="logo dark"
-                    src={require("../images/nav/HoneyLogo.png")}
-                    alt="Honey Logo"
-                  />
-                </>
-              ) : (
-                <img
-                  className="logo"
-                  src={require("../images/nav/HoneyLogo.png")}
-                  alt="Honey Logo"
-                />
-              ))
-            }
+            <img
+              className="logo light"
+              src={require("../images/nav/HoneyLogoWhite.png")}
+              alt="Honey Logo"
+            />
+            <img
+              className="logo dark"
+              src={require("../images/nav/HoneyLogo.png")}
+              alt="Honey Logo"
+            />
           </a>
           <Burger className="burger-container" />
         </div>

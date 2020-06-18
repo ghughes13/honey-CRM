@@ -680,7 +680,7 @@ h3.big-h3 {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  padding: 15px 45px;
+  padding: 7px 45px;
   text-align: center;
   font-weight: bold;
 }
@@ -812,6 +812,10 @@ h3.big-h3 {
   margin-top: 50px;
 }
 
+.margin-top-75-neg {
+  margin-top: -75px;
+}
+
 .margin-right-100-neg {
   margin-right: -100px;
 }
@@ -881,6 +885,10 @@ h3.big-h3 {
   max-width: 650px;
 }
 
+.max-width-700 {
+  max-width: 700px;
+}
+
 .max-width-900 {
   max-width: 900px;
 }
@@ -934,6 +942,10 @@ h3.big-h3 {
   bottom: 0;
   background-size: cover;
   pointer-events: none;
+}
+
+.hide-me {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
