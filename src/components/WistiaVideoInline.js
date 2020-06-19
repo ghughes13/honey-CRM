@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import "../styles/comp-WistiaVideoInline.scss"
+import "../styles/comp-wistiavideoinline.scss"
 
 const WistiaVideoInline = ({ id }) => {
   useEffect(() => {
