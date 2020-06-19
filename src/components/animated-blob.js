@@ -1,5 +1,5 @@
 import React, { useEffect } from "react"
-import "../styles/animated-blob.scss"
+import "../styles/comp-animated-blob.scss"
 const NewBlob = props => {
   useEffect(() => {})
 

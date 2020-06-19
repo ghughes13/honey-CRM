@@ -7,7 +7,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 import FeatureCard from "../components/Feature-Card"
 import { Waypoint } from "react-waypoint"
-import "../styles/sales.scss"
+import "../styles/page-sales.scss"
 
 const IndexPage = () => {
   useEffect(() => {})

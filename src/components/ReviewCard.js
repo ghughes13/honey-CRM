@@ -1,6 +1,6 @@
 import React from "react"
 import WistiaVideoInline from "./WistiaVideoInline"
-import "../styles/component-ReviewCard.scss"
+import "../styles/comp-ReviewCard.scss"
 
 const ReviewCard = ({ id, clientCompany, clientName, description }) => {
   return (

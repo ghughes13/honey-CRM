@@ -776,6 +776,10 @@ h3.big-h3 {
   background: linear-gradient(to bottom, #5718a5, #2d2437);
 }
 
+.blue-gradient-background {
+  background: linear-gradient(to top left, #4bc9fe, #5052fe);
+}
+
 .one-half {
   width: 48%;
 }
@@ -838,6 +842,10 @@ h3.big-h3 {
 
 .margin-bottom-100-neg {
   margin-bottom: -100px;
+}
+
+.margin-bottom-75-neg {
+  margin-bottom: -75px;
 }
 
 .margin-bottom-50-neg {
@@ -963,7 +971,8 @@ h3.big-h3 {
     font-weight: 800;
   }
 
-  h3 {
+  h3,
+  h3.big-text {
     font-family: "Nunito", sans-serif;
     font-size: 40px;
     color: white;
