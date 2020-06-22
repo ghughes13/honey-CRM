@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="154.083" height="146.708" viewBox="0 0 154.083 146.708">
+  <defs>
+    <filter id="Path_934" x="0" y="0" width="154.083" height="146.708" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_7208" data-name="Group 7208" transform="translate(-165.733 6)">
+    <rect id="Rectangle_621" data-name="Rectangle 621" width="37" height="9" transform="translate(175.416 -0.48)" fill="#59486e"/>
+    <path id="Path_935" data-name="Path 935" d="M0,0H30.33V8.849H0Z" transform="translate(310.816 98.471) rotate(90)" fill="#59486e"/>
+    <g transform="matrix(1, 0, 0, 1, 165.73, -6)" filter="url(#Path_934)">
+      <path id="Path_934-2" data-name="Path 934" d="M-11.233-12H25.743l99.106,93.853v34.855Z" transform="translate(20.23 18)" fill="#f30070"/>
+    </g>
+    <text id="Most_Popular" data-name="Most Popular" transform="translate(245.07 56.475) rotate(43)" fill="#fff" font-size="16" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="-48.88" y="0">Most Popular</tspan></text>
+  </g>
+</svg>

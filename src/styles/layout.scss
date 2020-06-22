@@ -953,7 +953,7 @@ h3.big-h3 {
 }
 
 .hide-me {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 767px) {

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2578.447" height="2456.241" viewBox="0 0 2578.447 2456.241">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ecf0f3"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path id="LogIn_BG_svg" d="M-290.214,1225.711c34.466,497.6,795.291,1088.941,1061.117,764.687s120-669.177,169.085-1147.248c19.24-187.4,203-462.058,126.267-672.846S972.156-263.851,633.039,0-324.68,728.112-290.214,1225.711Z" transform="translate(1802.425 302.147) rotate(51)" fill="url(#linear-gradient)"/>
+</svg>

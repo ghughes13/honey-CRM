@@ -1,0 +1,220 @@
+.pricing-page {
+  position: relative;
+  .container-1 {
+    padding: 255px 0 125px;
+  }
+
+  .grey-blob:before {
+    content: "";
+    background: url("../svgs/pricing/LogIn_BG_svg.svg");
+    position: absolute;
+    left: 0;
+    top: -16vw;
+    left: 0;
+    height: 70vw;
+    background-repeat: no-repeat;
+    background-size: 110vw;
+    background-position: 10vw -18vw;
+    z-index: 999;
+    overflow-x: hidden;
+    pointer-events: none;
+  }
+
+  .top {
+    background: linear-gradient(to bottom left, #ff899d, #f7329c);
+    position: relative;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    padding: 30px 60px;
+    h3 {
+      font-size: 36px;
+      font-weight: 700;
+      display: inline-block;
+      max-width: 610px;
+      margin-bottom: 0;
+    }
+  }
+
+  #contact-form .top:before {
+    content: "";
+    background: url("../images/sales/Mask Group 70.png") no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    pointer-events: none;
+    border-radius: 25px 25px 0 0;
+  }
+
+  .form-container-for-btn {
+    width: 800px;
+    -webkit-box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+    -moz-box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 10px 13px 26px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 25px;
+    margin-top: 110px;
+    background: white;
+  }
+
+  .form-container-for-btn input,
+  .form-container-for-btn textarea,
+  .form-container-for-btn label {
+    width: 75%;
+  }
+
+  .form-container-for-btn label {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #466777;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+
+  .what-do-we-call-you {
+    margin-top: 20px;
+  }
+
+  .comment-field {
+    padding-bottom: 50px;
+  }
+
+  ::-webkit-input-placeholder {
+    opacity: 0;
+  }
+
+  .form-container-for-btn input,
+  .form-container-for-btn textarea {
+    border: solid 1px #c9cbd9;
+  }
+
+  .form-container-for-btn input {
+    height: 45px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-container-for-btn textarea {
+    height: 90px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-thank-you {
+    display: none;
+  }
+
+  #contact-form .submit-btn {
+    text-align: right;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  #canvas-1 {
+    position: absolute;
+    left: -10%;
+    top: 15%;
+    z-index: -1;
+  }
+
+  #canvas-2 {
+    position: absolute;
+    right: -10%;
+    transform: rotate(90deg);
+    top: 15%;
+    z-index: -1;
+  }
+
+  @media screen and (max-width: 1700px) {
+    #canvas-1 {
+      left: -20%;
+    }
+
+    #canvas-2 {
+      right: -20%;
+    }
+  }
+
+  @media screen and (max-width: 1400px) {
+    #canvas-1 {
+      left: -30%;
+    }
+
+    #canvas-2 {
+      right: -30%;
+    }
+  }
+
+  @media screen and (max-width: 1224px) {
+    .container-2 .row {
+      max-width: 100%;
+    }
+
+    #canvas-1 {
+      left: -40%;
+    }
+
+    #canvas-2 {
+      right: -40%;
+    }
+
+    .form-container-for-btn {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .container-2 .row {
+      flex-direction: column;
+    }
+
+    .container-2 .price-card {
+      margin-top: 50px;
+    }
+
+    #canvas-1 {
+      left: -60%;
+    }
+
+    #canvas-2 {
+      top: 40%;
+      right: -60%;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    #contact-form {
+      max-width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .container-1 {
+      padding: 155px 0 5px;
+    }
+
+    #contact-form {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h3.form-title {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container-3 .row {
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+}
