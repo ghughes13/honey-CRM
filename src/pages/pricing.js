@@ -16,6 +16,13 @@ const Pricing = () => {
       <SEO title="Legendary Sales - Honey CRM" />
       <div className="pricing-page">
         <Container className="grey-blob container-1">
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelectorAll(".price-card")
+                .forEach(card => card.classList.add("animate"))
+            }}
+          />
           <Row>
             <Col className="centered-text">
               <h1>Get started with Honey</h1>
@@ -33,11 +40,6 @@ const Pricing = () => {
             <PriceCard title="Pro" price="249" contactNum="10000" />
           </Row>
           <NewBlob cls="canvas-2" fill="rgba(251, 96, 157, .25)" />
-          <Waypoint
-            onEnter={() => {
-              document.querySelector(".price-card").classList.add("animate")
-            }}
-          />
         </Container>
         <Container className="container-3">
           <Row>
