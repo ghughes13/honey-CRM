@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1576" height="695" viewBox="0 0 1576 695">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3147" data-name="Rectangle 3147" width="1576" height="695" transform="translate(-150 2359)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_3146" data-name="Rectangle 3146" width="1615" height="1977" transform="translate(-0.153)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.868" y1="0.701" x2="-0.029" y2="0.226" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff899d"/>
+      <stop offset="1" stop-color="#f7329c"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_97" data-name="Mask Group 97" transform="translate(150 -2359)" clip-path="url(#clip-path)">
+    <g id="Mask_Group_96" data-name="Mask Group 96" transform="translate(-149.847 2425)" clip-path="url(#clip-path-2)">
+      <path id="LogIn_BG_svg" d="M7.054,404.248,1121.435,20.536s314.265-9.19,386.7,465.408,554.586,864.783,554.586,864.783L276.181,1978.683C285.567,704.247,7.054,404.248,7.054,404.248Z" transform="matrix(0.326, -0.946, 0.946, 0.326, -379.519, 1511.118)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

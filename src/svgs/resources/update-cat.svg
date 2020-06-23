@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266" height="83.5" viewBox="0 0 266 83.5">
+  <defs>
+    <filter id="Rectangle_619" x="0" y="0" width="266" height="83.5" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#7b5bfd" flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" y1="0.75" x2="0.93" y2="0.167" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff5a6f"/>
+      <stop offset="1" stop-color="#f2cf80"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3448" data-name="Group 3448" transform="translate(-721 -429)">
+    <g transform="matrix(1, 0, 0, 1, 721, 429)" filter="url(#Rectangle_619)">
+      <rect id="Rectangle_619-2" data-name="Rectangle 619" width="230" height="47.5" rx="23.75" transform="translate(18 15)" fill="#fff"/>
+    </g>
+    <text id="Product_Updates" data-name="Product Updates" transform="translate(761 475)" fill="#d2c6eb" font-size="18" font-family="Nunito-ExtraBold, Nunito" font-weight="800"><tspan x="0" y="0">Product Updates</tspan></text>
+    <g id="Group_3439" data-name="Group 3439" transform="translate(-30)">
+      <circle id="Ellipse_1991" data-name="Ellipse 1991" cx="24" cy="24" r="24" transform="translate(951 444)" fill="url(#linear-gradient)"/>
+      <g id="favorite" transform="translate(602.398 -118.878)">
+        <path id="Path_2971" data-name="Path 2971" d="M383.9,582.338l-7.756-.373-2.753-7.238c-.41-1.078-1.074-1.078-1.484,0l-2.752,7.238-7.756.373c-1.154.055-1.359.685-.458,1.407L367,588.592l-2.04,7.468c-.3,1.112.234,1.5,1.2.87l6.495-4.243,6.494,4.243c.967.631,1.5.242,1.2-.87l-2.04-7.468,6.054-4.847C385.262,583.024,385.056,582.394,383.9,582.338Z" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="3" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

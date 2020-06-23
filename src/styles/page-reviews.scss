@@ -1,0 +1,169 @@
+.reviews-page {
+  overflow: hidden;
+  position: relative;
+  .row {
+    justify-content: space-between;
+    &.center {
+      display: flex;
+      justify-content: center;
+      .purple-row {
+        padding: 100px 50px 150px;
+      }
+    }
+  }
+
+  .container-1 {
+    .row {
+      position: relative;
+      overflow: visible;
+      z-index: 999;
+    }
+
+    .row:before {
+      content: url("../images/reviews/quote-right.png");
+      bottom: -650px;
+      right: -100px;
+      position: absolute;
+    }
+    .row:after {
+      content: url("../images/reviews/quote-left.png");
+      position: absolute;
+      top: -300px;
+      left: -100px;
+    }
+
+    padding-top: 200px;
+
+    @media screen and (max-width: 1500px) {
+      .row:before {
+        right: -200px;
+      }
+      .row:after {
+        left: -200px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .row:before {
+        content: none;
+      }
+      .row:after {
+        content: none;
+      }
+    }
+  }
+
+  .purple-swish-background:before {
+    content: "";
+    background: url("../svgs/reviews/top-purple.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: -2vw;
+    right: -2vw;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 105vw;
+    height: 200vh;
+    background-position: 50% -30vw;
+    @media screen and (max-width: 1400px) {
+      width: 150vw;
+    }
+  }
+
+  .pink-mid {
+    position: relative;
+    background: linear-gradient(to left, #ff899d, #fb5d9d);
+  }
+
+  .pink-mid:before {
+    content: "";
+    background: url("../svgs/reviews/mid-pink.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -26vw;
+    bottom: 0;
+    right: 0;
+    left: -14vw;
+    width: 120vw;
+    height: 170vw;
+    z-index: 0;
+  }
+
+  .blue-section {
+    position: relative;
+  }
+
+  .blue-section:before {
+    content: "";
+    background: url("../svgs/reviews/lower-blue.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -26vw;
+    bottom: 0;
+    right: 0;
+    left: -14vw;
+    width: 120vw;
+    height: 170vw;
+    z-index: 0;
+  }
+
+  .wistia_swatch {
+    display: none;
+  }
+
+  .reviewcard {
+    margin-top: 100px;
+    background: white;
+  }
+
+  .purple-section {
+    padding: 100px 50px 150px;
+  }
+
+  @media screen and (max-width: 1224px) {
+    .purple-container {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .purple-row {
+      max-width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .purple-swish-background:before {
+      width: 200vw;
+    }
+
+    .purple-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 50px 25px;
+      .right-side {
+        margin-top: 25px;
+      }
+    }
+
+    .reviewcard {
+      margin-top: 50px;
+    }
+
+    .text {
+      padding: 25px !important;
+    }
+
+    .container-1 {
+      padding-top: 120px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .purple-swish-background:before {
+      width: 300vw;
+      left: -5vw;
+    }
+  }
+}

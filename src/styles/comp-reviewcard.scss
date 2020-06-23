@@ -6,6 +6,45 @@
   overflow: hidden;
   position: relative;
 
+  &.full {
+    display: flex;
+
+    .image {
+      display: flex;
+      flex-basis: 25%;
+      img {
+        object-fit: cover;
+      }
+    }
+
+    .text {
+      flex-basis: 75%;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
+      padding-left: 70px;
+      padding-top: 70px;
+      padding-bottom: 100px;
+      padding-right: 70px;
+      img {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      .image {
+        flex-basis: 100%;
+        img {
+          width: 100%;
+          max-height: 500px;
+          object-position: center 10%;
+        }
+      }
+    }
+  }
+
   .text {
     padding: 24px 30px;
   }
@@ -56,6 +95,5 @@
   }
 
   @media screen and (max-width: 767px) {
-    border-radius: 0;
   }
 }

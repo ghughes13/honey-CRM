@@ -36,4 +36,13 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     })
   })
+
+  const resources = path.resolve("./src/pages/resources.js")
+  createPage({
+    path: "/resources",
+    component: slash(resources),
+    context: {
+      data: result,
+    },
+  })
 }
