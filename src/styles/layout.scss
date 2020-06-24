@@ -695,6 +695,16 @@ h3.big-h3 {
   border: solid 3px #18aeff;
 }
 
+.btn.orange {
+  background: #f89477;
+  border: solid 3px #f89477;
+}
+
+.btn.green {
+  background: #2ada2b;
+  border: solid 3px #2ada2b;
+}
+
 .btn.white {
   background: #fff;
   color: #7e5dff;
@@ -1092,6 +1102,14 @@ $anim-text-offset: 1em;
   }
   &.pink:hover {
     background: linear-gradient(to bottom, #eb7e0a, #f30070);
+    border: solid white 3px;
+  }
+  &.orange:hover {
+    background: linear-gradient(to bottom, #f3c27e, #fe6370);
+    border: solid white 3px;
+  }
+  &.green:hover {
+    background: linear-gradient(to bottom, #13e9e7, #28da34);
     border: solid white 3px;
   }
 }
