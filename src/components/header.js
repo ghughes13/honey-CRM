@@ -24,7 +24,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   return (
     <header className={`fixed ${opaque ? "end-transparency" : ""}`}>
       <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet"
       ></link>
       {/* <CookieConsent
@@ -71,10 +71,10 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
             <a href="/about-us/" className="navbar-item">
               Features for
             </a>
-            <a href="/process" className="navbar-item">
+            <a href="/pricing" className="navbar-item">
               Pricing
             </a>
-            <a href="/reviews" className="navbar-item">
+            <a href="/resources" className="navbar-item">
               Resources
             </a>
             <a href="/reviews" className="navbar-item">

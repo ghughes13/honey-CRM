@@ -142,7 +142,7 @@
     z-index: 0;
     transform: scale(0);
     transition-duration: 0.25s;
-    transition-delay: 0.25s;
+    transition-delay: 0.6s;
   }
 
   .phone-img-col.animate:before {
@@ -157,6 +157,7 @@
     z-index: 0;
     transform: scale(0);
     transition-duration: 0.25s;
+    transition-delay: 0.8s;
   }
 
   .phone-img-col.animate:after {
@@ -309,7 +310,7 @@
 
   .main-circle {
     display: block;
-    transform: scale(1) !important;
+    // transform: scale(1) !important;
   }
 
   .dash-1 {

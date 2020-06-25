@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, Fragment } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
@@ -7,13 +7,62 @@ import "../styles/page-resources.scss"
 import { graphql } from "gatsby"
 import ResourceCard from "../components/ResourceCard"
 
-const Pricing = ({ data }) => {
-  const post = data.allWordpressPost.edges[0].node
-  useEffect(() => {})
+const Resources = ({ data }) => {
+  const post = data.allWordpressPost.edges
+  let moreBlogs = []
 
-  const handleLoadMore = e => {
+  useEffect(() => {
+    for (let i = 0; i < post.length - 5; i++) {
+      moreBlogs.push()
+    }
+
+    document.querySelectorAll(".cat-btns a").forEach(btn =>
+      btn.addEventListener("click", e => {
+        document.querySelector("#search-blogs").value = ""
+        let id
+        if (e.path[0].tagName === "A") {
+          id = e.path[0].id
+        } else {
+          id = e.path[1].id
+        }
+        document.querySelector(".load-more-container").style.display = "flex"
+        document
+          .querySelectorAll(".load-more-container .card")
+          .forEach(card => {
+            card.style.display = "none"
+            if (card.classList.contains(id)) {
+              card.style.display = "block"
+            }
+          })
+        hideInitialBlogs()
+      })
+    )
+  })
+
+  const hideInitialBlogs = () => {
+    document
+      .querySelectorAll(".initial-blogs")
+      .forEach(container => (container.style.display = "none"))
+  }
+
+  const showMoreCards = e => {
     e.preventDefault()
-    console.log("test")
+    document.querySelector(".load-more-container").style.display = "flex"
+    document.querySelector(".load-more").style.display = "none"
+  }
+
+  const searchBlogs = () => {
+    let val = document.querySelector("#search-blogs").value
+    hideInitialBlogs()
+    document.querySelector(".load-more-container").style.display = "flex"
+    document.querySelectorAll(".load-more-container .card").forEach(card => {
+      console.log(typeof card.children[1].innerText)
+      card.style.display = "none"
+      if (card.children[1].innerText.includes(val)) {
+        console.log("true")
+        card.style.display = "block"
+      }
+    })
   }
 
   return (
@@ -47,30 +96,35 @@ const Pricing = ({ data }) => {
         <Container className="resource-content container-2">
           <Row className="input-els">
             <div className="flex justify-space-between flex-dir-row">
-              <select>
-                <option>All Categories</option>
-              </select>
-              <input type="text" placeholder="Search" />
+              <div className="select">
+                <select>
+                  <option>All Categories</option>
+                </select>
+              </div>
+              <input
+                type="text"
+                id="search-blogs"
+                placeholder="Search"
+                onKeyUp={() => {
+                  searchBlogs()
+                }}
+              />
             </div>
           </Row>
           <Row>
-            <div className="flex-justify-evenly flex-dir-row">
+            <div className="flex-justify-evenly flex-dir-row cat-btns">
               <a
-                href="/custom-marketing"
                 className="btn orange margin-left-50 category updates"
+                id="updates"
               >
                 <span class="btn__mask"></span>
                 <span class="btn__text">
-                  {" "}
                   <img src={require("../svgs/resources/star.svg")} />
                   Updates
                 </span>
               </a>
 
-              <a
-                href="/custom-marketing"
-                className="btn blue margin-left-50 category blogs"
-              >
+              <a className="btn blue margin-left-50 category blogs" id="blog">
                 <span class="btn__mask"></span>
                 <span class="btn__text">
                   <img src={require("../svgs/resources/pen.svg")} />
@@ -79,8 +133,8 @@ const Pricing = ({ data }) => {
               </a>
 
               <a
-                href="/custom-marketing"
                 className="btn green margin-left-50 category guides"
+                id="guides"
               >
                 <span class="btn__mask"></span>
                 <span class="btn__text">
@@ -90,8 +144,8 @@ const Pricing = ({ data }) => {
               </a>
 
               <a
-                href="/custom-marketing"
                 className="btn pink margin-left-50 category Videos"
+                id="videos"
               >
                 <span class="btn__mask"></span>
                 <span class="btn__text">
@@ -101,15 +155,15 @@ const Pricing = ({ data }) => {
               </a>
             </div>
           </Row>
-          <Row>
-            <ResourceCard colLength={"two-thirds"} post={post} />
-            <ResourceCard colLength={"one-third"} post={post} />
+          <Row className="initial-blogs">
+            <ResourceCard colLength={"two-thirds"} post={post[0]} />
+            <ResourceCard colLength={"one-third"} post={post[1]} />
           </Row>
-          <Row>
-            <ResourceCard colLength={"one-third"} post={post} />
-            <ResourceCard colLength={"two-thirds"} post={post} />
+          <Row className="initial-blogs">
+            <ResourceCard colLength={"one-third"} post={post[2]} />
+            <ResourceCard colLength={"two-thirds"} post={post[3]} />
           </Row>
-          <Row>
+          <Row className="initial-blogs">
             <div className="card newsletter-card two-thirds">
               <h2>Join the Honey Community</h2>
               <h5 className="max-width-420 centered-text">
@@ -128,17 +182,22 @@ const Pricing = ({ data }) => {
                 </button>
               </form>
             </div>
-            <ResourceCard colLength={"one-third"} post={post} />
+            <ResourceCard colLength={"one-third"} post={post[4]} />
           </Row>
-          <Row>
+          <Row id="loadMoreRow" className="initial-blogs">
             <a
               href="/custom-marketing"
               className="btn load-more pink margin-left-50"
-              onClick={e => handleLoadMore(e)}
+              onClick={e => showMoreCards(e)}
             >
               <span class="btn__mask"></span>
               <span class="btn__text">Load More...</span>
             </a>
+          </Row>
+          <Row className="load-more-container">
+            {post.map(post => {
+              return <ResourceCard colLength={"one-third"} post={post} />
+            })}
           </Row>
         </Container>
         <Container className="container-10">
@@ -195,4 +254,4 @@ export const query = graphql`
   }
 `
 
-export default Pricing
+export default Resources

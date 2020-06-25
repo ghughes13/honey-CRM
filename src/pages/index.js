@@ -11,10 +11,7 @@ import "../styles/page-home.scss"
 
 const IndexPage = () => {
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      document.querySelector(".stats-view-box").classList.add("animate")
-      window.removeEventListener("scroll", window)
-    })
+    document.querySelector(".stats-view-box").classList.add("animate")
   })
 
   return (
@@ -408,8 +405,8 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
-            <NewBlob cls="canvas-1" />
-            <NewBlob cls="canvas-2" />
+            <NewBlob cls="canvas-1" fill="rgba(255,137,157, .25)" />
+            <NewBlob cls="canvas-2" fill="rgba(255,137,157, .25)" />
           </Container>
         </div>
       </Layout>

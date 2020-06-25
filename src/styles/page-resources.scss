@@ -144,6 +144,10 @@
       color: white;
     }
 
+    a {
+      text-decoration: none;
+    }
+
     h3 {
       display: -webkit-box;
       line-height: 45px;
@@ -155,17 +159,22 @@
     }
     .top-img {
       max-height: 250px;
+      min-height: 250px;
       object-fit: cover;
       overflow: hidden;
       position: relative;
       img {
         overflow: hidden;
         border-radius: 32px;
+        width: 100%;
+        min-height: 250px;
+        object-fit: cover;
       }
     }
     .card-text {
       padding-top: 30px;
       padding-left: 50px;
+      padding-right: 25px;
       position: relative;
     }
     .date {
@@ -181,7 +190,7 @@
       }
     }
 
-    &.Blog .card-text:after {
+    &.blog .card-text:after {
       content: url("../svgs/resources/blog-cat.svg");
       position: absolute;
       right: -17px;
@@ -190,7 +199,7 @@
       overflow: visible;
     }
 
-    &.Service-Updates .card-text:after {
+    &.service-updates .card-text:after {
       content: url("../svgs/resources/update-cat.svg");
       position: absolute;
       right: -17px;
@@ -227,23 +236,31 @@
       border: solid 1.5px #dcdbe0;
       border-radius: 29px;
       padding: 10px 20px;
-      padding-right: 50px;
+      width: 200px;
       font-family: Roboto, sans-serif;
       color: #382153;
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
       position: relative;
-      &:before {
-        content: url("../svgs/resources/mag-glass.svg");
-        position: absolute;
-        height: 50px;
-        width: 50px;
-      }
+
       &:focus {
         outline: none;
         border-radius: 29px;
         box-shadow: 0 0 0 2pt #18aeff;
+      }
+    }
+
+    .select {
+      position: relative;
+      &:before {
+        content: url("../svgs/resources/down-arrow.svg");
+        position: absolute;
+        height: 25px;
+        width: 15px;
+        z-index: 9;
+        right: 15px;
+        top: 11px;
       }
     }
 
@@ -267,6 +284,29 @@
       color: #cac6cb;
       opacity: 1;
       font-family: "Roboto";
+    }
+  }
+
+  .load-more-container {
+    display: none;
+    flex-wrap: wrap;
+    .card:nth-child(1) {
+      display: none;
+    }
+    .card:nth-child(2) {
+      display: none;
+    }
+    .card:nth-child(3) {
+      display: none;
+    }
+    .card:nth-child(4) {
+      display: none;
+    }
+    .card:nth-child(5) {
+      display: none;
+    }
+    .card {
+      width: 31.33333%;
     }
   }
 }
