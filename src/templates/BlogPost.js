@@ -4,19 +4,16 @@ import "../styles/blog-post.scss"
 import { graphql } from "gatsby"
 import ResourceCard from "../components/ResourceCard"
 
-export default function BlogPost({ data }) {
+export default function BlogPost(qlData) {
+  let blogID = qlData.pathContext.id
+  let data = qlData.data
   let currentBlog
 
-  useEffect(() => {
-    for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
-      if (
-        data.allWordpressPost.edges[i].node.title.toLowerCase() ==
-        window.location.href.split("/").pop().split("-").join(" ")
-      ) {
-        currentBlog = data.allWordpressPost.edges[i]
-      }
+  for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
+    if (data.allWordpressPost.edges[i].node.id == blogID) {
+      currentBlog = data.allWordpressPost.edges[i]
     }
-  })
+  }
 
   const post = currentBlog.node
   const date = new Date(post.date).toString().split(" ")
@@ -111,19 +108,26 @@ export default function BlogPost({ data }) {
           </div>
         </div>
       </div>
-      <input className="siteUrl" value={window.location.href} type="text" />
+      <input
+        className="vis-none siteUrl"
+        value={window.location.href}
+        type="text"
+      />
     </Layout>
   )
 }
+
 export const query = graphql`
   {
     allWordpressPost {
       edges {
         node {
+          id
           title
           date
           excerpt
           content
+          slug
           featured_media {
             localFile {
               url

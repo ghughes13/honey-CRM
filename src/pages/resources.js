@@ -245,6 +245,7 @@ export const query = graphql`
           date
           excerpt
           content
+          slug
           featured_media {
             localFile {
               url
