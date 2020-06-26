@@ -1,5 +1,6 @@
 import React from "react"
 import "../styles/comp-reviewcard.scss"
+import "../styles/comp-resource-card.scss"
 
 const ResourceCard = ({ colLength, post }) => {
   post = post.node

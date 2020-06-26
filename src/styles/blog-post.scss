@@ -44,9 +44,10 @@
       height: 450px;
       top: -175px;
       left: -75%;
+      min-width: 2256px;
     }
 
-    > div:last-child {
+    > div {
       z-index: 999;
       padding-top: 00px;
       position: relative;
@@ -79,8 +80,42 @@
       }
     }
 
+    a {
+      color: #18aeff;
+      text-decoration: none;
+    }
+
     .socials {
+      background: white;
+      padding: 10px 15px 10px 15px;
       position: fixed;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      top: 25%;
+      right: 0px;
+      border-radius: 25px 0 0 25px;
+      -webkit-box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
+      -moz-box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
+      box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
+      a {
+        position: relative;
+        cursor: pointer;
+      }
+      img {
+        margin-bottom: 0px;
+      }
+
+      .colored {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        transition-duration: 0.5s;
+      }
+
+      a:hover .colored {
+        opacity: 1;
+      }
     }
   }
 
@@ -95,7 +130,7 @@
     color: #59486e;
   }
 
-  .blog:after {
+  .meta-infos .blog:after {
     content: url("../svgs/resources/blog-cat.svg");
     position: absolute;
     right: -17px;
@@ -104,7 +139,7 @@
     overflow: visible;
   }
 
-  .service-updates:after {
+  .meta-infos .service-updates:after {
     content: url("../svgs/resources/update-cat.svg");
     position: absolute;
     right: -17px;
@@ -121,5 +156,63 @@
     text-transform: capitalize;
     color: #18aeff;
     font-weight: bold;
+  }
+
+  .meta-infos {
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+
+  .resource-cards {
+    margin-bottom: 100px;
+  }
+
+  li {
+    font-family: "Roboto", sans-serif;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 1224px) {
+    .main-content {
+      padding: 0 50px;
+      .socials {
+        top: initial;
+        bottom: 15%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .feat-img h1 {
+      padding-left: 50px;
+      padding-right: 50px;
+      font-size: 40px;
+    }
+    .resource-cards {
+      flex-direction: column;
+      .card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+
+    .meta-infos .service-updates:after,
+    .meta-infos .blog:after {
+      top: -75px;
+    }
+
+    .main-content .meta .img:before {
+      content: none;
+    }
+
+    .main-content .meta .img {
+      position: relative;
+      top: 0;
+      right: 0;
+      left: 0;
+
+      margin-right: auto;
+    }
   }
 }

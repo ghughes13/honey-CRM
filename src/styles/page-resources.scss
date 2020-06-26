@@ -1,4 +1,5 @@
 .resources-page {
+  position: relative;
   h3 {
     font-size: 35px;
     color: #59486e;
@@ -489,6 +490,7 @@
   @media screen and (max-width: 500px) {
     .container-1 {
       text-align: center;
+      padding: 100px 50px 100px;
     }
 
     h1 {
@@ -497,7 +499,7 @@
 
     .purple-swish:before {
       background-position: 50% 0px;
-      width: 300vw;
+      width: 330vw;
       height: 1000px;
     }
   }
