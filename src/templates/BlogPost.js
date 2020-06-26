@@ -6,14 +6,16 @@ import ResourceCard from "../components/ResourceCard"
 
 export default function BlogPost({ data }) {
   let currentBlog
-  for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
-    if (
-      data.allWordpressPost.edges[i].node.title.toLowerCase() ==
-      window.location.href.split("/").pop().split("-").join(" ")
-    ) {
-      currentBlog = data.allWordpressPost.edges[i]
+  useEffect(() => {
+    for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
+      if (
+        data.allWordpressPost.edges[i].node.title.toLowerCase() ==
+        window.location.href.split("/").pop().split("-").join(" ")
+      ) {
+        currentBlog = data.allWordpressPost.edges[i]
+      }
     }
-  }
+  })
 
   const post = currentBlog.node
   const date = new Date(post.date).toString().split(" ")
