@@ -6,6 +6,7 @@ import ResourceCard from "../components/ResourceCard"
 
 export default function BlogPost({ data }) {
   let currentBlog
+
   useEffect(() => {
     for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
       if (
