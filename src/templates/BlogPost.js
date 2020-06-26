@@ -110,7 +110,7 @@ export default function BlogPost(qlData) {
       </div>
       <input
         className="vis-none siteUrl"
-        value={window.location.href}
+        // value={window.location.href}
         type="text"
       />
     </Layout>
