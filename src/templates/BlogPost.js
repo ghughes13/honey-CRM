@@ -21,8 +21,6 @@ export default function BlogPost({ data }) {
   const category = post.categories[0].name.split(" ").join("-")
 
   const copyURL = () => {
-    let url = toString(window.location.href)
-    console.log(url)
     document.querySelector(".siteUrl").select()
     document.execCommand("copy")
   }
