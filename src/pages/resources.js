@@ -1,4 +1,4 @@
-import React, { useEffect, Fragment } from "react"
+import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
@@ -89,6 +89,7 @@ const Resources = ({ data }) => {
               <img
                 className="transform-scale-1x25"
                 src={require("../images/resources/Group 6984.png")}
+                alt="hero decorative"
               />
             </Col>
           </Row>
@@ -101,9 +102,13 @@ const Resources = ({ data }) => {
                   <option>All Categories</option>
                 </select>
               </div>
+              <label className="hide-me" htmlFor="search-blogs">
+                search blogs
+              </label>
               <input
                 type="text"
                 id="search-blogs"
+                name="search-blogs"
                 placeholder="Search"
                 onKeyUp={() => {
                   searchBlogs()

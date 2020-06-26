@@ -1,0 +1,125 @@
+.single-post {
+  .feat-img {
+    position: relative;
+    background-size: cover;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      background: linear-gradient(to right, #e38dee, #7a5bff);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      opacity: 0.8;
+    }
+    h1 {
+      padding-top: 250px;
+      padding-bottom: 200px;
+      max-width: 700px;
+      z-index: 999;
+      position: relative;
+      color: white;
+      text-align: center;
+      margin: auto;
+      font-size: 51px;
+    }
+  }
+
+  .main-content {
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+
+    &::before {
+      content: "";
+      background: url("../svgs/blog-posts/white-top.svg") no-repeat top;
+      background-size: cover;
+      position: absolute;
+      z-index: 0;
+      width: 120vw;
+      height: 450px;
+      top: -175px;
+      left: -75%;
+    }
+
+    > div:last-child {
+      z-index: 999;
+      padding-top: 00px;
+      position: relative;
+    }
+
+    .meta {
+      z-index: 999;
+      position: relative;
+      display: flex;
+      color: #877d88;
+      img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+      }
+      .img {
+        position: relative;
+        top: -75px;
+      }
+      .img:before {
+        content: "";
+        background: white;
+        height: 150px;
+        border-radius: 100px;
+        width: 150px;
+        left: -23px;
+        top: -25px;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    .socials {
+      position: fixed;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    color: #59486e;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 26px;
+    color: #59486e;
+  }
+
+  .blog:after {
+    content: url("../svgs/resources/blog-cat.svg");
+    position: absolute;
+    right: -17px;
+    top: -10px;
+    z-index: 999;
+    overflow: visible;
+  }
+
+  .service-updates:after {
+    content: url("../svgs/resources/update-cat.svg");
+    position: absolute;
+    right: -17px;
+    top: -10px;
+    z-index: 999;
+    overflow: visible;
+  }
+
+  figure {
+    text-align: center;
+  }
+
+  .name {
+    text-transform: capitalize;
+    color: #18aeff;
+    font-weight: bold;
+  }
+}

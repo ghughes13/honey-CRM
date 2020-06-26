@@ -11,7 +11,10 @@ const ReviewCard = ({ id, clientCompany, clientName, description }) => {
         <h6>{clientName}</h6>
         <p>{description}</p>
         <div className="centered-text">
-          <img src={require("../images/reviewCard/stars.png")} />
+          <img
+            src={require("../images/reviewCard/stars.png")}
+            alt="feat img thumbnail"
+          />
         </div>
       </div>
     </div>

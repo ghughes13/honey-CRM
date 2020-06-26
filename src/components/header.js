@@ -85,12 +85,12 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
             <div className="navbar-item">
               <div className="buttons">
                 <a href="/marketing-warmup" className="btn blue first">
-                  <span class="btn__mask"></span>
-                  <span class="btn__text">Log in</span>
+                  <span className="btn__mask"></span>
+                  <span className="btn__text">Log in</span>
                 </a>
                 <a href="/custom-marketing" className="btn pink margin-left-50">
-                  <span class="btn__mask"></span>
-                  <span class="btn__text">Create Free Account</span>
+                  <span className="btn__mask"></span>
+                  <span className="btn__text">Create Free Account</span>
                 </a>
               </div>
             </div>

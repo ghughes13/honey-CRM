@@ -40,36 +40,46 @@ const IndexPage = () => {
           </Container>
           <Container className="container-2">
             <div className="mobile-stats-view">
-              <img src={require("../images/home/stats-mobile.png")} />
+              <img
+                src={require("../images/home/stats-mobile.png")}
+                alt="mobile stats"
+              />
             </div>
             <div className="stats-view-box">
               <img
                 className="stat-img img-1"
                 src={require("../images/home/Group 7213.png")}
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 7084.png")}
                 className="stat-img img-2"
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 557.png")}
                 className="stat-img img-3"
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 7216.png")}
                 className="stat-img img-4"
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 2460.png")}
                 className="stat-img img-5"
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 4773.png")}
                 className="stat-img img-6"
+                alt="decorative pop up"
               />
               <img
                 src={require("../images/home/Group 5014.png")}
                 className="stat-img img-7"
+                alt="decorative pop up"
               />
             </div>
           </Container>

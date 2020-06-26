@@ -23,8 +23,11 @@
   }
 
   .category {
-    padding: 15px 50px;
+    padding: 15px;
     margin-top: 25px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
   }
 
   .category:first-child {
@@ -261,6 +264,7 @@
         z-index: 9;
         right: 15px;
         top: 11px;
+        pointer-events: none;
       }
     }
 
@@ -306,7 +310,195 @@
       display: none;
     }
     .card {
-      width: 31.33333%;
+      width: 31%;
+      margin-left: 0.5%;
+      margin-right: 0.5%;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .purple-swish:before {
+      background-size: 100%;
+      position: absolute;
+      left: 0vw;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: -1;
+      width: 100vw;
+      background-position: 50% -225px;
+    }
+
+    .category {
+      padding: 15px;
+      margin-top: 25px;
+      width: 25%;
+    }
+
+    .flex-dir-row {
+      width: 98%;
+    }
+
+    h1 {
+      font-size: 72px;
+    }
+
+    .transform-scale-1x25 {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .purple-swish:before {
+      background-position: 50% -125px;
+    }
+
+    h1 {
+      font-size: 68px;
+    }
+
+    .transform-scale-1x25 {
+      transform: scale(1);
+    }
+
+    .newsletter-card {
+      padding: 25px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+
+    .card .card-text {
+      padding-top: 20px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    .card.two-thirds {
+      width: 45%;
+    }
+
+    .card.one-third {
+      width: 45%;
+    }
+  }
+
+  @media screen and (max-width: 1224px) {
+    .category {
+      padding: 15px;
+      margin-top: 25px;
+      width: 43%;
+      margin-left: 0;
+    }
+
+    .cat-btns {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 50px;
+    }
+
+    .transform-scale-1x25 {
+      margin-left: 50px;
+    }
+
+    .purple-swish:before {
+      background-position: 50% 0px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .purple-swish:before {
+      background-position: 50% 0px;
+      width: 120vw;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .purple-swish:before {
+      background-position: 50% 0px;
+      width: 150vw;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .container-1 {
+      text-align: center;
+    }
+
+    .transform-scale-1x25 {
+      margin-left: 0px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .purple-swish:before {
+      background-position: 50% 0px;
+      width: 250vw;
+      height: 1000px;
+    }
+
+    .category {
+      padding: 15px;
+      margin-top: 25px;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .flex-dir-row {
+      select,
+      .select {
+        width: 100%;
+      }
+
+      .select {
+        margin-top: 25px;
+      }
+
+      input {
+        margin-top: 25px;
+        width: 100%;
+        height: 49px;
+      }
+    }
+
+    .card.two-thirds {
+      width: 100%;
+    }
+
+    .card.one-third {
+      width: 100%;
+    }
+
+    .purple-container {
+      flex-direction: column;
+      text-align: center;
+      .right-side {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .container-1 {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .purple-swish:before {
+      background-position: 50% 0px;
+      width: 300vw;
+      height: 1000px;
     }
   }
 }

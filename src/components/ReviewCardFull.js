@@ -11,7 +11,7 @@ const ReviewCard = ({ id, clientCompany, clientName, description }) => {
         <h4>{clientCompany}</h4>
         <h6>{clientName}</h6>
         <div className="">
-          <img src={require("../images/reviewCard/stars.png")} />
+          <img src={require("../images/reviewCard/stars.png")} alt="5 stars" />
         </div>
         <p>{description}</p>
       </div>

@@ -23,6 +23,12 @@ exports.createPages = async ({ graphql, actions }) => {
             categories {
               name
             }
+            author {
+              name
+              avatar_urls {
+                wordpress_24
+              }
+            }
           }
         }
       }
