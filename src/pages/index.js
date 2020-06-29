@@ -184,6 +184,7 @@ const IndexPage = () => {
             <img
               className="pink-shadow"
               src={require("../svgs/home/ping-shadow.svg")}
+              alt="pink shadow"
             />
           </Container>
           <Container className="grey-swish-mid transparent-background">
@@ -269,86 +270,107 @@ const IndexPage = () => {
                 <img
                   className="mobile-img-2"
                   src={require("../images/home/cir.png")}
+                  alt="mobile"
                 />
                 <img
                   className="main-circle"
                   src={require("../images/home/circles/Ellipse 2058.png")}
+                  alt="circle"
                 />
                 <img
                   className="abs dash-1"
                   src={require("../images/home/circles/dashes-1.png")}
+                  alt="dashed lines"
                 />
                 <img
                   className="abs dash-2"
                   src={require("../images/home/circles/dashes-2.png")}
+                  alt="dashed lines"
                 />
                 <img
                   className="abs dash-3"
                   src={require("../images/home/circles/dash-3.png")}
+                  alt="dashed lines"
                 />
                 <img
                   className="abs dash-4"
                   src={require("../images/home/circles/dash-4.png")}
+                  alt="dashed lines"
                 />
                 <img
                   className="abs dash-5"
                   src={require("../images/home/circles/dashes-5.png")}
+                  alt="dashed lines"
                 />
                 <img
                   className="abs group-2696"
                   src={require("../images/home/circles/Group 2696.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2699"
                   src={require("../images/home/circles/Group 2699.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2701"
                   src={require("../images/home/circles/Group 2701.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2702"
                   src={require("../images/home/circles/Group 2702.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2703"
                   src={require("../images/home/circles/Group 2703.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2704"
                   src={require("../images/home/circles/Group 2704.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-2705"
                   src={require("../images/home/circles/Group 2705.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs group-7169"
                   src={require("../images/home/circles/Group 7169.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs path-3885"
                   src={require("../images/home/circles/Path 3885.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs path-3886"
                   src={require("../images/home/circles/Path 3886.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs rect-2837"
                   src={require("../images/home/circles/Rectangle 2837.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs rect-2838"
                   src={require("../images/home/circles/Rectangle 2838.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs rect-2840"
                   src={require("../images/home/circles/Rectangle 2840.png")}
+                  alt="logo"
                 />
                 <img
                   className="abs rect-3138"
                   src={require("../images/home/circles/Rectangle 3138.png")}
+                  alt="logo"
                 />
               </Col>
               <Col className="one-third lose-the-migration">
@@ -386,39 +408,60 @@ const IndexPage = () => {
                   }}
                 />
                 <div className="one-fourth first">
-                  <img src={require("../images/home/Group 11.png")} />
+                  <img
+                    src={require("../images/home/Group 11.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-fourth second">
-                  <img src={require("../images/home/path24.png")} />
+                  <img src={require("../images/home/path24.png")} alt="logo" />
                 </div>
                 <div className="one-fourth third">
                   <img
                     src={require("../images/home/757px-Apple_logo_white.png")}
+                    alt="logo"
                   />
                 </div>
                 <div className="one-fourth fourth">
-                  <img src={require("../images/home/Lenovo_logo.png")} />
+                  <img
+                    src={require("../images/home/Lenovo_logo.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-third seventh">
                   <img
                     src={require("../images/home/fortinet-logo-white.png")}
+                    alt="logo"
                   />
                 </div>
                 <div className="one-third sixth">
-                  <img src={require("../images/home/pronto-marketing.png")} />
+                  <img
+                    src={require("../images/home/pronto-marketing.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-third fifth">
-                  <img src={require("../images/home/Group 5857.png")} />
+                  <img
+                    src={require("../images/home/Group 5857.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-third eighth">
-                  <img src={require("../images/home/Group 7140.png")} />
+                  <img
+                    src={require("../images/home/Group 7140.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-third nineth">
-                  <img src={require("../images/home/Group 5860.png")} />
+                  <img
+                    src={require("../images/home/Group 5860.png")}
+                    alt="logo"
+                  />
                 </div>
                 <div className="one-third tenth">
                   <img
                     src={require("../images/home/compliancy group logo.png")}
+                    alt="logo"
                   />
                 </div>
               </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import Layout from "../components/layout"
 import "../styles/blog-post.scss"
 import { graphql } from "gatsby"
@@ -10,7 +10,7 @@ export default function BlogPost(qlData) {
   let currentBlog
 
   for (let i = 0; i < data.allWordpressPost.edges.length; i++) {
-    if (data.allWordpressPost.edges[i].node.id == blogID) {
+    if (data.allWordpressPost.edges[i].node.id === blogID) {
       currentBlog = data.allWordpressPost.edges[i]
     }
   }
@@ -71,7 +71,7 @@ export default function BlogPost(qlData) {
                 className="colored"
               />
             </a>
-            <a onClick={copyURL}>
+            <a role="button" tabIndex="0" onClick={copyURL}>
               <img src={require("../svgs/resources/link.svg")} alt="link" />
               <img
                 src={require("../svgs/resources/link-color.svg")}
@@ -96,7 +96,7 @@ export default function BlogPost(qlData) {
           <h2 className="centered-text">
             But wait... there’s more! <br /> Click below to keep learning!
           </h2>
-          <div class="resource-cards">
+          <div className="resource-cards">
             <ResourceCard
               colLength={"two-thirds"}
               post={data.allWordpressPost.edges[0]}

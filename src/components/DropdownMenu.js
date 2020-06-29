@@ -3,12 +3,11 @@ import "../styles/comp-dropdown.scss"
 
 const DropdownMenu = () => {
   const changeActiveFeat = e => {
-    if (e.target.tagName == "LI") {
+    if (e.target.tagName === "LI") {
       document
         .querySelector(".dropdown-menu .active")
         .classList.remove("active")
 
-      console.log(document.querySelector(".dropdown-menu .active-feature"))
       document
         .querySelector(".dropdown-menu .active-feature")
         .classList.remove("active-feature")
@@ -46,7 +45,8 @@ const DropdownMenu = () => {
           <a href="/sales" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
-              Learn More <img src={require("../svgs/nav/right-arrow.svg")} />
+              Learn More{" "}
+              <img src={require("../svgs/nav/right-arrow.svg")} alt="arrow" />
             </span>
           </a>
         </div>
@@ -61,7 +61,8 @@ const DropdownMenu = () => {
           <a href="/marketing" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
-              Learn More <img src={require("../svgs/nav/right-arrow.svg")} />
+              Learn More{" "}
+              <img src={require("../svgs/nav/right-arrow.svg")} alt="arrow" />
             </span>
           </a>
         </div>
@@ -76,7 +77,8 @@ const DropdownMenu = () => {
           <a href="/manager" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
-              Learn More <img src={require("../svgs/nav/right-arrow.svg")} />
+              Learn More{" "}
+              <img src={require("../svgs/nav/right-arrow.svg")} alt="arrow" />
             </span>
           </a>
         </div>
@@ -87,10 +89,11 @@ const DropdownMenu = () => {
             digital marketing. With complete visibility, management, data, and
             analytics, you can become the powerhouse you were meant to be.
           </p>
-          <a href="/agency" className="btn blue">
+          <a href="/agencies" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
-              Learn More <img src={require("../svgs/nav/right-arrow.svg")} />
+              Learn More{" "}
+              <img src={require("../svgs/nav/right-arrow.svg")} alt="arrow" />
             </span>
           </a>
         </div>
@@ -105,7 +108,8 @@ const DropdownMenu = () => {
           <a href="/vendor" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
-              Learn More <img src={require("../svgs/nav/right-arrow.svg")} />
+              Learn More{" "}
+              <img src={require("../svgs/nav/right-arrow.svg")} alt="arrow" />
             </span>
           </a>
         </div>

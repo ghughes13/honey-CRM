@@ -9,8 +9,6 @@ const ResourceCard = ({ colLength, post }) => {
   const formatedDate = date[1] + " " + date[2] + ", " + date[3]
   const category = post.categories[0].name.split(" ").join("-")
 
-  console.log(post)
-
   return (
     <div className={"card " + colLength + " " + category.toLowerCase()}>
       <div className="top-img">

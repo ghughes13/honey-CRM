@@ -109,11 +109,19 @@ header {
     padding-bottom: 50px;
     margin-bottom: -50px;
     outline: none;
+    background: transparent;
+  }
+
+  .dropdown-container .dropdown-menu .active-feature .btn {
+    pointer-events: none;
   }
 
   .dropdown-container:hover .dropdown-menu {
     opacity: 1;
     pointer-events: all;
+    .active-feature .btn {
+      pointer-events: all;
+    }
   }
 
   &.end-transparency .light {

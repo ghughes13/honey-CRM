@@ -56,10 +56,8 @@ const Resources = ({ data }) => {
     hideInitialBlogs()
     document.querySelector(".load-more-container").style.display = "flex"
     document.querySelectorAll(".load-more-container .card").forEach(card => {
-      console.log(typeof card.children[1].innerText)
       card.style.display = "none"
       if (card.children[1].innerText.includes(val)) {
-        console.log("true")
         card.style.display = "block"
       }
     })
