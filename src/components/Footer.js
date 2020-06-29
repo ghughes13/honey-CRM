@@ -51,16 +51,16 @@ const Footer = () => (
         <h6>About Us</h6>
         <ul>
           <li>
-            <a href="">Events</a>
+            <a href="/events">Events</a>
           </li>
           <li>
-            <a href="">Media/Press</a>
+            <a href="/media">Media/Press</a>
           </li>
           <li>
-            <a href="">Privacy Policy</a>
+            <a href="/privacy">Privacy Policy</a>
           </li>
           <li>
-            <a href="">Terms of Use</a>
+            <a href="/terms">Terms of Use</a>
           </li>
         </ul>
       </Col>
@@ -68,31 +68,31 @@ const Footer = () => (
         <h6>Site Map</h6>
         <ul>
           <li>
-            <a href="">Homepage</a>
+            <a href="/">Homepage</a>
           </li>
           <li>
-            <a href="">Sales</a>
+            <a href="/sales">Sales</a>
           </li>
           <li>
-            <a href="">Marketing</a>
+            <a href="/marketing">Marketing</a>
           </li>
           <li>
-            <a href="">Managers</a>
+            <a href="/manager">Managers</a>
           </li>
           <li>
-            <a href="">Agencies</a>
+            <a href="/agencies">Agencies</a>
           </li>
           <li>
-            <a href="">Vendors</a>
+            <a href="/vendors">Vendors</a>
           </li>
           <li>
-            <a href="">Pricing</a>
+            <a href="/pricing">Pricing</a>
           </li>
           <li>
-            <a href="">Log In</a>
+            <a href="/login">Log In</a>
           </li>
           <li>
-            <a href="">Create Free Account</a>
+            <a href="/demo">Create Free Account</a>
           </li>
         </ul>
       </Col>
@@ -100,19 +100,19 @@ const Footer = () => (
         <h6>Training</h6>
         <ul>
           <li>
-            <a href="">Blog</a>
+            <a href="/resources">Blog</a>
           </li>
           <li>
-            <a href="">White Papers</a>
+            <a href="/resources">White Papers</a>
           </li>
           <li>
-            <a href="">eBooks</a>
+            <a href="/resources">eBooks</a>
           </li>
           <li>
-            <a href="">Podcasts/Videos</a>
+            <a href="/resources">Podcasts/Videos</a>
           </li>
           <li>
-            <a href="">Webinars</a>
+            <a href="/resources">Webinars</a>
           </li>
         </ul>
       </Col>

@@ -20,7 +20,7 @@ const IndexPage = () => {
                 alt="mobile graphs"
               />
             </Col>
-            <Col className="one-half max-width-550">
+            <Col className="one-half max-width-550 z-index-999">
               <h1>Deliver a Legendary Sales Performance</h1>
               <p className="hero-subtext">With a CRM That Helps You Close</p>
             </Col>
@@ -97,7 +97,7 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="grey-swish-background container-2 centered-text ">
+        <Container className="grey-swish-background container-2 centered-text z-index-999">
           <Row>
             <Col className="max-width-900 margin-auto">
               <h3>Features To Shatter Your Quotas</h3>
@@ -113,7 +113,7 @@ const IndexPage = () => {
           </Row>
         </Container>
         <Container className="container-3">
-          <Row className="flexed-mobile">
+          <Row className="flexed-mobile z-index-999">
             <Col className="one-half max-width-500 margin-left-10-perc ">
               <h3>
                 Big Data,

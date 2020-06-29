@@ -110,7 +110,7 @@ const Resources = ({ data }) => {
                 id="search-blogs"
                 name="search-blogs"
                 placeholder="Search"
-                onKeyUp={() => {
+                onChange={() => {
                   searchBlogs()
                 }}
               />

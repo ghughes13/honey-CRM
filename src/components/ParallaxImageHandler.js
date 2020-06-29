@@ -12,7 +12,7 @@ class Image extends Component {
         src={this.props.src}
         onLoad={this.handleLoad}
         alt="Step Background"
-        class={this.props.class}
+        className={this.props.class}
       />
     )
   }

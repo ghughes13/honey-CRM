@@ -14,15 +14,14 @@ const ResourceCard = ({ colLength, post }) => {
   return (
     <div className={"card " + colLength + " " + category.toLowerCase()}>
       <div className="top-img">
-        <img src={post.featured_media.localFile.url} />
+        <img src={post.featured_media.localFile.url} alt="feat img thumbnail" />
       </div>
       <div className="card-text">
         <a href={"/" + post.slug}>
-          {/* title.split(" ").join("-").toLowerCase() */}
           <h3>{post.title}</h3>
         </a>
         <div className="date">
-          <img src={require("../svgs/resources/calendar.svg")} />
+          <img src={require("../svgs/resources/calendar.svg")} alt="calendar" />
           <p>{formatedDate}</p>
         </div>
       </div>

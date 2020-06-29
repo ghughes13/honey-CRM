@@ -3,13 +3,13 @@ import "../styles/mobile-btns.scss"
 
 const Footer = () => (
   <div className="mobile-btns">
-    <a href="#" className="btn blue">
-      <span class="btn__mask"></span>
-      <span class="btn__text">Log In</span>
+    <a href="/login" className="btn blue">
+      <span className="btn__mask"></span>
+      <span className="btn__text">Log In</span>
     </a>
-    <a href="#" className="btn pink">
-      <span class="btn__mask"></span>
-      <span class="btn__text">Create Free Account</span>
+    <a href="/demo" className="btn pink">
+      <span className="btn__mask"></span>
+      <span className="btn__text">Create Free Account</span>
     </a>
   </div>
 )

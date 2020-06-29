@@ -3,6 +3,7 @@ import React, { useEffect } from "react"
 import Burger from "./HamburgerMenu.js"
 import CookieConsent from "react-cookie-consent"
 import "../styles/header.scss"
+import DropdownMenu from "../components/DropdownMenu.js"
 
 const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
@@ -68,9 +69,10 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a href="/about-us/" className="navbar-item">
-              Features for
-            </a>
+            <div className="dropdown-container">
+              <button className="navbar-item features">Features for</button>
+              <DropdownMenu />
+            </div>
             <a href="/pricing" className="navbar-item">
               Pricing
             </a>

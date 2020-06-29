@@ -6,6 +6,7 @@ import NewBlob from "../components/animated-blob"
 import { Container, Row, Col } from "react-bootstrap"
 import { ParallaxProvider, Parallax } from "react-scroll-parallax"
 import FeatureCard from "../components/Feature-Card"
+import WistiaPopoverVideo from "../components/WistiaPopoverVideo.js"
 import { Waypoint } from "react-waypoint"
 import "../styles/page-home.scss"
 
@@ -25,17 +26,22 @@ const IndexPage = () => {
               A super sweet sales & marketing app for IT service providers
             </p>
             <div className="flex justify-center hero-btns margin-top-50">
-              <a href="#" className="btn pink">
-                <span class="btn__mask"></span>
-                <span class="btn__text">Try Honey for Free</span>
+              <a href="/demo" className="btn pink">
+                <span className="btn__mask"></span>
+                <span className="btn__text">Try Honey for Free</span>
               </a>
-              <a href="#" className="btn blue margin-left-25">
-                <span class="btn__mask"></span>
-                <span class="btn__text arrow-btn">
-                  Watch Demo
-                  <img src={require("../images/home/right-arrow.png")} />
-                </span>
-              </a>
+              <WistiaPopoverVideo id={"8bmv5xntgu"}>
+                <a href="#" className="btn blue margin-left-25">
+                  <span className="btn__mask"></span>
+                  <span className="btn__text arrow-btn">
+                    Watch Demo
+                    <img
+                      src={require("../images/home/right-arrow.png")}
+                      alt="right-arrow"
+                    />
+                  </span>
+                </a>
+              </WistiaPopoverVideo>
             </div>
           </Container>
           <Container className="container-2">
@@ -115,6 +121,7 @@ const IndexPage = () => {
                 <img
                   className="phone-img"
                   src={require("../images/home/Kryptonite Daa.png")}
+                  alt="phone"
                 />
               </Col>
             </Row>
@@ -123,6 +130,7 @@ const IndexPage = () => {
                 <img
                   className="mobile-img"
                   src={require("../images/home/parallax-imgs.png")}
+                  alt="mobile parallsax"
                 />
                 <Parallax
                   y={[-30, 150]}

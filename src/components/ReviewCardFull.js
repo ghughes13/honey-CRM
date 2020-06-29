@@ -5,7 +5,10 @@ const ReviewCard = ({ id, clientCompany, clientName, description }) => {
   return (
     <div className="reviewcard full">
       <div className="image">
-        <img src={require("../images/reviewCard/Group 7211.png")} />
+        <img
+          src={require("../images/reviewCard/Group 7211.png")}
+          alt="company"
+        />
       </div>
       <div className="text">
         <h4>{clientCompany}</h4>

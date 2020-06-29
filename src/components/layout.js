@@ -31,7 +31,7 @@ const Layout = ({ navTheme = "default", children }) => {
     if (window.innerWidth < 767) {
       setIsMobile(true)
     }
-  })
+  }, [])
 
   return (
     <>

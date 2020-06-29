@@ -1,0 +1,135 @@
+.dropdown-menu {
+  display: flex;
+  position: absolute;
+  border-radius: 19px;
+  overflow: hidden;
+  width: 100%;
+  background: #ffffff;
+  max-width: 975px;
+  top: 75px;
+  opacity: 0;
+  .btn {
+    opacity: 0;
+    pointer-events: none;
+  }
+  pointer-events: none;
+  transition-duration: 0.25s;
+
+  &.sales:after {
+    content: url("../images/nav/sales.png");
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+
+  &.marketing:after {
+    content: url("../images/nav/marketing.png");
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+
+  &.managers:after {
+    content: url("../images/nav/manager.png");
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+
+  &.agencies:after {
+    content: url("../images/nav/agencies.png");
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+
+  &.vendors:after {
+    content: url("../images/nav/vendor.png");
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #382153;
+    margin-bottom: 25px;
+  }
+
+  li {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 25px;
+    color: #59486e;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    &.active {
+      color: #7e5dff;
+      &:after {
+        content: url("../svgs/nav/purple-right-arrow.svg");
+        position: absolute;
+        left: -20px;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .options {
+    padding: 34px;
+    position: relative;
+    &:after {
+      content: "";
+      background: linear-gradient(
+        to right,
+        rgba(24, 174, 255, 0),
+        rgba(24, 174, 255, 0.06)
+      );
+      top: 0;
+      bottom: 0;
+      width: 50px;
+      position: absolute;
+      right: 0;
+      pointer-events: none;
+    }
+  }
+
+  .right-side {
+    padding: 30px 45px 70px;
+  }
+
+  .option {
+    position: absolute;
+    width: 800px;
+    text-align: left;
+    opacity: 0;
+    max-width: 620px;
+    &.active-feature {
+      opacity: 1;
+      .btn {
+        opacity: 1;
+        pointer-events: all;
+        z-index: 999;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  a {
+    span {
+      display: flex;
+    }
+    img {
+      margin-bottom: 0;
+      margin-left: 25px;
+    }
+  }
+}

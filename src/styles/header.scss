@@ -78,6 +78,12 @@ header {
 
   .navbar-item {
     color: #382153;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   .default .logo.light {
@@ -97,6 +103,17 @@ header {
   .light .logo.dark {
     opacity: 0;
     transition-duration: 0.25s;
+  }
+
+  .features {
+    padding-bottom: 50px;
+    margin-bottom: -50px;
+    outline: none;
+  }
+
+  .dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: all;
   }
 
   &.end-transparency .light {
