@@ -23,6 +23,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
+    pointer-events: none;
   }
 
   &.marketing:after {
@@ -30,6 +31,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
+    pointer-events: none;
   }
 
   &.managers:after {
@@ -37,6 +39,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
+    pointer-events: none;
   }
 
   &.agencies:after {
@@ -44,6 +47,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
+    pointer-events: none;
   }
 
   &.vendors:after {
@@ -51,6 +55,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
+    pointer-events: none;
   }
 
   h2 {
@@ -125,9 +130,9 @@
     text-align: left;
     opacity: 0;
     max-width: 620px;
-    z-index: 999;
     &.active-feature {
       opacity: 1;
+      z-index: 999;
       .btn {
         opacity: 1;
         pointer-events: all;
