@@ -150,10 +150,28 @@ const IndexPage = () => {
         </Container>
         <Container className="container-4">
           <Row>
+            <Waypoint
+              onEnter={() => {
+                document.querySelector("#grunt-work").play()
+              }}
+            />
             <Col className="one-half">
+              <video
+                src={require("../videos/ai-gruntwork.mp4")}
+                muted
+                playsInline
+                className="hide-on-mobile"
+                id="grunt-work"
+              >
+                <p>
+                  If you are reading this, it is because your browser does not
+                  support the HTML5 video element.
+                </p>
+              </video>
               <img
                 src={require("../images/sales/Group 5996.png")}
                 alt="flow chart"
+                className="mobile-img"
               />
             </Col>
             <Col className="one-half second-col max-width-420 ">
@@ -202,9 +220,28 @@ const IndexPage = () => {
         </Container>
         <Container className="container-6">
           <Row>
+            <Waypoint
+              onEnter={() => {
+                document.querySelector("#leads-video").play()
+              }}
+            />
             <Col className="one-half centered-text">
+              <video
+                src={require("../videos/anim-leads.mp4")}
+                muted
+                playsInline
+                className="hide-on-mobile"
+                id="leads-video"
+              >
+                <p>
+                  If you are reading this, it is because your browser does not
+                  support the HTML5 video element.
+                </p>
+              </video>
+
               <img
                 src={require("../images/sales/Group 6591.png")}
+                className="mobile-img"
                 alt="leads"
               />
             </Col>
@@ -241,10 +278,28 @@ const IndexPage = () => {
                 right leads for MSPs like yours.
               </p>
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document.querySelector("#library").play()
+              }}
+            />
             <Col className="one-half centered-text second-col">
+              <video
+                src={require("../videos/marketing-library.mp4")}
+                muted
+                playsInline
+                className="hide-on-mobile"
+                id="library"
+              >
+                <p>
+                  If you are reading this, it is because your browser does not
+                  support the HTML5 video element.
+                </p>
+              </video>
               <img
                 src={require("../images/sales/Group 7109.png")}
                 alt="future video"
+                className="mobile-img"
               />
             </Col>
           </Row>

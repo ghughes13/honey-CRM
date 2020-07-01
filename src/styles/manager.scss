@@ -367,6 +367,24 @@
     display: none;
   }
 
+  video {
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: 2000px) {
+    .purple-blob:before {
+      top: -37vw;
+    }
+
+    .pink-swish-section:after {
+      height: 24vw;
+    }
+
+    .grey-swish:before {
+      height: 3000px;
+    }
+  }
+
   @media screen and (max-width: 1600px) {
     .purple-blob:before {
       top: -25vw;

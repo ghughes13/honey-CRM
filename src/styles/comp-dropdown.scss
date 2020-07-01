@@ -60,21 +60,29 @@
   li {
     list-style: none;
     text-align: left;
-    margin-bottom: 25px;
-    color: #59486e;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    cursor: pointer;
     position: relative;
+    button {
+      margin-bottom: 25px;
+      color: #59486e;
+      font-family: "Nunito", sans-serif;
+      font-weight: 700;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      outline: none;
+    }
     &.active {
       color: #7e5dff;
+      button {
+        color: #7e5dff;
+      }
       &:after {
         content: url("../svgs/nav/purple-right-arrow.svg");
         position: absolute;
         left: -20px;
       }
     }
-    li:last-child {
+    &:last-child button {
       margin-bottom: 0;
     }
   }

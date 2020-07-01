@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="505" height="333" viewBox="0 0 505 333">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3146" data-name="Rectangle 3146" width="505" height="333" transform="translate(-66 648)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.462" y1="0.822" x2="0.484" y2="0.164" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e6e7ed" stop-opacity="0.451"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f7f8fa" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e6e7ed"/>
+    </linearGradient>
+  </defs>
+  <g id="Mask_Group_96" data-name="Mask Group 96" transform="translate(66 -648)" clip-path="url(#clip-path)">
+    <g id="Group_7208" data-name="Group 7208">
+      <g id="Group_7002" data-name="Group 7002" transform="translate(-84.844 560.434) rotate(7)">
+        <path id="Path_6413" data-name="Path 6413" d="M0,105.725S130.926,89.608,223.859,139.88s198.146,82.764,315.9,44.772c5.372-20.049,0-184.652,0-184.652H12.728Z" transform="translate(573.519 196.082) rotate(167)" fill="url(#linear-gradient)"/>
+        <g id="Group_6808" data-name="Group 6808" transform="translate(0.052 0.082)">
+          <g id="Group_6807" data-name="Group 6807" transform="translate(0 0)">
+            <path id="Path_6411" data-name="Path 6411" d="M0,105.725S130.926,89.608,223.859,139.88s198.146,82.764,315.9,44.772c5.372-20.049,0-184.652,0-184.652H12.728Z" transform="translate(571.359 197.671) rotate(169)" fill="#fff" opacity="0.18"/>
+            <path id="Path_6412" data-name="Path 6412" d="M0,105.725S130.926,89.608,223.859,139.88s198.146,82.764,315.9,44.772c5.372-20.049,0-184.652,0-184.652H12.728Z" transform="matrix(-0.978, 0.208, -0.208, -0.978, 572.136, 196.842)" fill="#fff" opacity="0.18"/>
+          </g>
+        </g>
+      </g>
+      <path id="Path_9026" data-name="Path 9026" d="M85.511.166c61.873,0,112.032,32.517,112.032,72.628s-50.158,72.628-112.032,72.628S0,106.742,0,66.631,51.5-2.465,85.511.166Z" transform="translate(91.804 881.667) rotate(171)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

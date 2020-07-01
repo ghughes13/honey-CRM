@@ -3,34 +3,41 @@ import "../styles/comp-dropdown.scss"
 
 const DropdownMenu = () => {
   const changeActiveFeat = e => {
-    if (e.target.tagName === "LI") {
-      document
-        .querySelector(".dropdown-menu .active")
-        .classList.remove("active")
+    document.querySelector(".dropdown-menu .active").classList.remove("active")
 
-      document
-        .querySelector(".dropdown-menu .active-feature")
-        .classList.remove("active-feature")
+    document
+      .querySelector(".dropdown-menu .active-feature")
+      .classList.remove("active-feature")
 
-      e.target.classList.add("active")
-      document
-        .querySelector("." + e.target.innerText.toLowerCase() + "-features")
-        .classList.add("active-feature")
+    e.target.parentElement.classList.add("active")
 
-      document.querySelector(".dropdown-menu").classList =
-        "dropdown-menu " + e.target.innerText.toLowerCase()
-    }
+    document
+      .querySelector("." + e.target.innerText.toLowerCase() + "-features")
+      .classList.add("active-feature")
+
+    document.querySelector(".dropdown-menu").classList =
+      "dropdown-menu " + e.target.innerText.toLowerCase()
   }
 
   return (
     <div className="dropdown-menu sales">
       <div className="options">
-        <ul onClick={e => changeActiveFeat(e)}>
-          <li className="active">Sales</li>
-          <li>Marketing</li>
-          <li>Managers</li>
-          <li>Agencies</li>
-          <li>Vendors</li>
+        <ul>
+          <li className="active">
+            <button onClick={e => changeActiveFeat(e)}>Sales</button>
+          </li>
+          <li>
+            <button onClick={e => changeActiveFeat(e)}>Marketing</button>
+          </li>
+          <li>
+            <button onClick={e => changeActiveFeat(e)}>Managers</button>
+          </li>
+          <li>
+            <button onClick={e => changeActiveFeat(e)}>Agencies</button>
+          </li>
+          <li>
+            <button onClick={e => changeActiveFeat(e)}>Vendors</button>
+          </li>
         </ul>
       </div>
       <div className="right-side">
@@ -105,7 +112,7 @@ const DropdownMenu = () => {
             performance visibility, you will have the ability to share marketing
             and sales assets with them at unlimited scale.{" "}
           </p>
-          <a href="/vendor" className="btn blue">
+          <a href="/vendors" className="btn blue">
             <span className="btn__mask"></span>
             <span className="btn__text">
               Learn More{" "}

@@ -28,7 +28,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet"
       ></link>
-      {/* <CookieConsent
+      <CookieConsent
         cookieName="myAwesomeCookieName2"
         style={{ background: "#fff", justifyContent: "Center" }}
         buttonStyle={{
@@ -49,7 +49,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         acceptOnScrollPercentage={10}
       >
         This website uses cookies to enhance the user experience.
-      </CookieConsent> */}
+      </CookieConsent>
 
       <div className={"mainHeader navbar " + navTheme} role="navigation">
         <div href="/" className="navbar-brand">

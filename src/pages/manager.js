@@ -224,9 +224,26 @@ const IndexPage = () => {
         </Container>
         <Container className="container-8">
           <Row>
+            <Waypoint
+              onEnter={() => {
+                document.querySelector("#leads-video").play()
+              }}
+            />
             <Col className="one-half centered-text">
+              <video
+                src={require("../videos/anim-leads.mp4")}
+                muted
+                playsInline
+                className="hide-on-mobile"
+                id="leads-video"
+              >
+                <p>
+                  If you are reading this, it is because your browser does not
+                  support the HTML5 video element.
+                </p>
+              </video>
               <img
-                className=""
+                className="mobile-img"
                 src={require("../images/manager-page/Group 6591.png")}
                 alt="video placeholder"
               />

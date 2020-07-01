@@ -265,6 +265,10 @@
     display: none;
   }
 
+  video {
+    max-width: 100%;
+  }
+
   @media screen and (min-width: 2000px) {
     .pink-blob:before {
       background: url("../svgs/sales/pink-blob-large.svg");
@@ -376,7 +380,7 @@
     }
 
     .container-1 {
-      padding: 100px 0 50px;
+      padding: 100vw 0 100px;
     }
 
     .container-2 {
@@ -440,9 +444,24 @@
     }
 
     .pink-blob:before {
-      background-position: -3vw 0vw;
+      background-position: -10vw 10vw;
       height: 110vh;
       background-size: 200vw;
+    }
+
+    .grey-swish-background:before {
+      background: url("../svgs/sales/mobile-grey-stuff.svg");
+      background-repeat: no-repeat;
+      top: -85px;
+    }
+
+    .container-1 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: -10vw;
+      margin: auto;
+      min-width: 125vw;
     }
   }
 }
