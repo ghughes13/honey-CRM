@@ -317,6 +317,22 @@
     }
   }
 
+  @media screen and (min-width: 2000px) {
+    .purple-swish:before {
+      background-size: 100%;
+      width: 100vw;
+      background-position: 50% -26vw;
+    }
+  }
+
+  @media screen and (min-width: 2400px) {
+    .purple-swish:before {
+      background-size: 100%;
+      width: 100vw;
+      background-position: 50% -31vw;
+    }
+  }
+
   @media screen and (max-width: 1500px) {
     .purple-swish:before {
       background-size: 100%;

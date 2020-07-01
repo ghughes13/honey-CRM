@@ -77,7 +77,10 @@ const Resources = ({ data }) => {
           />
           <Row>
             <Col className="white-text">
-              <h1 className="white-text">Sales & Marketing Resources </h1>
+              <h1 className="white-text">
+                Sales & Marketing
+                <br /> Resources{" "}
+              </h1>
               <p className="white-text hero-subtext">
                 Guides to make you better at IT
                 <br /> Marketing & Sales
