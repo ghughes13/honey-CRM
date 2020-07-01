@@ -1074,6 +1074,7 @@ $anim-text-offset: 1em;
   position: relative;
   cursor: pointer;
   overflow: hidden;
+  max-height: 46px;
   &__text {
     display: block;
     font-weight: bold;

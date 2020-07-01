@@ -16,6 +16,7 @@
   .container-3 {
     position: relative;
     padding-bottom: 75px;
+    z-index: 999;
   }
 
   .container-4 {
@@ -208,6 +209,7 @@
 
   .grey-swish-background {
     position: relative;
+    background: #7a5bff;
   }
 
   .grey-swish-background:before {
