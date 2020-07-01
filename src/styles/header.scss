@@ -110,6 +110,14 @@ header {
     margin-bottom: -50px;
     outline: none;
     background: transparent;
+    position: relative;
+
+    &:after {
+      content: url("../svgs/nav/down-white-arrow.svg");
+      position: absolute;
+      right: -20px;
+      top: 0px;
+    }
   }
 
   .dropdown-container .dropdown-menu .active-feature .btn {

@@ -211,6 +211,15 @@
       z-index: 999;
       overflow: visible;
     }
+
+    &.guides .card-text:after {
+      content: url("../svgs/resources/guides-block.svg");
+      position: absolute;
+      right: -17px;
+      top: -40px;
+      z-index: 999;
+      overflow: visible;
+    }
   }
 
   .purple-container.animate {

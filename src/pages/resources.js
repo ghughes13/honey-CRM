@@ -22,8 +22,10 @@ const Resources = ({ data }) => {
         let id
         if (e.path[0].tagName === "A") {
           id = e.path[0].id
-        } else {
+        } else if (e.path[1].tagName === "A") {
           id = e.path[1].id
+        } else if (e.path[2].tagName === "A") {
+          id = e.path[2].id
         }
         document.querySelector(".load-more-container").style.display = "flex"
         document
@@ -123,16 +125,16 @@ const Resources = ({ data }) => {
                 className="btn orange margin-left-50 category updates"
                 id="updates"
               >
-                <span class="btn__mask"></span>
-                <span class="btn__text">
+                <span className="btn__mask"></span>
+                <span className="btn__text">
                   <img src={require("../svgs/resources/star.svg")} />
                   Updates
                 </span>
               </a>
 
               <a className="btn blue margin-left-50 category blogs" id="blog">
-                <span class="btn__mask"></span>
-                <span class="btn__text">
+                <span className="btn__mask"></span>
+                <span className="btn__text">
                   <img src={require("../svgs/resources/pen.svg")} />
                   Blogs
                 </span>
@@ -142,8 +144,8 @@ const Resources = ({ data }) => {
                 className="btn green margin-left-50 category guides"
                 id="guides"
               >
-                <span class="btn__mask"></span>
-                <span class="btn__text">
+                <span className="btn__mask"></span>
+                <span className="btn__text">
                   <img src={require("../svgs/resources/guides.svg")} />
                   Guides
                 </span>
@@ -153,8 +155,8 @@ const Resources = ({ data }) => {
                 className="btn pink margin-left-50 category Videos"
                 id="videos"
               >
-                <span class="btn__mask"></span>
-                <span class="btn__text">
+                <span className="btn__mask"></span>
+                <span className="btn__text">
                   <img src={require("../svgs/resources/video.svg")} />
                   Videos
                 </span>
@@ -196,13 +198,19 @@ const Resources = ({ data }) => {
               className="btn load-more pink margin-left-50"
               onClick={e => showMoreCards(e)}
             >
-              <span class="btn__mask"></span>
-              <span class="btn__text">Load More...</span>
+              <span className="btn__mask"></span>
+              <span className="btn__text">Load More...</span>
             </a>
           </Row>
           <Row className="load-more-container">
             {post.map(post => {
-              return <ResourceCard colLength={"one-third"} post={post} />
+              return (
+                <ResourceCard
+                  key={post.node.id}
+                  colLength={"one-third"}
+                  post={post}
+                />
+              )
             })}
           </Row>
         </Container>
@@ -242,6 +250,7 @@ export const query = graphql`
     allWordpressPost {
       edges {
         node {
+          id
           title
           date
           excerpt
