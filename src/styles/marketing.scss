@@ -345,10 +345,20 @@
 
     h5 {
       font-size: 20px;
+      line-height: 30px;
     }
 
     .container-1 {
-      padding: 100px 0 50px;
+      padding: 104vw 0 50px;
+    }
+
+    .container-1 img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      min-width: 100%;
     }
 
     .container-2 {
@@ -412,13 +422,23 @@
     }
 
     .pink-blob:before {
-      background-position: -21vw -3vw;
+      background-position: -21vw 15vw;
       height: 76vh;
       background-size: 200vw;
     }
 
     .margin-bottom-100-neg {
       margin-bottom: 0px;
+    }
+
+    p.hero-subtext {
+      font-size: 20px;
+    }
+
+    .grey-swish-background:before {
+      background: url("../svgs/sales/mobile-grey-stuff.svg");
+      background-repeat: no-repeat;
+      top: -85px;
     }
   }
 }

@@ -8,6 +8,9 @@
   max-width: 975px;
   top: 75px;
   opacity: 0;
+  -webkit-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.16);
   .btn {
     opacity: 0;
     pointer-events: none;
@@ -57,10 +60,15 @@
     margin-bottom: 25px;
   }
 
+  ul {
+    margin-bottom: 0;
+  }
+
   li {
     list-style: none;
     text-align: left;
     position: relative;
+    margin-bottom: 5px;
     button {
       margin-bottom: 25px;
       color: #59486e;
@@ -89,6 +97,7 @@
 
   .options {
     padding: 34px;
+
     position: relative;
     &:after {
       content: "";
@@ -116,6 +125,7 @@
     text-align: left;
     opacity: 0;
     max-width: 620px;
+    z-index: 999;
     &.active-feature {
       opacity: 1;
       .btn {
