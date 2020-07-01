@@ -8,6 +8,17 @@ import "../styles/manager.scss"
 const IndexPage = () => {
   useEffect(() => {})
 
+  const animateImgs = (removeFrom, addTo) => {
+    console.log(removeFrom, addTo)
+    document
+      .querySelectorAll("." + removeFrom + ".animate")
+      .forEach(img => img.classList.remove("animate"))
+
+    document
+      .querySelectorAll("." + addTo)
+      .forEach(img => img.classList.add("animate"))
+  }
+
   return (
     <Layout navTheme="light">
       <SEO title="Your IT Marketing Hive - Honey CRM" />
@@ -114,90 +125,155 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row>
-            <Waypoint
-              onEnter={() => {
-                document.querySelector(".stats-img").classList.add("animate")
-              }}
-            />
             <Col className="stats-img centered-text">
+              <Waypoint
+                onEnter={() => {
+                  document
+                    .querySelectorAll(".sales")
+                    .forEach(img => img.classList.add("animate"))
+                }}
+              />
               <img
                 class="tablet-img"
                 src={require("../images/manager-page/mobile-grid.png")}
                 alt="pop in tablet"
               />
               <img
-                className="img-1"
+                className="img-1 sales marketing-button"
                 src={require("../images/manager-page/stats-imgs/Marketing.png")}
                 alt="stats"
+                onClick={() => animateImgs("sales", "marketing")}
               />
               <img
-                className="img-2"
+                className="img-2 sales"
                 src={require("../images/manager-page/stats-imgs/Group 7209.png")}
                 alt="stats"
               />
               <img
-                className="grey-block img-3"
+                className="grey-block img-3 sales marketing"
                 src={require("../images/manager-page/stats-imgs/Group 7125.png")}
                 alt="stats"
               />
               <img
-                className="img-4"
+                className="img-4 sales "
                 src={require("../images/manager-page/stats-imgs/Group 466.png")}
                 alt="stats"
               />
               <img
-                className="img-5"
+                className="img-5 sales"
                 src={require("../images/manager-page/stats-imgs/Group 468.png")}
                 alt="stats"
               />
               <img
-                className="img-6"
+                className="img-6 sales"
                 src={require("../images/manager-page/stats-imgs/Group 467.png")}
                 alt="stats"
               />
               <img
-                className="img-7"
+                className="img-7 sales"
                 src={require("../images/manager-page/stats-imgs/Group 469.png")}
                 alt="stats"
               />
               <img
-                className="img-8"
+                className="img-8 sales"
                 src={require("../images/manager-page/stats-imgs/Group 557.png")}
                 alt="stats"
               />
               <img
-                className="img-9"
+                className="img-9 sales"
                 src={require("../images/manager-page/stats-imgs/Group 6649.png")}
                 alt="stats"
               />
               <img
-                className="img-10"
+                className="img-10 sales"
                 src={require("../images/manager-page/stats-imgs/Group 4088.png")}
                 alt="stats"
               />
               <img
-                className="img-11"
+                className="img-11 sales"
                 src={require("../images/manager-page/stats-imgs/Group 4085.png")}
                 alt="stats"
               />
               <img
-                className="img-12"
+                className="img-12 sales"
                 src={require("../images/manager-page/stats-imgs/Group 4083.png")}
                 alt="stats"
               />
               <img
-                className="img-13"
+                className="img-13 sales"
                 src={require("../images/manager-page/stats-imgs/Group 4086.png")}
                 alt="stats"
               />
               <img
-                className="img-14"
+                className="img-14 sales"
                 src={require("../images/manager-page/stats-imgs/Group 4087.png")}
                 alt="stats"
               />
               <img
-                className="img-15"
+                className="img-15 sales"
                 src={require("../images/manager-page/stats-imgs/Group 6667.png")}
+                alt="stats"
+              />
+              {/* START MARKETING IMAGES */}
+              <img
+                className="img-16 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 7203.png")}
+                alt="stats"
+              />
+              <img
+                className="img-17 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 7204.png")}
+                alt="stats"
+                onClick={() => animateImgs("marketing", "sales")}
+              />
+              <img
+                className="img-18 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 466.png")}
+                alt="stats"
+              />
+              <img
+                className="img-19 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 468.png")}
+                alt="stats"
+              />
+              <img
+                className="img-20 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 467.png")}
+                alt="stats"
+              />
+              <img
+                className="img-21 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 469.png")}
+                alt="stats"
+              />
+              <img
+                className="img-22 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 6758.png")}
+                alt="stats"
+              />
+              <img
+                className="img-23 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 6759.png")}
+                alt="stats"
+              />
+              <img
+                className="img-24 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 6760.png")}
+                alt="stats"
+              />
+              <img
+                className="img-25 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 6761.png")}
+                alt="stats"
+              />
+              <img
+                className="img-26 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 7200.png")}
+                alt="stats"
+              />
+              <img
+                className="img-27 marketing"
+                src={require("../images/manager-page/marketing-imgs/Group 7199.png")}
                 alt="stats"
               />
             </Col>

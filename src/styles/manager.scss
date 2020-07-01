@@ -27,7 +27,6 @@
     position: relative;
     z-index: 9;
     margin-top: 100px;
-    left: -50px;
   }
 
   .stats-img img {
@@ -41,74 +40,76 @@
     width: 100%;
   }
 
-  .stats-img.animate {
-    img {
+  .sales {
+    &.animate {
       transform: scale(1);
-    }
-    .img-1 {
-      transition-delay: 0.5s;
-    }
 
-    .img-2 {
-      transition-delay: 0.25s;
-    }
+      &.img-1 {
+        transition-delay: 0.5s;
+      }
 
-    .img-3 {
-      transition-delay: 0;
-    }
+      &.img-2 {
+        transition-delay: 0.25s;
+      }
 
-    .img-4 {
-      transition-delay: 0.15s;
-    }
+      &.img-3 {
+        transition-delay: 0;
+      }
 
-    .img-5 {
-      transition-delay: 0.45s;
-    }
+      &.img-4 {
+        transition-delay: 0.15s;
+      }
 
-    .img-6 {
-      transition-delay: 0.35s;
-    }
+      &.img-5 {
+        transition-delay: 0.45s;
+      }
 
-    .img-7 {
-      transition-delay: 0.55s;
-    }
+      &.img-6 {
+        transition-delay: 0.35s;
+      }
 
-    .img-8 {
-      transition-delay: 0.3s;
-    }
+      &.img-7 {
+        transition-delay: 0.55s;
+      }
 
-    .img-9 {
-      transition-delay: 0.2s;
-    }
+      &.img-8 {
+        transition-delay: 0.3s;
+      }
 
-    .img-10 {
-      transition-delay: 0.1s;
-    }
+      &.img-9 {
+        transition-delay: 0.2s;
+      }
 
-    .img-11 {
-      transition-delay: 0.4s;
-    }
+      &.img-10 {
+        transition-delay: 0.1s;
+      }
 
-    .img-12 {
-      transition-delay: 0.46s;
-    }
+      &.img-11 {
+        transition-delay: 0.4s;
+      }
 
-    .img-13 {
-      transition-delay: 0.24s;
-    }
+      &.img-12 {
+        transition-delay: 0.46s;
+      }
 
-    .img-14 {
-      transition-delay: 0.44s;
-    }
+      &.img-13 {
+        transition-delay: 0.24s;
+      }
 
-    .img-15 {
-      transition-delay: 0.34s;
+      &.img-14 {
+        transition-delay: 0.44s;
+      }
+
+      &.img-15 {
+        transition-delay: 0.34s;
+      }
     }
   }
 
   .img-1 {
     top: -66px;
     left: 30px;
+    cursor: pointer;
   }
 
   .img-2 {
@@ -171,6 +172,136 @@
   .img-15 {
     left: 77px;
     top: 448px;
+  }
+
+  // Marketing Start
+
+  .img-16 {
+    top: -36px;
+    left: 30px;
+  }
+
+  .img-17 {
+    left: 264px;
+    top: -41px;
+    cursor: pointer;
+  }
+
+  .img-18 {
+    left: -10px;
+    top: 30px;
+  }
+
+  .img-19 {
+    left: 240px;
+    top: 30px;
+  }
+
+  .img-20 {
+    top: 30px;
+    left: 490px;
+  }
+
+  .img-21 {
+    top: 30px;
+    left: 730px;
+  }
+
+  .img-22 {
+    top: 140px;
+    left: 0;
+  }
+
+  .img-23 {
+    top: 140px;
+    left: 270px;
+  }
+
+  .img-24 {
+    top: 140px;
+    left: 540px;
+  }
+
+  .img-25 {
+    top: 140px;
+    left: 810px;
+  }
+
+  .img-25 {
+    top: 140px;
+    left: 0;
+  }
+
+  .img-26 {
+    left: -70px;
+    top: 300px;
+  }
+
+  .img-27 {
+    top: 350px;
+    left: 450px;
+  }
+
+  .marketing {
+    &.animate {
+      transform: scale(1);
+
+      &.img-16 {
+        transition-delay: 0.5s;
+      }
+
+      &.img-17 {
+        transition-delay: 0.25s;
+      }
+
+      &.img-18 {
+        transition-delay: 0;
+      }
+
+      &.img-19 {
+        transition-delay: 0.15s;
+      }
+
+      &.img-20 {
+        transition-delay: 0.45s;
+      }
+
+      &.img-21 {
+        transition-delay: 0.35s;
+      }
+
+      &.img-22 {
+        transition-delay: 0.55s;
+      }
+
+      &.img-23 {
+        transition-delay: 0.3s;
+      }
+
+      &.img-24 {
+        transition-delay: 0.2s;
+      }
+
+      &.img-25 {
+        transition-delay: 0.1s;
+      }
+
+      &.img-26 {
+        transition-delay: 0.4s;
+      }
+
+      &.img-27 {
+        transition-delay: 0.46s;
+      }
+
+      &.img-28 {
+        transition-delay: 0.24s;
+      }
+
+      &.img-29 {
+        transition-delay: 0.44s;
+      }
+    }
   }
 
   .pink-swish-section {
