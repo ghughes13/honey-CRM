@@ -104,7 +104,7 @@ function _markupContent(tag, html, index) {
  * The jQuery plugin function. See the top of this file for information on the
  * options
  */
-export const split = ($.fn.splitLines = function (options) {
+export const splitLines = ($.fn.splitLines = function (options) {
   var settings = {
     width: "auto",
     tag: "<div>",
