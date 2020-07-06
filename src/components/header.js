@@ -56,7 +56,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
           <a className="navbar-item" href="/">
             <img
               className="logo light"
-              src={require("../svgs/nav/honeylogowhite.svg")}
+              src={require("../svgs/nav/honey-logo-white.svg")}
               alt="Honey Logo"
             />
             <img
