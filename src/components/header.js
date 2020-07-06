@@ -4,6 +4,8 @@ import Burger from "./HamburgerMenu.js"
 import CookieConsent from "react-cookie-consent"
 import "../styles/header.scss"
 import DropdownMenu from "../components/DropdownMenu.js"
+import HoneyLogoDark from "../components/honey-logo-dark.js"
+import HoneyLogoLight from "../components/honey-logo-light.js"
 
 const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
@@ -54,16 +56,8 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
       <div className={"mainHeader navbar " + navTheme} role="navigation">
         <div href="/" className="navbar-brand">
           <a className="navbar-item" href="/">
-            <img
-              className="logo light"
-              src={require("../svgs/nav/honey-logo-white.svg")}
-              alt="Honey Logo"
-            />
-            <img
-              className="logo dark"
-              src={require("../svgs/nav/honey-logo-dark.svg")}
-              alt="Honey Logo"
-            />
+            <HoneyLogoLight />
+            <HoneyLogoDark />
           </a>
           <Burger className="burger-container" />
         </div>

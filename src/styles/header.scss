@@ -113,14 +113,14 @@ header {
     position: relative;
 
     &:after {
-      content: url("../svgs/nav/down-white-arrow.svg");
+      content: url("../svgs/nav/down-dark-arrow.svg");
       position: absolute;
       right: -20px;
       top: 0px;
     }
   }
 
-  .dropdown-container .dropdown-menu .active-feature .btn {
+  .navbar .dropdown-container .dropdown-menu .active-feature .btn {
     pointer-events: none;
   }
 
