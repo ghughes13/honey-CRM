@@ -912,6 +912,10 @@ h3.big-h3 {
   max-width: 900px;
 }
 
+.max-width-1100 {
+  max-width: 1100px;
+}
+
 .z-index-9 {
   z-index: 9;
   position: relative;
@@ -975,6 +979,206 @@ h3.big-h3 {
   display: none;
 }
 
+.reach h2 span,
+.reach h3 span,
+.reach h4 span {
+  opacity: 1;
+  transform: scaleY(1) translateY(0);
+}
+
+h2,
+h3,
+h4 {
+  display: block;
+  overflow: hidden;
+}
+
+h2 .word,
+h3 .word {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+h4 .word {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+h2 span,
+h3 span,
+h4 span {
+  display: inline-block;
+  opacity: 0;
+  transform: scaleY(2) translateY(25%);
+  transition: all 0.25s ease;
+}
+
+.wrapLineSib .container-span {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.wrapLineSib .container-span span {
+  display: inline-block;
+  transform: translateY(100%);
+  transition: all 1s cubic-bezier(0.5, 0.01, 0, 1);
+}
+
+.reach .wrapLineSib .container-span span {
+  transform: translateY(0);
+}
+
+p .container-span:nth-child(1) span {
+  transition-delay: 0.1s;
+}
+p .container-span:nth-child(2) span {
+  transition-delay: 0.2s;
+}
+p .container-span:nth-child(3) span {
+  transition-delay: 0.3s;
+}
+p .container-span:nth-child(4) span {
+  transition-delay: 0.4s;
+}
+p .container-span:nth-child(5) span {
+  transition-delay: 0.5s;
+}
+p .container-span:nth-child(6) span {
+  transition-delay: 0.6s;
+}
+p .container-span:nth-child(7) span {
+  transition-delay: 0.7s;
+}
+p .container-span:nth-child(8) span {
+  transition-delay: 0.8s;
+}
+p .container-span:nth-child(9) span {
+  transition-delay: 0.9s;
+}
+p .container-span:nth-child(10) span {
+  transition-delay: 1s;
+}
+p .container-span:nth-child(11) span {
+  transition-delay: 1.1s;
+}
+p .container-span:nth-child(12) span {
+  transition-delay: 1.2s;
+}
+p .container-span:nth-child(13) span {
+  transition-delay: 1.3s;
+}
+p .container-span:nth-child(14) span {
+  transition-delay: 1.4s;
+}
+p .container-span:nth-child(15) span {
+  transition-delay: 1.5s;
+}
+p .container-span:nth-child(16) span {
+  transition-delay: 1.6s;
+}
+p .container-span:nth-child(17) span {
+  transition-delay: 1.7s;
+}
+p .container-span:nth-child(18) span {
+  transition-delay: 1.8s;
+}
+p .container-span:nth-child(19) span {
+  transition-delay: 1.9s;
+}
+p .container-span:nth-child(20) span {
+  transition-delay: 2s;
+}
+p .container-span:nth-child(21) span {
+  transition-delay: 2.1s;
+}
+p .container-span:nth-child(22) span {
+  transition-delay: 2.2s;
+}
+p .container-span:nth-child(23) span {
+  transition-delay: 2.3s;
+}
+p .container-span:nth-child(24) span {
+  transition-delay: 2.4s;
+}
+p .container-span:nth-child(25) span {
+  transition-delay: 2.5s;
+}
+p .container-span:nth-child(26) span {
+  transition-delay: 2.6s;
+}
+p .container-span:nth-child(27) span {
+  transition-delay: 2.7s;
+}
+p .container-span:nth-child(28) span {
+  transition-delay: 2.8s;
+}
+p .container-span:nth-child(29) span {
+  transition-delay: 2.9s;
+}
+p .container-span:nth-child(30) span {
+  transition-delay: 3s;
+}
+p .container-span:nth-child(31) span {
+  transition-delay: 3.1s;
+}
+p .container-span:nth-child(32) span {
+  transition-delay: 3.2s;
+}
+p .container-span:nth-child(33) span {
+  transition-delay: 3.3s;
+}
+p .container-span:nth-child(34) span {
+  transition-delay: 3.4s;
+}
+p .container-span:nth-child(35) span {
+  transition-delay: 3.5s;
+}
+p .container-span:nth-child(36) span {
+  transition-delay: 3.6s;
+}
+p .container-span:nth-child(37) span {
+  transition-delay: 3.7s;
+}
+p .container-span:nth-child(38) span {
+  transition-delay: 3.8s;
+}
+p .container-span:nth-child(39) span {
+  transition-delay: 3.9s;
+}
+p .container-span:nth-child(40) span {
+  transition-delay: 4s;
+}
+p .container-span:nth-child(41) span {
+  transition-delay: 4.1s;
+}
+p .container-span:nth-child(42) span {
+  transition-delay: 4.2s;
+}
+p .container-span:nth-child(43) span {
+  transition-delay: 4.3s;
+}
+p .container-span:nth-child(44) span {
+  transition-delay: 4.4s;
+}
+p .container-span:nth-child(45) span {
+  transition-delay: 4.5s;
+}
+p .container-span:nth-child(46) span {
+  transition-delay: 4.6s;
+}
+p .container-span:nth-child(47) span {
+  transition-delay: 4.7s;
+}
+p .container-span:nth-child(48) span {
+  transition-delay: 4.8s;
+}
+p .container-span:nth-child(49) span {
+  transition-delay: 4.9s;
+}
+p .container-span:nth-child(50) span {
+  transition-delay: 5s;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 40px;
@@ -1006,7 +1210,7 @@ h3.big-h3 {
 
   p {
     font-family: "Roboto", sans-serif;
-    line-height: 30px;
+    line-height: 15px;
   }
 
   .hero-subtext {

@@ -167,15 +167,15 @@ const IndexPage = () => {
                   />
                 </Parallax>
               </Col>
-              <Col className="one-third">
+              <Col className="one-third ">
                 <h3 className="white-text ">Defeat Time with Automation </h3>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   Honey has the power to automate pretty much everything. From
                   sales follow up to marketing plans, data entry, and beyond,
                   Honey’s got the power to make your sales and marketing team
                   super human.
                 </p>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   All this time it’s been about empowering your service delivery
                   team with automation. It’s our turn to make them jealous.
                 </p>
@@ -189,7 +189,7 @@ const IndexPage = () => {
           </Container>
           <Container className="grey-swish-mid transparent-background">
             <Row>
-              <h2 className="purple-text centered-text margin-bottom-100">
+              <h2 className="purple-text centered-text margin-bottom-100 max-width-1100 margin-auto">
                 Innovative Sales & Marketing
                 <br /> Features for IT Service Providers{" "}
               </h2>
@@ -228,7 +228,7 @@ const IndexPage = () => {
                   onEnter={() => {
                     document
                       .querySelector(".third-card")
-                      .classList.add("animate")
+                      .classList.add("animate", "reach")
                   }}
                 />
                 <FeatureCard
@@ -248,7 +248,7 @@ const IndexPage = () => {
                   onEnter={() => {
                     document
                       .querySelector(".fourth-card")
-                      .classList.add("animate")
+                      .classList.add("animate", "reach")
                   }}
                 />
               </Col>
@@ -390,7 +390,7 @@ const IndexPage = () => {
               </Col>
             </Row>
             <div className="logos-container deep-purple-background centered-text">
-              <h3 className="white-text">
+              <h3 className="white-text max-width-700 margin-auto">
                 Simplify Marketing Relationships
                 <br /> with Platform Unity
               </h3>

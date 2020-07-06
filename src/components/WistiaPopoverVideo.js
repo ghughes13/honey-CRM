@@ -23,7 +23,7 @@ const WistiaVideoInline = ({ id, children }) => {
 
   return (
     <span
-      class={
+      className={
         "wistia_embed wistia_async_" +
         id +
         " popover=true popoverAnimateThumbnail=true popoverContent=link"

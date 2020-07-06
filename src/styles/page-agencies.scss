@@ -209,7 +209,7 @@
 
   .grey-swish-background {
     position: relative;
-    background: #7a5bff;
+    background: transparent;
   }
 
   .grey-swish-background:before {
@@ -265,6 +265,8 @@
       .img-1 {
         left: 100px;
         top: -150px;
+        opacity: 1;
+        transition-delay: 1.4s;
       }
 
       .img-2 {
@@ -294,6 +296,10 @@
       .img-8 {
         transition-delay: 0.75s;
       }
+    }
+
+    .white-lines {
+      opacity: 0;
     }
 
     .img-2 {
@@ -779,6 +785,27 @@
   .tablet-img,
   .mobile-med {
     display: none;
+  }
+
+  @media screen and (min-width: 1950px) {
+    .container-1 {
+      padding: 180px 0 475px;
+    }
+
+    .container-2 {
+      margin-top: -3vw;
+    }
+  }
+
+  @media screen and (min-width: 2500px) {
+    .container-1 {
+      padding: 180px 0 17vw;
+      position: relative;
+    }
+
+    .container-2 {
+      margin-top: -5vw;
+    }
   }
 
   @media screen and (max-width: 1400px) {
