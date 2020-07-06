@@ -61,7 +61,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
             />
             <img
               className="logo dark"
-              src={require("../svgs/nav/honeyhorizontal_small.svg")}
+              src={require("../svgs/nav/honey-logo-dark.svg")}
               alt="Honey Logo"
             />
           </a>
