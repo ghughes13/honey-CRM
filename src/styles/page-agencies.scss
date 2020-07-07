@@ -3,6 +3,10 @@
     color: white;
   }
 
+  h4 {
+    overflow: visible;
+  }
+
   .container-1 {
     padding: 180px 0 400px;
     position: relative;
@@ -34,10 +38,10 @@
     &:after {
       content: "";
       width: 100vw;
-      height: 600px;
+      height: 500px;
       position: absolute;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-      bottom: 50px;
+      bottom: 60px;
     }
   }
 
@@ -65,10 +69,10 @@
     &:after {
       content: "";
       width: 100vw;
-      height: 400px;
+      height: 300px;
       position: absolute;
       background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
-      bottom: 50px;
+      bottom: 100px;
     }
   }
 
@@ -83,6 +87,10 @@
   .hero-img-container img {
     position: absolute;
     transition-duration: 0.5s;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
   }
 
   .hero-img-container {
@@ -797,14 +805,87 @@
     }
   }
 
+  @media screen and (min-width: 2000px) {
+    .hero-img-container.animate .img-3 {
+      left: initial;
+      right: 980px;
+    }
+
+    .hero-img-container.animate img.img-2 {
+      left: 200px;
+    }
+
+    .orange-swish-background:before {
+      background-position: 13vw -20vw;
+    }
+
+    .odd-img-2 {
+      min-width: 115vw;
+    }
+
+    .odd-img-1 {
+      max-width: 100%;
+      min-width: 50vw;
+      margin: auto;
+      position: absolute;
+      bottom: 180px;
+    }
+
+    .container-4 .rel.second-col.col {
+      width: 25%;
+    }
+
+    .container-7 .rel.col.z-index-9.width-55-perc {
+      width: 32%;
+    }
+  }
+
+  @media screen and (min-width: 2300px) {
+    .hero-img-container.animate .img-3 {
+      left: initial;
+      right: 1100px;
+    }
+
+    .hero-img-container.animate img.img-2 {
+      left: 300px;
+    }
+
+    .hero-img-container.animate .img-8 {
+      right: 0px;
+      top: 400px;
+    }
+
+    .orange-swish-background:before {
+      background-position: 13vw -24vw;
+    }
+
+    .container-4 .one-half.max-width-480 {
+      margin-left: 5%;
+    }
+  }
+
   @media screen and (min-width: 2500px) {
     .container-1 {
-      padding: 180px 0 17vw;
+      padding: 180px 0 500px;
       position: relative;
     }
 
     .container-2 {
-      margin-top: -5vw;
+      margin-top: -4vw;
+    }
+
+    .hero-img-container.animate .img-3 {
+      left: initial;
+      right: 1230px;
+    }
+
+    .hero-img-container.animate .img-8 {
+      right: 0px;
+      top: 400px;
+    }
+
+    .orange-swish-background:before {
+      background-position: 13vw -26vw;
     }
   }
 

@@ -303,7 +303,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container-7">
           <Row className="flexed-mobile">
-            <Col className="one-half max-width-480">
+            <Col className="one-half max-width-480 margin-top-150-neg">
               <h3 className="purple-text">
                 Create And Activate Marketing Plans
               </h3>
@@ -468,9 +468,18 @@ const IndexPage = () => {
             </div>
           </Row>
         </Container>
-        <Container className="container-11">
+        <Container className="container-11 overflow-hidden">
           <Row className="flexed-mobile stretch">
-            <Col className="one-half small-width">
+            <Col className="one-half small-width  review-row">
+              <Waypoint
+                onEnter={() => {
+                  document
+                    .querySelectorAll(".review-row .reviewcard")
+                    .forEach(card => {
+                      card.classList.add("slide-up")
+                    })
+                }}
+              />
               <ReviewCard
                 id="39haizsr07"
                 clientCompany="Tridigital Marketing"
