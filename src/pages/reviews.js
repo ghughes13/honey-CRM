@@ -29,7 +29,16 @@ const IndexPage = () => {
           </Row>
         </Container>
         <Container className="container-11">
-          <Row className="flexed-mobile stretch">
+          <Waypoint
+            onEnter={() => {
+              document
+                .querySelectorAll(".review-row-1 .reviewcard")
+                .forEach(card => {
+                  card.classList.add("slide-up")
+                })
+            }}
+          />
+          <Row className="flexed-mobile stretch review-row-1">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -47,7 +56,8 @@ const IndexPage = () => {
               />
             </Col>
           </Row>
-          <Row className="flexed-mobile stretch">
+
+          <Row className="flexed-mobile stretch review-row-2">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -55,7 +65,16 @@ const IndexPage = () => {
                 clientName="Scott Mitchell"
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
-            </Col>
+            </Col>{" "}
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-2 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -65,7 +84,8 @@ const IndexPage = () => {
               />
             </Col>
           </Row>
-          <Row className="flexed-mobile stretch z-index-999">
+
+          <Row className="flexed-mobile stretch z-index-999 review-row-3">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -74,6 +94,15 @@ const IndexPage = () => {
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-3 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -85,7 +114,16 @@ const IndexPage = () => {
           </Row>
         </Container>
         <Container className="pink-mid">
-          <Row>
+          <Row className="review-row-4">
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-4 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="">
               <ReviewCardFull
                 id="39haizsr07"
@@ -99,7 +137,7 @@ Thank you for everything you have done for us. We are looking forward to a long 
           </Row>
         </Container>
         <Container className="z-index-999">
-          <Row className="flexed-mobile stretch">
+          <Row className="flexed-mobile stretch review-row-5">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -108,24 +146,15 @@ Thank you for everything you have done for us. We are looking forward to a long 
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
             </Col>
-            <Col className="one-half small-width">
-              <ReviewCard
-                id="39haizsr07"
-                clientCompany="Tridigital Marketing"
-                clientName="Scott Mitchell"
-                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
-              />
-            </Col>
-          </Row>
-          <Row className="flexed-mobile stretch">
-            <Col className="one-half small-width">
-              <ReviewCard
-                id="39haizsr07"
-                clientCompany="Tridigital Marketing"
-                clientName="Scott Mitchell"
-                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
-              />
-            </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-5 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -135,7 +164,43 @@ Thank you for everything you have done for us. We are looking forward to a long 
               />
             </Col>
           </Row>
-          <Row>
+          <Row className="flexed-mobile stretch review-row-6">
+            <Col className="one-half small-width">
+              <ReviewCard
+                id="39haizsr07"
+                clientCompany="Tridigital Marketing"
+                clientName="Scott Mitchell"
+                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
+              />
+            </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-6 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
+            <Col className="one-half small-width">
+              <ReviewCard
+                id="39haizsr07"
+                clientCompany="Tridigital Marketing"
+                clientName="Scott Mitchell"
+                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
+              />
+            </Col>
+          </Row>
+          <Row className="review-row-7">
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-7 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="">
               <ReviewCardFull
                 id="39haizsr07"
@@ -145,7 +210,7 @@ Thank you for everything you have done for us. We are looking forward to a long 
               />
             </Col>
           </Row>
-          <Row className="flexed-mobile stretch">
+          <Row className="flexed-mobile stretch review-row-8">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -154,6 +219,15 @@ Thank you for everything you have done for us. We are looking forward to a long 
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-8 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -165,7 +239,7 @@ Thank you for everything you have done for us. We are looking forward to a long 
           </Row>
         </Container>
         <Container className="blue-section">
-          <Row className="flexed-mobile stretch">
+          <Row className="flexed-mobile stretch review-row-9">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -174,24 +248,15 @@ Thank you for everything you have done for us. We are looking forward to a long 
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
             </Col>
-            <Col className="one-half small-width">
-              <ReviewCard
-                id="39haizsr07"
-                clientCompany="Tridigital Marketing"
-                clientName="Scott Mitchell"
-                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
-              />
-            </Col>
-          </Row>
-          <Row className="flexed-mobile stretch">
-            <Col className="one-half small-width">
-              <ReviewCard
-                id="39haizsr07"
-                clientCompany="Tridigital Marketing"
-                clientName="Scott Mitchell"
-                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
-              />
-            </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-9 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -201,7 +266,7 @@ Thank you for everything you have done for us. We are looking forward to a long 
               />
             </Col>
           </Row>
-          <Row className="flexed-mobile stretch">
+          <Row className="flexed-mobile stretch review-row-10">
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"
@@ -210,6 +275,42 @@ Thank you for everything you have done for us. We are looking forward to a long 
                 description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
               />
             </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-10 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
+            <Col className="one-half small-width">
+              <ReviewCard
+                id="39haizsr07"
+                clientCompany="Tridigital Marketing"
+                clientName="Scott Mitchell"
+                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
+              />
+            </Col>
+          </Row>
+          <Row className="flexed-mobile stretch review-row-11">
+            <Col className="one-half small-width">
+              <ReviewCard
+                id="39haizsr07"
+                clientCompany="Tridigital Marketing"
+                clientName="Scott Mitchell"
+                description="Honey is doing what all of the big dogs on the market are doing and adding more every single week. And that's just something you can't really find with those big companies."
+              />
+            </Col>
+            <Waypoint
+              onEnter={() => {
+                document
+                  .querySelectorAll(".review-row-11 .reviewcard")
+                  .forEach(card => {
+                    card.classList.add("slide-up")
+                  })
+              }}
+            />
             <Col className="one-half small-width">
               <ReviewCard
                 id="39haizsr07"

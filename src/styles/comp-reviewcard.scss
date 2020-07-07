@@ -5,6 +5,12 @@
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  bottom: -100vh;
+  transition-duration: 0.5s;
+
+  &.slide-up {
+    bottom: 0;
+  }
 
   &.full {
     display: flex;
@@ -21,7 +27,6 @@
       flex-basis: 75%;
       display: flex;
       flex-direction: column;
-      // align-items: center;
       justify-content: center;
       padding-left: 70px;
       padding-top: 70px;
