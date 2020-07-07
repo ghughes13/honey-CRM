@@ -16,7 +16,9 @@ const IndexPage = () => {
         <Container className="blue-gradient-background container-1">
           <Row>
             <Col className="centered-text">
-              <h1>The Ultimate Through Partner Marketing Solution</h1>
+              <h1 className="max-width-1500">
+                The Ultimate Through Partner Marketing Solution
+              </h1>
               <p className="hero-subtext white-text">
                 Partner Success & Tracking of MDF, POP, and ROI, Fully Automated
               </p>
@@ -88,7 +90,7 @@ const IndexPage = () => {
             alt="grey-blob"
           />
         </Container>
-        <Container className="container-3 ">
+        <Container className="container-3 z-index-999 ">
           <Waypoint
             onEnter={() => {
               document
