@@ -110,7 +110,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container-6">
           <Row>
-            <Col className="centered-text max-width-650">
+            <Col className="centered-text max-width-650 left-align-mobile">
               <h3>Centralized Dashboard</h3>
               <p>
                 Honey’s collateral library lets you instantly publish all your
@@ -126,15 +126,21 @@ const IndexPage = () => {
           </Row>
           <Row>
             <Col className="stats-img centered-text">
+              <span id="checkRun" className="false" />
               <Waypoint
                 onEnter={() => {
-                  document
-                    .querySelectorAll(".sales")
-                    .forEach(img => img.classList.add("animate"))
+                  let isRun = document.querySelector("#checkRun").classList
+                    .value
+                  if (isRun == "false") {
+                    document
+                      .querySelectorAll(".sales")
+                      .forEach(img => img.classList.add("animate"))
+                    document.querySelector("#checkRun").classList = "true"
+                  }
                 }}
               />
               <img
-                class="tablet-img"
+                className="tablet-img"
                 src={require("../images/manager-page/mobile-grid.png")}
                 alt="pop in tablet"
               />
@@ -280,7 +286,7 @@ const IndexPage = () => {
           </Row>
         </Container>
         <Container className="container-7 pink-swish-section">
-          <Row className="flexed-mobile">
+          <Row>
             <Col className="one-half max-width-500 margin-left-10-perc white-text">
               <h3 className="white-text">Deep campaign analytics</h3>
               <p>Get a complete view of how your email campaigns perform.</p>
@@ -404,9 +410,9 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="container-12 grey-swish">
+        <Container className="container-12 grey-swish flexed-mobile flex-mobile">
           <Row>
-            <Col className="centered-text max-width-650">
+            <Col className="centered-text max-width-650 left-align-mobile">
               <h3>Stay Ahead With Marketing Plans</h3>
               <p>
                 Planning your marketing is a fun and exciting time full of

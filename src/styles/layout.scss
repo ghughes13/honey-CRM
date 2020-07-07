@@ -1210,7 +1210,7 @@ p .container-span:nth-child(50) span {
 
   p {
     font-family: "Roboto", sans-serif;
-    line-height: 15px;
+    line-height: 30px;
   }
 
   .hero-subtext {
@@ -1232,6 +1232,10 @@ p .container-span:nth-child(50) span {
 
   .flexed-mobile {
     flex-direction: column-reverse;
+  }
+
+  .flex-mobile {
+    display: flex;
   }
 
   .second-col {
@@ -1256,6 +1260,10 @@ p .container-span:nth-child(50) span {
 
   .mobile-img {
     display: block;
+  }
+
+  .left-align-mobile {
+    text-align: left;
   }
 
   @media screen and (max-width: 400px) {
