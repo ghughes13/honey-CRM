@@ -68,7 +68,7 @@ const Resources = ({ data }) => {
   return (
     <Layout navTheme="light">
       <SEO title="Legendary Sales - Honey CRM" />
-      <div className="resources-page">
+      <div className="resources-page reach">
         <Container className="purple-swish container-1">
           <Waypoint
             onEnter={() => {

@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Layout navTheme="light">
       <SEO title="Honey CRM" />
-      <div className="reviews-page">
+      <div className="reviews-page reach">
         <Container className="purple-swish-background container-1">
           <Row className="center">
             <Col className="centered-text">
