@@ -15,12 +15,12 @@ const Footer = ({ title, price, contactNum }) => (
       <ul>
         <li>Unlimited Users</li>
         <li>
-          <span class="bold">{contactNum}</span> Contacts
+          <span className="bold">{contactNum}</span> Contacts
         </li>
       </ul>
       <a href="/marketing-warmup" className="btn blue first">
-        <span class="btn__mask"></span>
-        <span class="btn__text">Sign Up</span>
+        <span className="btn__mask"></span>
+        <span className="btn__text">Sign Up</span>
       </a>
     </div>
   </div>
