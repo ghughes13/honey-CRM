@@ -7,7 +7,7 @@ import DropdownMenu from "../components/DropdownMenu.js"
 import HoneyLogoDark from "../components/honey-logo-dark.js"
 import HoneyLogoLight from "../components/honey-logo-light.js"
 import $ from "jquery"
-// import "../scripts/splitLines.js"
+import "../scripts/splitLines.js"
 
 const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
@@ -25,80 +25,80 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
     script.async = true
     document.body.appendChild(script)
 
-    // document.querySelectorAll("main p").forEach(p => {
-    //   p.classList.add("wrapLineSib")
-    // })
+    document.querySelectorAll("main p").forEach(p => {
+      p.classList.add("wrapLineSib")
+    })
 
-    // $(".wrapLineSib").each(function (index) {
-    //   console.log("ran")
-    //   $(this).splitLines({ tag: '<div class="container-span"><span>' })
-    // })
+    $(".wrapLineSib").each(function () {
+      console.log("ran")
+      $(this).splitLines({ tag: '<div class="container-span"><span>' })
+    })
 
-    // setTimeout(function () {
-    //   $("#section-cover .banner").addClass("reach")
-    // }, 500)
+    setTimeout(function () {
+      $("#section-cover .banner").addClass("reach")
+    }, 500)
 
-    // let $window = $(window)
-    // function animScroll() {
-    //   var windowHeight = $window.height() / 1.5
-    //   $(".wrapLineSib, h2, h3, h4")
-    //     .parent()
-    //     .each(function () {
-    //       if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
-    //         if (!$(this).hasClass("reach")) {
-    //           $(this).addClass("reach")
-    //         }
-    //       }
-    //     })
-    // }
-    // $window.scroll(function () {
-    //   animScroll()
+    let $window = $(window)
+    function animScroll() {
+      var windowHeight = $window.height() / 1.5
+      $(".wrapLineSib, h2, h3, h4")
+        .parent()
+        .each(function () {
+          if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
+            if (!$(this).hasClass("reach")) {
+              $(this).addClass("reach")
+            }
+          }
+        })
+    }
+    $window.scroll(function () {
+      animScroll()
 
-    //   $("main").addClass("scroll")
-    //   clearTimeout($.data(this, "scrollTimer"))
-    //   $.data(
-    //     this,
-    //     "scrollTimer",
-    //     setTimeout(function () {
-    //       $("main").removeClass("scroll")
-    //     }, 50)
-    //   )
-    // })
+      $("main").addClass("scroll")
+      clearTimeout($.data(this, "scrollTimer"))
+      $.data(
+        this,
+        "scrollTimer",
+        setTimeout(function () {
+          $("main").removeClass("scroll")
+        }, 50)
+      )
+    })
 
-    // animScroll()
+    animScroll()
 
-    // $("h2, h3, h4").each(function () {
-    //   let textH2 = $.trim($(this).text())
-    //   let newText = ""
-    //   for (let i = 0; i < textH2.length; i++) {
-    //     if (i == 0) {
-    //       newText += '<div class="word">'
-    //     } else if (i == textH2.length) {
-    //       newText += "</div>"
-    //     }
+    $("h2, h3, h4").each(function () {
+      let textH2 = $.trim($(this).text())
+      let newText = ""
+      for (let i = 0; i < textH2.length; i++) {
+        if (i == 0) {
+          newText += '<div class="word">'
+        } else if (i == textH2.length) {
+          newText += "</div>"
+        }
 
-    //     if (textH2[i] == " ") {
-    //       newText += '</div><span class="space"> </span><div class="word">'
-    //     } else {
-    //       newText += "<span>" + textH2[i] + "</span>"
-    //     }
-    //   }
-    //   $(this).html(newText)
+        if (textH2[i] == " ") {
+          newText += '</div><span class="space"> </span><div class="word">'
+        } else {
+          newText += "<span>" + textH2[i] + "</span>"
+        }
+      }
+      $(this).html(newText)
 
-    //   let i = 0
-    //   $(this)
-    //     .find("span")
-    //     .each(function (index) {
-    //       $(this)
-    //         .css("-webkit-transition-delay", i + "s")
-    //         .css("-moz-transition-delay", i + "s")
-    //         .css("-ms-transition-delay", i + "s")
-    //         .css("-o-transition-delay", i + "s")
-    //         .css("transition-delay", i + "s")
+      let i = 0
+      $(this)
+        .find("span")
+        .each(function (index) {
+          $(this)
+            .css("-webkit-transition-delay", i + "s")
+            .css("-moz-transition-delay", i + "s")
+            .css("-ms-transition-delay", i + "s")
+            .css("-o-transition-delay", i + "s")
+            .css("transition-delay", i + "s")
 
-    //       i += 0.025
-    //     })
-    // })
+          i += 0.025
+        })
+    })
   })
 
   return (

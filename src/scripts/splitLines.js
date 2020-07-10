@@ -58,6 +58,7 @@ function _markupContent(tag, html, index) {
 }
 
 $.fn.splitLines = function (options) {
+  console.log("attemptingSplit")
   var settings = {
     width: "auto",
     tag: "<div>",
