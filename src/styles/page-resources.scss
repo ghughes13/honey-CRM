@@ -13,6 +13,10 @@
 
   .container-1 {
     padding: 175px 50px;
+
+    .row {
+      max-width: 90%;
+    }
   }
 
   .container-2 {
@@ -29,6 +33,26 @@
     width: 20%;
     display: flex;
     justify-content: center;
+
+    &.orange {
+      background: linear-gradient(to right, #fe6370, #f3c27e);
+      border: none !important;
+    }
+
+    &.blue {
+      background: linear-gradient(to left, #4bc9fe, #5052fe);
+      border: none !important;
+    }
+
+    &.green {
+      background: linear-gradient(to right, #28da34, #13e9e7);
+      border: none !important;
+    }
+
+    &.pink {
+      background: linear-gradient(to left, #ff899d, #f7329c);
+      border: none !important;
+    }
   }
 
   .category:first-child {
@@ -37,7 +61,7 @@
 
   .category span {
     font-family: "Roboto";
-    font-size: 29px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     display: flex;
@@ -83,7 +107,7 @@
     }
     &:before {
       content: "";
-      background: url("../svgs/resources/blob.svg");
+      background: url("../svgs/resources/join-the-community-blob.svg");
       position: absolute;
       top: 0;
       bottom: 0;
@@ -178,7 +202,8 @@
     .card-text {
       padding-top: 30px;
       padding-left: 50px;
-      padding-right: 25px;
+      padding-right: 35px;
+      padding-bottom: 20px;
       position: relative;
     }
     .date {
@@ -324,6 +349,18 @@
       margin-left: 0.5%;
       margin-right: 0.5%;
     }
+  }
+
+  .excerpt p {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #382153;
+    display: -webkit-box;
+    line-height: 30px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   @media screen and (min-width: 2000px) {

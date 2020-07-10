@@ -233,7 +233,7 @@ const Resources = ({ data }) => {
                 </h4>
               </div>
               <div className="right-side">
-                <a href="#" className="btn white">
+                <a href="/join" className="btn white">
                   Join Honey
                 </a>
               </div>

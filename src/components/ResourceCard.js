@@ -4,7 +4,7 @@ import "../styles/comp-resource-card.scss"
 
 const ResourceCard = ({ colLength, post }) => {
   post = post.node
-
+  console.log(post.excerpt)
   let date = new Date(post.date).toString().split(" ")
   const formatedDate = date[1] + " " + date[2] + ", " + date[3]
   const category = post.categories[0].name.split(" ").join("-")
@@ -21,6 +21,9 @@ const ResourceCard = ({ colLength, post }) => {
         <div className="date">
           <img src={require("../svgs/resources/calendar.svg")} alt="calendar" />
           <p>{formatedDate}</p>
+        </div>
+        <div class="excerpt">
+          <p>{post.excerpt}</p>
         </div>
       </div>
     </div>
