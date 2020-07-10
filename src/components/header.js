@@ -25,9 +25,9 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
     script.async = true
     document.body.appendChild(script)
 
-    document.querySelectorAll("main p").forEach(p => {
-      p.classList.add("wrapLineSib")
-    })
+    // document.querySelectorAll("main p").forEach(p => {
+    //   p.classList.add("wrapLineSib")
+    // })
 
     $(".wrapLineSib").each(function () {
       console.log("ran")

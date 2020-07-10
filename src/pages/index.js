@@ -22,7 +22,7 @@ const IndexPage = () => {
         <div className="home-page">
           <Container className="grey-swish-top container-1">
             <h1>Say Hello to Honey </h1>
-            <p className="hero-subtext">
+            <p className="hero-subtext wrapLineSib">
               A super sweet sales & marketing app for IT service providers
             </p>
             <div className="flex justify-center hero-btns margin-top-50">
