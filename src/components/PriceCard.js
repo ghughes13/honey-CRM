@@ -3,7 +3,7 @@ import "../styles/comp-pricecard.scss"
 
 const Footer = ({ title, price, contactNum }) => (
   <div className={"price-card " + title.toLowerCase()}>
-    <div className="top">
+    <div className="top reach">
       <h4 className="white-text">{title}</h4>
     </div>
     <div className="parts">

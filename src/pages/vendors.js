@@ -72,12 +72,12 @@ const IndexPage = () => {
               <h3 className="purple-text big-h3">
                 Honey Revolutionizes Partner Enablement
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey places you directly in your partners workflow environment.
                 You will have the ability to share marketing and sales assets
                 with them at unlimited scale.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Automated on-demand performance data and co-op features allow
                 you to provide additional resources and support to maximize
                 their success potential.
@@ -103,15 +103,15 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Easily share your collateral with all your partners
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey can take all marketing collateral and fully co-brand it
                 with their colors, logo, and contact information automatically.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 You can even bundle it all up into a comprehensive marketing
                 plan that a partner can execute in just a few clicks.
               </p>
-              <p>Heck, you can even do it for them.</p>
+              <p className="wrapLineSib">Heck, you can even do it for them.</p>
             </Col>
 
             <Col className="one-half centered-text rel second-col width-55-perc z-index-999">
@@ -178,11 +178,11 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Track individual campaigns and collateral performance
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Every resource you publish in Honey that a partner uses will
                 send back analytics on how well it performs.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Imagine, knowing exactly what material is most used by partners
                 and most attractive to their prospects.
               </p>
@@ -195,11 +195,11 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 REAL insights into partner performance and MDF ROI
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey’s power is in the visibility it provides you and your
                 partners.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 It harnesses the magic of automation, AI, and big data to
                 automatically register activities throughout the sales cycle
                 whether or not users are logged in.
@@ -227,11 +227,11 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Use The Data To Crown Your Champions.
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 You know who your top partners are but do you know how and why
                 they are so successful.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey data can reveal how each member of a top partner’s sales
                 and marketing team contributes to the overall success of an
                 organization.
@@ -245,11 +245,11 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Ghost Assist Partner’s Marketing Efforts
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Through Honey, you can assist a partner with every aspect of
                 their sales and marketing efforts.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 You will have the ability to execute campaigns on a partner’s
                 behalf and even assist in a sales engagement without
                 compromising the sales rep.

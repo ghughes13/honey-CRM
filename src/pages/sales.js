@@ -101,14 +101,14 @@ const IndexPage = () => {
           <Row>
             <Col className="max-width-900 margin-auto">
               <h3>Features To Shatter Your Quotas</h3>
-              <h5>
+              <p className="large-p-text wrapLineSib">
                 Honey gives your sales team the tools they need to carry out
                 effective activities without the rigamarole of data entry and
                 file management. When your sales process lives in Honey, you can
                 harness the full power of AI, big data, automation, and an
                 integrated collateral library, without sacrificing your
                 workflow.
-              </h5>
+              </p>
             </Col>
           </Row>
         </Container>
@@ -119,11 +119,11 @@ const IndexPage = () => {
                 Big Data,
                 <br /> Big Improvements
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Big data, big improvements, dial-in your sales process and KPIs
                 with big data automatically gathered and compiled within Honey.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey tracks all of your sales and marketing statistics, and
                 even allows you to compare them against best-in-class performers
                 in the industry.
@@ -163,7 +163,7 @@ const IndexPage = () => {
                 className="hide-on-mobile"
                 id="grunt-work"
               >
-                <p>
+                <p className="wrapLineSib">
                   If you are reading this, it is because your browser does not
                   support the HTML5 video element.
                 </p>
@@ -179,11 +179,11 @@ const IndexPage = () => {
                 Let AI Do The
                 <br /> Grunt Work
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Finding important lead information is as simple as entering the
                 information on a business card.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey automatically scrubs google and social media platforms to
                 create a profile for every lead entered into the platform.
               </p>
@@ -197,11 +197,11 @@ const IndexPage = () => {
                 Craft The <br />
                 Perfect Journey
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Doing the same campaigns over and over manually is, frankly, a
                 waste of your time and effort.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 That’s why in Honey you have the capability to create completely
                 automated email journeys. As simple as selecting a trigger
                 event, a series of campaigns and a timeline, you can send out
@@ -233,7 +233,7 @@ const IndexPage = () => {
                 className="hide-on-mobile"
                 id="leads-video"
               >
-                <p>
+                <p className="wrapLineSib">
                   If you are reading this, it is because your browser does not
                   support the HTML5 video element.
                 </p>
@@ -250,8 +250,10 @@ const IndexPage = () => {
                 Your Sales <br />
                 Sidekick{" "}
               </h3>
-              <p>Prioritize your daily activities at a glance.</p>
-              <p>
+              <p className="wrapLineSib">
+                Prioritize your daily activities at a glance.
+              </p>
+              <p className="wrapLineSib">
                 Honey allows you to organize your leads from temperature all the
                 way to the last activity so you can set your priorities quickly
                 and effectively.
@@ -266,12 +268,12 @@ const IndexPage = () => {
                 A Fully-Stocked <br />
                 Marketing Library
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Every Honey subscription comes with access to an ever-growing
                 library of MSP content that you can instantly use in your
                 marketing.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Whitepapers, eBooks, infographics and more are instantly
                 accessible to your team to be easily inserted into any email.
                 Each content piece has been tried-and-tested to generate the
@@ -291,7 +293,7 @@ const IndexPage = () => {
                 className="hide-on-mobile"
                 id="library"
               >
-                <p>
+                <p className="wrapLineSib">
                   If you are reading this, it is because your browser does not
                   support the HTML5 video element.
                 </p>
@@ -317,14 +319,14 @@ const IndexPage = () => {
                 Important information
                 <br /> in one place
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey has robust and expert integrations with your existing line
                 of business applications. Whether you’re using Office 365,
                 Exchange, Salesforce or ConnectWise, Honey can connect to all
                 that important information and bring it into one well-organized
                 hub.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 These activities are automatically logged and connected to the
                 appropriate lead inside of Honey. From a single pane of glass,
                 you can see all activities associated with any lead in your list
@@ -340,11 +342,11 @@ const IndexPage = () => {
                 Make winners with
                 <br /> outstanding visibility
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Manage your daily tasks and stay connected with the rest of your
                 sales team using the intuitive visibility of Honey.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 All emails from linked accounts are automatically logged, along
                 with the ability to create tasks on a per-lead basis so you can
                 organize your sales funnel for seamless and timely follow-ups to

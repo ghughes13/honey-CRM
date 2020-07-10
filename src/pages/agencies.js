@@ -104,12 +104,12 @@ const IndexPage = () => {
               <h3 className="purple-text big-h3">
                 Industry-Leading Marketing At Scale
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Digital marketing can change at the drop of a hat, and the only
                 way to stay on top of market shifts is with great analytics and
                 expert partner management.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey gives your agency a platform to carry out truly
                 influential digital marketing. With complete visibility,
                 management, data, and analytics, you can become the powerhouse
@@ -134,11 +134,11 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-480 margin-top-75-neg z-index-999">
               <h3 className="purple-text">Client Management Made Simple</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey allows you to see the complete picture of the sales and
                 marketing activities for every one of your clients.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Whether the actions were carried out by your team or your
                 client, even if done on another platform, you can see those
                 activities within Honey at any time.
@@ -152,11 +152,11 @@ const IndexPage = () => {
               <h3 className="">
                 The Library Of Alexandria, But With Collateral
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Is file sharing and management a full-time time job for your
                 agency?
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Not anymore. Honey has an integrated collateral library that
                 hosts all of your collateral. Sharing is as simple as drag and
                 drop.
@@ -231,11 +231,11 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-480">
               <h3 className="purple-text">Everything The Light Touches</h3>
-              <p>
+              <p className="wrapLineSib">
                 Your team does their best work when they have real-time, deep
                 data to work from.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Visibility is a central pillar of Honey. The core functions, as
                 well as the look and feel, were created to enable intuitive
                 visibility at a glance with the ability to easily dive into
@@ -248,12 +248,12 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="centered-text max-width-700">
               <h3 className="purple-text">Automate And Improve</h3>
-              <p>
+              <p className="wrapLineSib">
                 Many industries have been reaping the benefits of automation for
                 some time now. We figured it was time sales and marketing could
                 do the same.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey has multiple tools that allow you to automate for easier
                 management and increased success. Whether it’s automated email
                 journies, campaign A/B testing, or a marketing plan, Honey
@@ -307,11 +307,11 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Create And Activate Marketing Plans
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Wouldn’t it be amazing if those detailed marketing plans you
                 created could instantly be put to use and acted on?
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Marketing plans in Honey allow you to create, schedule, and
                 automatically send all of your campaigns.
               </p>
@@ -329,11 +329,11 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="centered-text max-width-700">
               <h3 className="purple-text">Package And Resell Your Marketing</h3>
-              <p>
+              <p className="wrapLineSib">
                 Created emails, collateral, journeys, or entire marketing plans
                 that you want to sell to future clients?
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey allows you to package up any of your past marketing so it
                 can be reused for future clients. It even automatically rebrands
                 with the right colors, logos and links.
@@ -359,12 +359,12 @@ const IndexPage = () => {
               <h3 className="purple-text">
                 Agency-Wide Performance At A Glance
               </h3>
-              <p className="max-width-650 margin-auto">
+              <p className="max-width-650 margin-auto wrapLineSib">
                 Want to see who your top-performing client is? It’s right there.
                 What about your average open and click-through rates? That’s
                 there too.
               </p>
-              <p className="max-width-650 margin-auto">
+              <p className="max-width-650 margin-auto wrapLineSib">
                 There is even an overview of total leads, meetings,
                 opportunities and wins to keep your team aware of the importance
                 and success of the work they do.

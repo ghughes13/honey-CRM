@@ -11,7 +11,7 @@ class FeatureCard extends React.Component {
         className={"feat-card " + (this.props.class ? this.props.class : "")}
       >
         <h4>{this.props.title}</h4>
-        <p>{this.props.body}</p>
+        <p className="wrapLineSib">{this.props.body}</p>
         <img src={this.props.src} alt={"Feature - " + this.props.title} />
       </div>
     )

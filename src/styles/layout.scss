@@ -652,10 +652,15 @@ h4 {
   font-weight: 800;
 }
 
-h5 {
+h5,
+.large-p-text {
   font-size: 25px;
   font-family: "Nunito", sans-serif;
   font-weight: 300;
+}
+
+.large-p-text span {
+  white-space: nowrap;
 }
 
 p {
@@ -985,14 +990,16 @@ h3.big-h3 {
 
 .reach h2 span,
 .reach h3 span,
-.reach h4 span {
+.reach h4 span,
+.reach h5 span {
   opacity: 1;
   transform: scaleY(1) translateY(0);
 }
 
 h2,
 h3,
-h4 {
+h4,
+h5 {
   display: block;
   overflow: hidden;
 }
@@ -1008,6 +1015,11 @@ h4 .word {
   margin-right: 10px;
 }
 
+h5 .word {
+  display: inline-block;
+  margin-right: 6px;
+}
+
 h2 span,
 h3 span,
 h4 span {
@@ -1015,6 +1027,13 @@ h4 span {
   opacity: 0;
   transform: scaleY(2) translateY(25%);
   transition: all 0.25s ease;
+}
+
+h5 span {
+  display: inline-block;
+  opacity: 0;
+  transform: scaleY(2) translateY(25%);
+  transition: all 0.1s ease;
 }
 
 .wrapLineSib .container-span {

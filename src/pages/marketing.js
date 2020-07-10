@@ -79,17 +79,19 @@ const IndexPage = () => {
           <Row>
             <Col className="max-width-900 margin-auto">
               <h3>Level Up Your IT Marketing</h3>
-              <h5>
+              <p className="large-p-text wrapLineSib">
                 You’re used to being on the front line of generating new
                 revenue. You’ve probably heard more than one variation of “this
                 lead isn’t an SQL.”
-              </h5>
-              <h5>That’s a thing of the past with Honey.</h5>
-              <h5>
+              </p>
+              <p className="large-p-text wrapLineSib">
+                That’s a thing of the past with Honey.
+              </p>
+              <p className="large-p-text wrapLineSib">
                 With Honey, you get to see the complete picture of your
                 marketing efforts. And when you hand that lead off to your sales
                 team, you know its qualified.
-              </h5>
+              </p>
             </Col>
           </Row>
         </Container>
@@ -97,11 +99,11 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc ">
               <h3>Next-Generation Email Builder</h3>
-              <p>
+              <p className="wrapLineSib">
                 Build completely custom and branded emails with our intuitive
                 and simple-to-use email builder.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Whether using one of our pre-made templates or designing it
                 yourself, all emails sent through Honey are mobile-responsive.
               </p>
@@ -127,17 +129,19 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half second-col max-width-500 ">
               <h3>Comprehensive & Automated Marketing Plans</h3>
-              <p>
+              <p className="wrapLineSib">
                 Plan out months or a year’s worth of marketing content through
                 our marketing plan tool.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Schedule the exact date, time and topic of every email you want
                 to send out ahead of time. Any content you need already exists
                 in the Honey collateral library, and all calls to action are
                 automatically linked to the collateral piece of your choosing.
               </p>
-              <p>Just pick a start date and watch the leads roll in.</p>
+              <p className="wrapLineSib">
+                Just pick a start date and watch the leads roll in.
+              </p>
             </Col>
           </Row>
         </Container>
@@ -145,11 +149,11 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>Send The Best Email Every Time</h3>
-              <p>
+              <p className="wrapLineSib">
                 Automatic A/B testing ensures you’re always sending out the
                 strongest email.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 With Honey’s built-in A/B testing, you can test different
                 subject lines or content on a portion of your list and send out
                 the best performer to your full list automatically
@@ -174,12 +178,12 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-480 second-col">
               <h3>Instantly Publish To Your Collateral Library</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey’s collateral library lets you instantly publish all your
                 marketing materials so you can quickly and easily attach it to
                 future campaigns.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Your sales team has access to the same collateral library, so
                 you can analyze valuable data points you need to assess the
                 performance of each piece of collateral to consistently improve.
@@ -194,13 +198,13 @@ const IndexPage = () => {
                 The Data You Need In
                 <br /> One Pane Of Glass
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 One of the core tenets of Honey is visibility. From day one,
                 Honey as a platform was developed to offer comprehensive
                 visibility that could be leveraged to improve sales and
                 marketing efforts.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 That’s why we made your home dashboard a snapshot of all the
                 analytics you need to assess and improve your marketing.
               </p>
@@ -225,12 +229,12 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-500 second-col">
               <h3>Pre-Made Marketing Material That’s Proven To Work</h3>
-              <p>
+              <p className="wrapLineSib">
                 When you sign up for Honey, you instantly get access to a full
                 library of marketing material. Whitepapers, eBooks, videos and
                 more covering topics from IT budget to virtualization.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 With these resources, you can get to marketing quicker than on
                 any other platform with specialized content that is proven to
                 work.
@@ -242,14 +246,14 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>Easily Build Your Core Marketing Pieces</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey has built-in collateral, landing page and email building
                 tools. You can build your own custom-branded templates so that
                 every piece of marketing material you need can be easily and
                 quickly branded, published and ready to use in your next
                 campaign.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 And if you use vendor marketing materials, your vendor partners
                 can share their collateral library with you so you have one
                 place to go to for all of your marketing assets.

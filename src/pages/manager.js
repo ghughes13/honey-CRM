@@ -43,12 +43,12 @@ const IndexPage = () => {
                 Big Data And Best In <br className="hide-on-mobile" /> Class
                 Bench Marks{" "}
               </h3>
-              <p>
+              <p className="wrapLineSib">
                 Sales and marketing management is like a game of chess. It takes
                 years of detailed analysis and sound strategies to consistently
                 win.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey provides you the immediate success formula with analytics
                 and bench marks from thousands of IT services providers around
                 the world from average to best in class.
@@ -74,11 +74,11 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half second-col max-width-500 ">
               <h3>See The Forest AND The Trees</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey gives your sales and marketing teams the same quality fo
                 analytics that you expect from your service delivery teams.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Data in hand, you can see the big picture of your sales and
                 marketing efforts without losing track of the day-to-day.
               </p>
@@ -89,12 +89,12 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>A/B Testing To Get The Best Results</h3>
-              <p>
+              <p className="wrapLineSib">
                 Want to compare two awesome subject lines to see which performs
                 better on your list? Or maybe you have two layouts you want to
                 give a shot.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Honey’s automatic A/B testing will find your best performing
                 version and send it out to maximize your results.
               </p>
@@ -112,12 +112,12 @@ const IndexPage = () => {
           <Row>
             <Col className="centered-text max-width-650 left-align-mobile">
               <h3>Centralized Dashboard</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey’s collateral library lets you instantly publish all your
                 marketing materials so you can quickly and easily attach it to
                 future campaigns.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Your sales team has access to the same collateral library, so
                 you can analyze valuable data points you need to assess the
                 performance of each piece of collateral to consistently improve.
@@ -289,8 +289,10 @@ const IndexPage = () => {
           <Row>
             <Col className="one-half max-width-500 margin-left-10-perc white-text">
               <h3 className="white-text">Deep campaign analytics</h3>
-              <p>Get a complete view of how your email campaigns perform.</p>
-              <p>
+              <p className="wrapLineSib">
+                Get a complete view of how your email campaigns perform.
+              </p>
+              <p className="wrapLineSib">
                 Besides open and click-through rate, Honey allows you to see the
                 per-prospect activity as well as when activities took place.
               </p>
@@ -319,7 +321,7 @@ const IndexPage = () => {
                 className="hide-on-mobile"
                 id="leads-video"
               >
-                <p>
+                <p className="wrapLineSib">
                   If you are reading this, it is because your browser does not
                   support the HTML5 video element.
                 </p>
@@ -332,7 +334,7 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-500 second-col">
               <h3>Point-based lead qualifications</h3>
-              <p>
+              <p className="wrapLineSib">
                 We created a point system to assist you in qualifying your leads
                 for sales-readiness. Each action, from email click through to
                 form fill has a unique score value that is easily viewable
@@ -345,13 +347,15 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>The Perfect Hand-Off</h3>
-              <p>Struggling to prove that MQLs are maturing into SQLs?</p>
-              <p>
+              <p className="wrapLineSib">
+                Struggling to prove that MQLs are maturing into SQLs?
+              </p>
+              <p className="wrapLineSib">
                 Honey was developed by a bunch of sales and marketing
                 professionals, so we’re familiar with the butting of heads
                 between the two.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 That’s why, from day one, we made sure that both sales and
                 marketing would be operating from the same data, the same list,
                 and the same source of truth.
@@ -376,12 +380,12 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-500 second-col">
               <h3>Easy-To-Read Reports</h3>
-              <p>
+              <p className="wrapLineSib">
                 Honey automatically records activities and organizes them by
                 team member. With a few clicks, you can see all emails and
                 follow-ups as well as the content contained within each.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 You can also configure Honey to automatically export these
                 reports so that you can check in at regular intervals to keep
                 your team on track.
@@ -393,11 +397,11 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>Stay On Top Of Wins And Losses</h3>
-              <p>
+              <p className="wrapLineSib">
                 With built-in win-wires and lost opportunity reporting, you can
                 keep your team motivated and aligned behind your goals.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Send out win-wires or lost opportunity reports to keep your team
                 on the same page and rallied around the cause.
               </p>
@@ -414,12 +418,12 @@ const IndexPage = () => {
           <Row>
             <Col className="centered-text max-width-650 left-align-mobile">
               <h3>Stay Ahead With Marketing Plans</h3>
-              <p>
+              <p className="wrapLineSib">
                 Planning your marketing is a fun and exciting time full of
                 optimism —executing, on the other hand, can fall short of
                 expectations.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 With marketing plans in Honey, you can schedule all of your
                 email campaigns ahead of time so they will automatically send
                 when you need them to.
@@ -477,11 +481,11 @@ const IndexPage = () => {
           <Row className="flexed-mobile">
             <Col className="one-half max-width-500 margin-left-10-perc">
               <h3>Optimize Your Pipeline</h3>
-              <p>
+              <p className="wrapLineSib">
                 Get automated revenue projections on engagements during each
                 phase of your sales cycle.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 Use Honey’s automated marketing and sales features to keep
                 prospects moving through the funnel more consistently.
               </p>
@@ -505,11 +509,11 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half max-width-500 second-col">
               <h3>Complete brand consistency</h3>
-              <p>
+              <p className="wrapLineSib">
                 Journies within Honey allow you to send the same series of
                 campaigns to any prospect who takes a certain action.
               </p>
-              <p>
+              <p className="wrapLineSib">
                 When leveraged fully, you not only ensure there is always
                 correct follow up to an action, but you also establish your
                 brand the same way for every one of your leads.

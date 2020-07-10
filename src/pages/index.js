@@ -22,7 +22,7 @@ const IndexPage = () => {
         <div className="home-page">
           <Container className="grey-swish-top container-1">
             <h1>Say Hello to Honey </h1>
-            <p className="hero-subtext wrapLineSib">
+            <p className="hero-subtext">
               A super sweet sales & marketing app for IT service providers
             </p>
             <div className="flex justify-center hero-btns margin-top-50">
@@ -96,13 +96,13 @@ const IndexPage = () => {
                   Overcome your
                   <br /> Kryptonite with Data{" "}
                 </h3>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   If you’re an IT service provider, you know what your problem
                   is… it’s sales and marketing. If you want to fix that problem
                   you need to approach it like any other problem, identify the
                   source.
                 </p>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   That’s why Honey’s entire foundation is built on visibility.
                   With Honey you will finally have complete visibility over your
                   sales and marketing team, making the source of the problem
@@ -379,12 +379,12 @@ const IndexPage = () => {
                   Lose the migration
                   <br /> anxiety{" "}
                 </h3>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   Instead of outright replacing what you currently use, our
                   integrations let your favorite apps ride shotgun in your sales
                   and marketing journey.
                 </p>
-                <p className="white-text">
+                <p className="white-text wrapLineSib">
                   Keep them all or replace what you want when you want.
                 </p>
               </Col>
@@ -394,7 +394,7 @@ const IndexPage = () => {
                 Simplify Marketing Relationships
                 <br /> with Platform Unity
               </h3>
-              <p className="white-text max-width-650 margin-auto margin-bottom-50 inline-block">
+              <p className="white-text max-width-650 margin-auto margin-bottom-50 inline-block wrapLineSib">
                 Honey takes the complexity out of your vendor marketing
                 relationships by creating a single platform that benefits both
                 vendors and partners.

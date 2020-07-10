@@ -7,7 +7,6 @@ import DropdownMenu from "../components/DropdownMenu.js"
 import HoneyLogoDark from "../components/honey-logo-dark.js"
 import HoneyLogoLight from "../components/honey-logo-light.js"
 import $ from "jquery"
-// import "../scripts/splitLines.js"
 
 const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
   useEffect(() => {
@@ -182,7 +181,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
 
     animScroll()
 
-    $("h2, h3, h4").each(function () {
+    $("h2, h3, h4, h5").each(function () {
       let textH2 = $.trim($(this).text())
       let newText = ""
       for (let i = 0; i < textH2.length; i++) {
