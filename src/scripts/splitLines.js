@@ -1,5 +1,4 @@
 import $ from "jquery"
-import React from "react"
 
 function _createTemp(element) {
   return element.clone().css({ position: "absolute" })
@@ -109,9 +108,3 @@ $.fn.splitLines = function (options) {
 
   this.html(newHtml.html())
 }
-
-const placeholder = () => {
-  return <p>placeholder</p>
-}
-
-export default placeholder
