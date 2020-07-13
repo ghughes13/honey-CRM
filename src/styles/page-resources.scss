@@ -5,6 +5,11 @@
     color: #59486e;
   }
 
+  h3 .word {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
   h5 {
     font-size: 20px;
     color: white;
@@ -90,8 +95,8 @@
     top: 0;
     bottom: 0;
     z-index: -1;
-    width: 100vw;
-    background-position: 50% -20vw;
+    width: 2000px;
+    background-position: 50% -400px;
   }
 
   .newsletter-card {
@@ -108,12 +113,13 @@
     &:before {
       content: "";
       background: url("../svgs/resources/join-the-community-blob.svg");
+      background-repeat: no-repeat;
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 0;
+      width: 100%;
       left: 0;
-      z-index: 999;
+      z-index: 0;
       pointer-events: none;
     }
 
@@ -164,9 +170,9 @@
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 40px;
-    -webkit-box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
-    -moz-box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
-    box-shadow: 10px 3px 26px 0px rgba(0, 0, 0, 0.28);
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(74, 128, 255, 0.22);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(74, 128, 255, 0.22);
+    box-shadow: 0px 3px 12px 0px rgba(74, 128, 255, 0.22);
     h2 {
       font-size: 44px;
       color: white;
@@ -185,6 +191,9 @@
       text-overflow: ellipsis;
       max-width: 500px;
     }
+    &.two-thirds h3 {
+      max-width: 90%;
+    }
     .top-img {
       max-height: 250px;
       min-height: 250px;
@@ -193,7 +202,7 @@
       position: relative;
       img {
         overflow: hidden;
-        border-radius: 32px;
+        border-radius: 32px 32px 0 0;
         width: 100%;
         min-height: 250px;
         object-fit: cover;
@@ -257,6 +266,9 @@
     margin-right: 15px;
     margin-left: 15px;
     margin-top: 50px;
+    -webkit-box-shadow: 0px 3px 12px 0px rgba(255, 24, 24, 0.22);
+    -moz-box-shadow: 0px 3px 12px 0px rgba(255, 24, 24, 0.22);
+    box-shadow: 0px 3px 12px 0px rgba(255, 24, 24, 0.22);
     a {
       margin-top: 15px;
     }
@@ -269,6 +281,16 @@
   }
 
   .input-els {
+    > div {
+      position: relative;
+      &:after {
+        content: url("../svgs/resources/magnifying-glass.svg");
+        position: absolute;
+        right: 20px;
+        z-index: 999;
+        top: 12px;
+      }
+    }
     select {
       background: #efeff4;
       border: solid 1.5px #dcdbe0;
@@ -312,7 +334,6 @@
       width: 40%;
       color: #18aeff;
       font-family: Roboto, sans-serif;
-
       &:focus {
         outline: none;
         border-radius: 29px;
@@ -357,7 +378,7 @@
     color: #382153;
     display: -webkit-box;
     line-height: 30px;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -367,6 +388,12 @@
     .purple-swish:before {
       background-size: 100%;
       width: 100vw;
+      background-position: 50% -23vw;
+    }
+  }
+
+  @media screen and (min-width: 2200px) {
+    .purple-swish:before {
       background-position: 50% -26vw;
     }
   }
@@ -374,8 +401,8 @@
   @media screen and (min-width: 2400px) {
     .purple-swish:before {
       background-size: 100%;
-      width: 100vw;
-      background-position: 50% -31vw;
+      width: 2685px;
+      background-position: 50% -830px;
     }
   }
 
@@ -388,8 +415,8 @@
       top: 0;
       bottom: 0;
       z-index: -1;
-      width: 100vw;
-      background-position: 50% -225px;
+      width: 1500px;
+      background-position: 50% -165px;
     }
 
     .category {
@@ -471,6 +498,7 @@
     }
 
     .purple-swish:before {
+      width: 1224px;
       background-position: 50% 0px;
     }
   }
