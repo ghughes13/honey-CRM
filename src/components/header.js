@@ -28,191 +28,193 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
     //   p.classList.add("wrapLineSib")
     // })
 
-    function _createTemp(element) {
-      return element.clone().css({ position: "absolute" })
-    }
+    if (window.screen.width > 767) {
+      function _createTemp(element) {
+        return element.clone().css({ position: "absolute" })
+      }
 
-    function _splitHtmlWords(contents) {
-      var words = []
-      var splitContent
-      for (var c = 0; c < contents.length; c++) {
-        if (contents[c].nodeName === "BR") {
-          words.push("<br>")
-          continue
-        }
-        if (contents[c].nodeType == 3) {
-          splitContent = _splitWords(
-            contents[c].textContent || contents[c].toString()
-          )
-        } else {
-          var tag = $(contents[c]).clone()
-          splitContent = _splitHtmlWords(tag.contents())
-          for (var t = 0; t < splitContent.length; t++) {
-            tag.empty()
-            splitContent[t] = tag
-              .html(splitContent[t])
-              .wrap("<p></p>")
-              .parent()
-              .html()
-          }
-        }
-        for (var w = 0; w < splitContent.length; w++) {
-          if (splitContent[w] === "") {
+      function _splitHtmlWords(contents) {
+        var words = []
+        var splitContent
+        for (var c = 0; c < contents.length; c++) {
+          if (contents[c].nodeName === "BR") {
+            words.push("<br>")
             continue
           }
-          words.push(splitContent[w])
-        }
-      }
-      return words
-    }
-
-    function _splitWords(text) {
-      return text.split(/\s+/)
-    }
-
-    function _markupContent(tag, html, index) {
-      tag = '<div class="stop">' + tag
-      var $outer = $(tag)
-        .find('*:not(:has("*"))')
-        .html(html)
-        .closest(".stop")
-        .slice(-1)
-
-      $outer.children().each(function (i, element) {
-        element.style.setProperty("--line-index", index)
-      })
-
-      return $outer.html()
-    }
-
-    $.fn.splitLines = function (options) {
-      console.log("attemptingSplit")
-      var settings = {
-        width: "auto",
-        tag: "<div>",
-        wrap: "",
-        keepHtml: true,
-      }
-      if (options) {
-        $.extend(settings, options)
-      }
-      var newHtml = _createTemp(this)
-      var contents = this.contents()
-      var text = this.text()
-      this.append(newHtml)
-      newHtml.text("42")
-      var maxHeight = newHtml.height() + 2
-      newHtml.empty()
-
-      var tempLine = _createTemp(newHtml)
-      var width = settings.width
-      if (settings.width === "auto") {
-        width = this[0].offsetWidth
-      }
-      tempLine.width(width)
-      this.append(tempLine)
-      var words = settings.keepHtml
-        ? _splitHtmlWords(contents)
-        : _splitWords(text)
-      var prev
-      var lineCount = 0
-      for (var w = 0; w < words.length; w++) {
-        var html = tempLine.html()
-        tempLine.html(html + words[w] + " ")
-        if (tempLine.html() == prev) {
-          prev = ""
-          newHtml.append(
-            _markupContent(settings.tag, tempLine.html(), lineCount)
-          )
-          tempLine.html("")
-          continue
-        }
-        if (tempLine.height() > maxHeight) {
-          prev = tempLine.html()
-          tempLine.html(html)
-          newHtml.append(
-            _markupContent(settings.tag, tempLine.html(), lineCount)
-          )
-          tempLine.html("")
-          w--
-          lineCount++
-        }
-      }
-      newHtml.append(_markupContent(settings.tag, tempLine.html(), lineCount))
-
-      this.html(newHtml.html())
-    }
-
-    $(".wrapLineSib").each(function () {
-      console.log("ran")
-      $(this).splitLines({ tag: '<div class="container-span"><span>' })
-    })
-
-    setTimeout(function () {
-      $("#section-cover .banner").addClass("reach")
-    }, 500)
-
-    let $window = $(window)
-    function animScroll() {
-      var windowHeight = $window.height() / 1.5
-      $(".wrapLineSib, h2, h3, h4")
-        .parent()
-        .each(function () {
-          if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
-            if (!$(this).hasClass("reach")) {
-              $(this).addClass("reach")
+          if (contents[c].nodeType == 3) {
+            splitContent = _splitWords(
+              contents[c].textContent || contents[c].toString()
+            )
+          } else {
+            var tag = $(contents[c]).clone()
+            splitContent = _splitHtmlWords(tag.contents())
+            for (var t = 0; t < splitContent.length; t++) {
+              tag.empty()
+              splitContent[t] = tag
+                .html(splitContent[t])
+                .wrap("<p></p>")
+                .parent()
+                .html()
             }
           }
+          for (var w = 0; w < splitContent.length; w++) {
+            if (splitContent[w] === "") {
+              continue
+            }
+            words.push(splitContent[w])
+          }
+        }
+        return words
+      }
+
+      function _splitWords(text) {
+        return text.split(/\s+/)
+      }
+
+      function _markupContent(tag, html, index) {
+        tag = '<div class="stop">' + tag
+        var $outer = $(tag)
+          .find('*:not(:has("*"))')
+          .html(html)
+          .closest(".stop")
+          .slice(-1)
+
+        $outer.children().each(function (i, element) {
+          element.style.setProperty("--line-index", index)
         })
-    }
-    $window.scroll(function () {
+
+        return $outer.html()
+      }
+
+      $.fn.splitLines = function (options) {
+        console.log("attemptingSplit")
+        var settings = {
+          width: "auto",
+          tag: "<div>",
+          wrap: "",
+          keepHtml: true,
+        }
+        if (options) {
+          $.extend(settings, options)
+        }
+        var newHtml = _createTemp(this)
+        var contents = this.contents()
+        var text = this.text()
+        this.append(newHtml)
+        newHtml.text("42")
+        var maxHeight = newHtml.height() + 2
+        newHtml.empty()
+
+        var tempLine = _createTemp(newHtml)
+        var width = settings.width
+        if (settings.width === "auto") {
+          width = this[0].offsetWidth
+        }
+        tempLine.width(width)
+        this.append(tempLine)
+        var words = settings.keepHtml
+          ? _splitHtmlWords(contents)
+          : _splitWords(text)
+        var prev
+        var lineCount = 0
+        for (var w = 0; w < words.length; w++) {
+          var html = tempLine.html()
+          tempLine.html(html + words[w] + " ")
+          if (tempLine.html() == prev) {
+            prev = ""
+            newHtml.append(
+              _markupContent(settings.tag, tempLine.html(), lineCount)
+            )
+            tempLine.html("")
+            continue
+          }
+          if (tempLine.height() > maxHeight) {
+            prev = tempLine.html()
+            tempLine.html(html)
+            newHtml.append(
+              _markupContent(settings.tag, tempLine.html(), lineCount)
+            )
+            tempLine.html("")
+            w--
+            lineCount++
+          }
+        }
+        newHtml.append(_markupContent(settings.tag, tempLine.html(), lineCount))
+
+        this.html(newHtml.html())
+      }
+
+      $(".wrapLineSib").each(function () {
+        console.log("ran")
+        $(this).splitLines({ tag: '<div class="container-span"><span>' })
+      })
+
+      setTimeout(function () {
+        $("#section-cover .banner").addClass("reach")
+      }, 500)
+
+      let $window = $(window)
+      function animScroll() {
+        var windowHeight = $window.height() / 1.5
+        $(".wrapLineSib, h2, h3, h4")
+          .parent()
+          .each(function () {
+            if ($window.scrollTop() >= $(this).offset().top - windowHeight) {
+              if (!$(this).hasClass("reach")) {
+                $(this).addClass("reach")
+              }
+            }
+          })
+      }
+      $window.scroll(function () {
+        animScroll()
+
+        $("main").addClass("scroll")
+        clearTimeout($.data(this, "scrollTimer"))
+        $.data(
+          this,
+          "scrollTimer",
+          setTimeout(function () {
+            $("main").removeClass("scroll")
+          }, 50)
+        )
+      })
+
       animScroll()
 
-      $("main").addClass("scroll")
-      clearTimeout($.data(this, "scrollTimer"))
-      $.data(
-        this,
-        "scrollTimer",
-        setTimeout(function () {
-          $("main").removeClass("scroll")
-        }, 50)
-      )
-    })
+      $("h2, h3, h4, h5").each(function () {
+        let textH2 = $.trim($(this).text())
+        let newText = ""
+        for (let i = 0; i < textH2.length; i++) {
+          if (i == 0) {
+            newText += '<div class="word">'
+          } else if (i == textH2.length) {
+            newText += "</div>"
+          }
 
-    animScroll()
-
-    $("h2, h3, h4, h5").each(function () {
-      let textH2 = $.trim($(this).text())
-      let newText = ""
-      for (let i = 0; i < textH2.length; i++) {
-        if (i == 0) {
-          newText += '<div class="word">'
-        } else if (i == textH2.length) {
-          newText += "</div>"
+          if (textH2[i] == " ") {
+            newText += '</div><span class="space"> </span><div class="word">'
+          } else {
+            newText += "<span>" + textH2[i] + "</span>"
+          }
         }
+        $(this).html(newText)
 
-        if (textH2[i] == " ") {
-          newText += '</div><span class="space"> </span><div class="word">'
-        } else {
-          newText += "<span>" + textH2[i] + "</span>"
-        }
-      }
-      $(this).html(newText)
+        let i = 0
+        $(this)
+          .find("span")
+          .each(function (index) {
+            $(this)
+              .css("-webkit-transition-delay", i + "s")
+              .css("-moz-transition-delay", i + "s")
+              .css("-ms-transition-delay", i + "s")
+              .css("-o-transition-delay", i + "s")
+              .css("transition-delay", i + "s")
 
-      let i = 0
-      $(this)
-        .find("span")
-        .each(function (index) {
-          $(this)
-            .css("-webkit-transition-delay", i + "s")
-            .css("-moz-transition-delay", i + "s")
-            .css("-ms-transition-delay", i + "s")
-            .css("-o-transition-delay", i + "s")
-            .css("transition-delay", i + "s")
-
-          i += 0.025
-        })
-    })
+            i += 0.025
+          })
+      })
+    }
   })
 
   return (

@@ -303,7 +303,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container-7">
           <Row className="flexed-mobile">
-            <Col className="one-half max-width-480 margin-top-150-neg">
+            <Col className="one-half max-width-480 margin-top-150-neg mobile-margin-top-0">
               <h3 className="purple-text">
                 Create And Activate Marketing Plans
               </h3>

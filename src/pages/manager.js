@@ -110,7 +110,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container-6">
           <Row>
-            <Col className="centered-text max-width-650 left-align-mobile">
+            <Col className="centered-text max-width-650">
               <h3>Centralized Dashboard</h3>
               <p className="wrapLineSib">
                 Honey’s collateral library lets you instantly publish all your
@@ -416,7 +416,7 @@ const IndexPage = () => {
         </Container>
         <Container className="container-12 grey-swish flexed-mobile flex-mobile">
           <Row>
-            <Col className="centered-text max-width-650 left-align-mobile">
+            <Col className="centered-text max-width-650">
               <h3>Stay Ahead With Marketing Plans</h3>
               <p className="wrapLineSib">
                 Planning your marketing is a fun and exciting time full of
