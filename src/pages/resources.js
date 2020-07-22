@@ -121,46 +121,55 @@ const Resources = ({ data }) => {
           </Row>
           <Row>
             <div className="flex-justify-evenly flex-dir-row cat-btns">
-              <a
+              <button
                 className="btn orange margin-left-50 category updates"
                 id="updates"
               >
                 <span className="btn__mask"></span>
                 <span className="btn__text">
-                  <img src={require("../svgs/resources/star.svg")} />
+                  <img src={require("../svgs/resources/star.svg")} alt="star" />
                   Updates
                 </span>
-              </a>
+              </button>
 
-              <a className="btn blue margin-left-50 category blogs" id="blog">
+              <button
+                className="btn blue margin-left-50 category blogs"
+                id="blog"
+              >
                 <span className="btn__mask"></span>
                 <span className="btn__text">
-                  <img src={require("../svgs/resources/pen.svg")} />
+                  <img src={require("../svgs/resources/pen.svg")} alt="pen" />
                   Blogs
                 </span>
-              </a>
+              </button>
 
-              <a
+              <button
                 className="btn green margin-left-50 category guides"
                 id="guides"
               >
                 <span className="btn__mask"></span>
                 <span className="btn__text">
-                  <img src={require("../svgs/resources/guides.svg")} />
+                  <img
+                    src={require("../svgs/resources/guides.svg")}
+                    alt="guides"
+                  />
                   Guides
                 </span>
-              </a>
+              </button>
 
-              <a
+              <button
                 className="btn pink margin-left-50 category Videos"
                 id="videos"
               >
                 <span className="btn__mask"></span>
                 <span className="btn__text">
-                  <img src={require("../svgs/resources/video.svg")} />
+                  <img
+                    src={require("../svgs/resources/video.svg")}
+                    alt="video"
+                  />
                   Videos
                 </span>
-              </a>
+              </button>
             </div>
           </Row>
           <Row className="initial-blogs">
@@ -186,7 +195,7 @@ const Resources = ({ data }) => {
                   placeholder="name@email.com"
                 />
                 <button type="submit">
-                  <img src={require("../svgs/resources/mail.svg")} />
+                  <img src={require("../svgs/resources/mail.svg")} alt="mail" />
                 </button>
               </form>
             </div>

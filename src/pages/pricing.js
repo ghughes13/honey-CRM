@@ -132,8 +132,8 @@ const Pricing = () => {
                 </div>
                 <div className="submit-btn">
                   <a href="/marketing-warmup" className="btn blue first">
-                    <span class="btn__mask"></span>
-                    <span class="btn__text">Send Email</span>
+                    <span className="btn__mask"></span>
+                    <span className="btn__text">Send Email</span>
                   </a>
                 </div>
               </form>

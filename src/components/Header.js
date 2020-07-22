@@ -19,14 +19,11 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         }
       }
     })
+
     const script = document.createElement("script")
     script.src = "/static/honey-form-integration.js"
     script.async = true
     document.body.appendChild(script)
-
-    // document.querySelectorAll("main p").forEach(p => {
-    //   p.classList.add("wrapLineSib")
-    // })
 
     if (window.screen.width > 767) {
       function _createTemp(element) {
@@ -41,7 +38,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
             words.push("<br>")
             continue
           }
-          if (contents[c].nodeType == 3) {
+          if (contents[c].nodeType === 3) {
             splitContent = _splitWords(
               contents[c].textContent || contents[c].toString()
             )
@@ -87,7 +84,6 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
       }
 
       $.fn.splitLines = function (options) {
-        console.log("attemptingSplit")
         var settings = {
           width: "auto",
           tag: "<div>",
@@ -120,7 +116,7 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         for (var w = 0; w < words.length; w++) {
           var html = tempLine.html()
           tempLine.html(html + words[w] + " ")
-          if (tempLine.html() == prev) {
+          if (tempLine.html() === prev) {
             prev = ""
             newHtml.append(
               _markupContent(settings.tag, tempLine.html(), lineCount)
@@ -145,7 +141,6 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
       }
 
       $(".wrapLineSib").each(function () {
-        console.log("ran")
         $(this).splitLines({ tag: '<div class="container-span"><span>' })
       })
 
@@ -186,13 +181,13 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         let textH2 = $.trim($(this).text())
         let newText = ""
         for (let i = 0; i < textH2.length; i++) {
-          if (i == 0) {
+          if (i === 0) {
             newText += '<div class="word">'
-          } else if (i == textH2.length) {
+          } else if (i === textH2.length) {
             newText += "</div>"
           }
 
-          if (textH2[i] == " ") {
+          if (textH2[i] === " ") {
             newText += '</div><span class="space"> </span><div class="word">'
           } else {
             newText += "<span>" + textH2[i] + "</span>"
@@ -215,6 +210,20 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
           })
       })
     }
+
+    document.addEventListener("load", () => {
+      const honeyInt = document.createElement("script")
+      const honeyVal = document.createElement("script")
+
+      honeyInt.src = require("../scripts/honey-form-integration.js")
+      honeyInt.async = true
+
+      honeyVal.src = require("../scripts/honey-form-validation.js")
+      honeyVal.async = true
+
+      document.body.appendChild(honeyInt)
+      document.body.appendChild(honeyVal)
+    })
   })
 
   return (

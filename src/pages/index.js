@@ -31,7 +31,7 @@ const IndexPage = () => {
                 <span className="btn__text">Try Honey for Free</span>
               </a>
               <WistiaPopoverVideo id={"8bmv5xntgu"}>
-                <a href="#" className="btn blue margin-left-25">
+                <button className="btn blue margin-left-25">
                   <span className="btn__mask"></span>
                   <span className="btn__text arrow-btn">
                     Watch Demo
@@ -40,7 +40,7 @@ const IndexPage = () => {
                       alt="right-arrow"
                     />
                   </span>
-                </a>
+                </button>
               </WistiaPopoverVideo>
             </div>
           </Container>

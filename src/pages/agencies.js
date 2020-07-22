@@ -5,8 +5,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Waypoint } from "react-waypoint"
 import "../styles/page-agencies.scss"
 import ReviewCard from "../components/ReviewCard"
-import axios from "axios"
-
+import Loader from "../components/Loader"
 const IndexPage = () => {
   useEffect(() => {})
 
@@ -492,20 +491,35 @@ const IndexPage = () => {
                 id="contact-form"
                 className="pink-form"
                 method="POST"
+                name="contact-form"
+                action="https://admiring-clarke-317df8.netlify.app/agencies/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
-                  var request = `form-name=contact-us-form&firstName=${
-                    document.getElementById("firstName").value
-                  }&company=${document.getElementById("company").value}&email=${
-                    document.getElementById("email").value
-                  }&message=${document.getElementById("message").value}`
-                  document.querySelector("#contact-form").style.display = "none"
-                  document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
-                    request
-                  )
+                  const submitButton = document.getElementById("sbmt-form-btn")
+                  const loader = document.querySelector(".loader")
+                  const formName = document.getElementById("contact-form")
+
+                  loader.style.display = "block"
+                  submitButton.style.display = "none"
+
+                  fetch(formName.getAttribute("action"), {
+                    method: "POST",
+                    body: new FormData(document.getElementById("contact-form")),
+                  }).then(res => {
+                    console.log(res)
+                    if (res.status === 200) {
+                      document.querySelector("#contact-form").style.display =
+                        "none"
+                      document.querySelector(
+                        ".contact-thank-you"
+                      ).style.display = "block"
+                    } else {
+                      loader.style.display = "none"
+                      document.getElementById("error-msg").style.display =
+                        "block"
+                      submitButton.style.display = "block"
+                    }
+                  })
                 }}
                 name="contact-us-form"
               >
@@ -574,7 +588,16 @@ const IndexPage = () => {
                   ></input>
                 </div>
                 <div className="submit-btn">
-                  <button type="submit" className="pink-button">
+                  <Loader />
+                  <p id="error-msg">
+                    Looks like there was a problem submitting your form. Please
+                    ensure ALL form fields are filled out and try again.
+                  </p>
+                  <button
+                    id="sbmt-form-btn"
+                    type="submit"
+                    className="pink-button"
+                  >
                     SEND
                   </button>
                 </div>

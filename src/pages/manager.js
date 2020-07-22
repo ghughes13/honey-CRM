@@ -9,7 +9,6 @@ const IndexPage = () => {
   useEffect(() => {})
 
   const animateImgs = (removeFrom, addTo) => {
-    console.log(removeFrom, addTo)
     document
       .querySelectorAll("." + removeFrom + ".animate")
       .forEach(img => img.classList.remove("animate"))
@@ -131,7 +130,7 @@ const IndexPage = () => {
                 onEnter={() => {
                   let isRun = document.querySelector("#checkRun").classList
                     .value
-                  if (isRun == "false") {
+                  if (isRun === "false") {
                     document
                       .querySelectorAll(".sales")
                       .forEach(img => img.classList.add("animate"))
@@ -149,6 +148,9 @@ const IndexPage = () => {
                 src={require("../images/manager-page/stats-imgs/Marketing.png")}
                 alt="stats"
                 onClick={() => animateImgs("sales", "marketing")}
+                onKeyPress={() => animateImgs("sales", "marketing")}
+                role="button"
+                tabindex="0"
               />
               <img
                 className="img-2 sales"

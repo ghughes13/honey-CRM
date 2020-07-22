@@ -71,14 +71,14 @@ export default function BlogPost(qlData) {
                 className="colored"
               />
             </a>
-            <a role="button" tabIndex="0" onClick={copyURL}>
+            <button className="copyURLBtn" onClick={copyURL}>
               <img src={require("../svgs/resources/link.svg")} alt="link" />
               <img
                 src={require("../svgs/resources/link-color.svg")}
                 alt="link"
                 className="colored"
               />
-            </a>
+            </button>
           </div>
           <div className="meta">
             <div className="img">

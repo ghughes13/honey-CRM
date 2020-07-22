@@ -130,6 +130,12 @@
     color: #59486e;
   }
 
+  .copyURLBtn {
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
   .meta-infos .blog:after {
     content: url("../svgs/resources/blog-cat.svg");
     position: absolute;

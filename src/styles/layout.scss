@@ -1202,6 +1202,12 @@ p .container-span:nth-child(50) span {
   transition-delay: 5s;
 }
 
+#error-msg {
+  display: none;
+  color: white;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 40px;
