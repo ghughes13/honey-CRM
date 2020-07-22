@@ -524,6 +524,8 @@ const IndexPage = () => {
                 netlify="true"
                 netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" id="bot" />
+
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
                   <br />

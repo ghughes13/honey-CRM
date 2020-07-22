@@ -225,6 +225,8 @@ const Resources = ({ data }) => {
                 netlify="true"
                 netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" id="bot" />
+
                 <input
                   type="email"
                   required

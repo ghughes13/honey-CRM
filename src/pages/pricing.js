@@ -81,6 +81,8 @@ const Pricing = () => {
                 netlify="true"
                 netlify-honeypot="bot-field"
               >
+                <input type="hidden" name="bot-field" id="bot" />
+
                 <div className="form-container-for-btn">
                   <div className="top">
                     <h3 className="white-text form-title">
