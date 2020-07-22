@@ -492,7 +492,7 @@ const IndexPage = () => {
                 className="pink-form"
                 method="POST"
                 name="contact-form"
-                action="https://admiring-clarke-317df8.netlify.app/agencies/#thanks"
+                action="/agencies/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
                   const submitButton = document.getElementById("sbmt-form-btn")
@@ -602,7 +602,7 @@ const IndexPage = () => {
                   </button>
                 </div>
               </form>
-              <div className="contact-thank-you">
+              <div className="contact-thank-you" id="thanks">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </Col>
