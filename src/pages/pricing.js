@@ -5,8 +5,8 @@ import { Container, Row, Col } from "react-bootstrap"
 import { Waypoint } from "react-waypoint"
 import "../styles/page-pricing.scss"
 import PriceCard from "../components/PriceCard"
-import axios from "axios"
 import NewBlob from "../components/AnimatedBlob"
+import Loader from "../components/Loader"
 
 const Pricing = () => {
   useEffect(() => {})
@@ -48,22 +48,36 @@ const Pricing = () => {
                 id="contact-form"
                 className="pink-form"
                 method="POST"
+                name="pricing-form"
+                action="/pricing/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
-                  var request = `form-name=contact-us-form&firstName=${
-                    document.getElementById("firstName").value
-                  }&company=${document.getElementById("company").value}&email=${
-                    document.getElementById("email").value
-                  }&message=${document.getElementById("message").value}`
-                  document.querySelector("#contact-form").style.display = "none"
-                  document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
-                    request
-                  )
+                  const submitButton = document.getElementById("sbmt-form-btn")
+                  const loader = document.querySelector(".loader")
+                  const formName = document.getElementById("contact-form")
+
+                  loader.style.display = "block"
+                  submitButton.style.display = "none"
+
+                  fetch(formName.getAttribute("action"), {
+                    method: "POST",
+                    body: new FormData(document.getElementById("contact-form")),
+                  }).then(res => {
+                    console.log(res.body)
+                    if (res.status === 200) {
+                      document.querySelector("#contact-form").style.display =
+                        "none"
+                      document.querySelector(
+                        ".contact-thank-you"
+                      ).style.display = "block"
+                    } else {
+                      loader.style.display = "none"
+                      document.getElementById("error-msg").style.display =
+                        "block"
+                      submitButton.style.display = "block"
+                    }
+                  })
                 }}
-                name="contact-us-form"
               >
                 <div className="form-container-for-btn">
                   <div className="top">
@@ -131,13 +145,22 @@ const Pricing = () => {
                   </div>
                 </div>
                 <div className="submit-btn">
-                  <a href="/marketing-warmup" className="btn blue first">
+                  <Loader />
+                  <p id="error-msg" style={{ color: "red" }}>
+                    Looks like there was a problem submitting your form. Please
+                    ensure ALL form fields are filled out and try again.
+                  </p>
+                  <button
+                    type="submit"
+                    className="btn blue first"
+                    id="sbmt-form-btn"
+                  >
                     <span className="btn__mask"></span>
                     <span className="btn__text">Send Email</span>
-                  </a>
+                  </button>
                 </div>
               </form>
-              <div className="contact-thank-you">
+              <div className="contact-thank-you reach" id="thanks">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </Col>

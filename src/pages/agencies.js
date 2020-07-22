@@ -521,7 +521,6 @@ const IndexPage = () => {
                     }
                   })
                 }}
-                name="contact-us-form"
               >
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
@@ -602,7 +601,7 @@ const IndexPage = () => {
                   </button>
                 </div>
               </form>
-              <div className="contact-thank-you" id="thanks">
+              <div className="contact-thank-you reach" id="thanks">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </Col>

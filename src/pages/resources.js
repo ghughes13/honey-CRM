@@ -6,6 +6,7 @@ import { Waypoint } from "react-waypoint"
 import "../styles/page-resources.scss"
 import { graphql } from "gatsby"
 import ResourceCard from "../components/ResourceCard"
+import Loader from "../components/Loader"
 
 const Resources = ({ data }) => {
   const post = data.allWordpressPost.edges
@@ -187,17 +188,64 @@ const Resources = ({ data }) => {
                 Monthly company updates and marketing tips, delivered straight
                 to your inbox.
               </h5>
-              <form>
+              <form
+                id="contact-form"
+                className="pink-form"
+                method="POST"
+                name="contact-form"
+                action="/resources/#thanks"
+                onSubmit={e => {
+                  e.preventDefault()
+                  const submitButton = document.getElementById("sbmt-form-btn")
+                  const loader = document.querySelector(".loader")
+                  const formName = document.getElementById("contact-form")
+
+                  loader.style.display = "block"
+                  submitButton.style.display = "none"
+
+                  fetch(formName.getAttribute("action"), {
+                    method: "POST",
+                    body: new FormData(document.getElementById("contact-form")),
+                  }).then(res => {
+                    console.log(res.body)
+                    if (res.status === 200) {
+                      document.querySelector("#contact-form").style.display =
+                        "none"
+                      document.querySelector(
+                        ".contact-thank-you"
+                      ).style.display = "block"
+                    } else {
+                      loader.style.display = "none"
+                      document.getElementById("error-msg").style.display =
+                        "block"
+                      submitButton.style.display = "block"
+                    }
+                  })
+                }}
+              >
                 <input
                   type="email"
                   required
                   name="email"
                   placeholder="name@email.com"
                 />
-                <button type="submit">
-                  <img src={require("../svgs/resources/mail.svg")} alt="mail" />
-                </button>
+                <div className="submit-btn">
+                  <Loader />
+                  <p id="error-msg">
+                    Looks like there was a problem submitting your form. Please
+                    ensure ALL form fields are filled out and try again.
+                  </p>
+                  <button id="sbmt-form-btn" type="submit">
+                    <img
+                      src={require("../svgs/resources/mail.svg")}
+                      alt="mail"
+                    />
+                  </button>
+                </div>
               </form>
+              <div className="contact-thank-you reach" id="thanks">
+                <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
+              </div>
             </div>
             <ResourceCard colLength={"one-third"} post={post[4]} />
           </Row>

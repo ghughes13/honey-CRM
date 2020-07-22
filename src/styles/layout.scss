@@ -1208,6 +1208,19 @@ p .container-span:nth-child(50) span {
   margin-top: 10px;
 }
 
+.contact-thank-you {
+  display: none;
+  background: linear-gradient(to bottom, #e38dee, #7a5bff);
+  padding: 50px 25px;
+  border-radius: 23px;
+  margin: 50px 0;
+  color: white;
+  h5 {
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 40px;

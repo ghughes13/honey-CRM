@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { Container, Row, Col } from "react-bootstrap"
 import { Waypoint } from "react-waypoint"
 import "../styles/page-vendors.scss"
-import axios from "axios"
+import Loader from "../components/Loader"
 
 const VendorPage = () => {
   useEffect(() => {})
@@ -357,22 +357,36 @@ const VendorPage = () => {
                 id="contact-form"
                 className="pink-form"
                 method="POST"
+                name="contact-form"
+                action="/vendors/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
-                  var request = `form-name=contact-us-form&firstName=${
-                    document.getElementById("firstName").value
-                  }&company=${document.getElementById("company").value}&email=${
-                    document.getElementById("email").value
-                  }&message=${document.getElementById("message").value}`
-                  document.querySelector("#contact-form").style.display = "none"
-                  document.querySelector(".contact-thank-you").style.display =
-                    "block"
-                  return axios.post(
-                    "https://eloquent-hawking-0b4899.netlify.com/",
-                    request
-                  )
+                  const submitButton = document.getElementById("sbmt-form-btn")
+                  const loader = document.querySelector(".loader")
+                  const formName = document.getElementById("contact-form")
+
+                  loader.style.display = "block"
+                  submitButton.style.display = "none"
+
+                  fetch(formName.getAttribute("action"), {
+                    method: "POST",
+                    body: new FormData(document.getElementById("contact-form")),
+                  }).then(res => {
+                    console.log(res.body)
+                    if (res.status === 200) {
+                      document.querySelector("#contact-form").style.display =
+                        "none"
+                      document.querySelector(
+                        ".contact-thank-you"
+                      ).style.display = "block"
+                    } else {
+                      loader.style.display = "none"
+                      document.getElementById("error-msg").style.display =
+                        "block"
+                      submitButton.style.display = "block"
+                    }
+                  })
                 }}
-                name="contact-us-form"
               >
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
@@ -381,19 +395,20 @@ const VendorPage = () => {
                 </h3>
                 <div className="what-do-we-call-you">
                   <div className="field name-field">
-                    <label htmlFor="firstName">
-                      <input
-                        type="text"
-                        className="theInput"
-                        name="firstName"
-                        id="firstName"
-                        placeholder="Name"
-                        required
-                      ></input>
+                    <label htmlFor="firstName" hidden>
+                      What’s your name?
                     </label>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="firstName"
+                      id="firstName"
+                      placeholder="Name"
+                      required
+                    ></input>
                   </div>
                   <div className="field email-field">
-                    <label className="hide-me" htmlFor="email">
+                    <label hidden htmlFor="email">
                       What’s your email address?
                     </label>
                     <input
@@ -406,28 +421,30 @@ const VendorPage = () => {
                     ></input>
                   </div>
                   <div className="field">
-                    <label className="second-label" htmlFor="company">
-                      <input
-                        type="text"
-                        className="theInput"
-                        name="company"
-                        placeholder="Company"
-                        id="company"
-                      ></input>
+                    <label className="second-label" hidden htmlFor="company">
+                      What company are you with?
                     </label>
+                    <input
+                      type="text"
+                      className="theInput"
+                      name="company"
+                      placeholder="Company"
+                      id="company"
+                    ></input>
                   </div>
                 </div>
 
                 <div className="field comment-field">
-                  <label className="textarea-label" htmlFor="message">
-                    <textarea
-                      type="text"
-                      className="theInput"
-                      name="message"
-                      id="message"
-                      placeholder="Comments"
-                    ></textarea>
+                  <label hidden className="textarea-label" htmlFor="message">
+                    What question can we answer for you?
                   </label>
+                  <textarea
+                    type="text"
+                    className="theInput"
+                    name="message"
+                    id="message"
+                    placeholder="Comments"
+                  ></textarea>
                 </div>
                 <div className="hide-me field">
                   <input
@@ -436,12 +453,21 @@ const VendorPage = () => {
                   ></input>
                 </div>
                 <div className="submit-btn">
-                  <button type="submit" className="pink-button">
+                  <Loader />
+                  <p id="error-msg">
+                    Looks like there was a problem submitting your form. Please
+                    ensure ALL form fields are filled out and try again.
+                  </p>
+                  <button
+                    id="sbmt-form-btn"
+                    type="submit"
+                    className="pink-button"
+                  >
                     SEND
                   </button>
                 </div>
               </form>
-              <div className="contact-thank-you">
+              <div className="contact-thank-you reach" id="thanks">
                 <h5>Thank you for contacting us. We'll be in touch shortly!</h5>
               </div>
             </Col>
