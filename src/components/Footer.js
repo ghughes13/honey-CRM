@@ -1,6 +1,6 @@
 import React from "react"
 import { Row, Col } from "react-bootstrap"
-import "../styles/footer.scss"
+import "../styles/comp-footer.scss"
 
 const Footer = () => (
   <footer className="fixed" id="footer">

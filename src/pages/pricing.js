@@ -6,7 +6,7 @@ import { Waypoint } from "react-waypoint"
 import "../styles/page-pricing.scss"
 import PriceCard from "../components/PriceCard"
 import axios from "axios"
-import NewBlob from "../components/animated-blob"
+import NewBlob from "../components/AnimatedBlob"
 
 const Pricing = () => {
   useEffect(() => {})

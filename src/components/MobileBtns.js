@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/mobile-btns.scss"
+import "../styles/comp-mobile-btns.scss"
 
 const Footer = () => (
   <div className="mobile-btns">

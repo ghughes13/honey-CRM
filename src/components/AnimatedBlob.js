@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"
 import "../styles/comp-animated-blob.scss"
+
 const NewBlob = props => {
   useEffect(() => {})
 

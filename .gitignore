@@ -56,7 +56,9 @@ typings/
 
 # gatsby files
 .cache/
-public
+public/*
+!public/static/honey-form-validation.js
+!public/static/honey-form-integration.js
 
 # Mac files
 .DS_Store

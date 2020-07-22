@@ -1,6 +1,6 @@
 import React from "react"
 import { slide as Menu } from "react-burger-menu"
-import "../styles/burger-menu.scss"
+import "../styles/comp-burger-menu.scss"
 
 class Burger extends React.Component {
   showSettings(event) {
