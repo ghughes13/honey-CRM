@@ -506,7 +506,7 @@ const IndexPage = () => {
                     method: "POST",
                     body: new FormData(document.getElementById("contact-form")),
                   }).then(res => {
-                    console.log(res)
+                    console.log(res.body)
                     if (res.status === 200) {
                       document.querySelector("#contact-form").style.display =
                         "none"
