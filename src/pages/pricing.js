@@ -78,6 +78,8 @@ const Pricing = () => {
                     }
                   })
                 }}
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
                 <div className="form-container-for-btn">
                   <div className="top">

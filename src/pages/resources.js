@@ -222,6 +222,8 @@ const Resources = ({ data }) => {
                     }
                   })
                 }}
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
                 <input
                   type="email"

@@ -387,6 +387,8 @@ const VendorPage = () => {
                     }
                   })
                 }}
+                netlify="true"
+                netlify-honeypot="bot-field"
               >
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
