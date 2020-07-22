@@ -6,7 +6,7 @@ import { Waypoint } from "react-waypoint"
 import "../styles/page-vendors.scss"
 import axios from "axios"
 
-const IndexPage = () => {
+const VendorPage = () => {
   useEffect(() => {})
 
   return (
@@ -451,3 +451,5 @@ const IndexPage = () => {
     </Layout>
   )
 }
+
+export default VendorPage
