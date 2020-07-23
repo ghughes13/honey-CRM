@@ -45,7 +45,7 @@ const Pricing = () => {
           <Row>
             <Col className="">
               <form
-                id="contact-form"
+                id="pricing-form"
                 className="pink-form"
                 method="POST"
                 name="pricing-form"
@@ -54,18 +54,18 @@ const Pricing = () => {
                   e.preventDefault()
                   const submitButton = document.getElementById("sbmt-form-btn")
                   const loader = document.querySelector(".loader")
-                  const formName = document.getElementById("contact-form")
+                  const formName = document.getElementById("pricing-form")
 
                   loader.style.display = "block"
                   submitButton.style.display = "none"
 
                   fetch(formName.getAttribute("action"), {
                     method: "POST",
-                    body: new FormData(document.getElementById("contact-form")),
+                    body: new FormData(document.getElementById("pricing-form")),
                   }).then(res => {
                     console.log(res.body)
                     if (res.status === 200) {
-                      document.querySelector("#contact-form").style.display =
+                      document.querySelector("#pricing-form").style.display =
                         "none"
                       document.querySelector(
                         ".contact-thank-you"

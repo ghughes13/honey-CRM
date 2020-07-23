@@ -488,27 +488,36 @@ const IndexPage = () => {
             </Col>
             <Col className="one-half centered-text rel z-index-9 small-width min-height-100">
               <form
-                id="contact-form"
+                id="agencies-form"
                 className="pink-form"
                 method="POST"
-                name="contact-form"
+                name="agencies-form"
                 action="/agencies/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
                   const submitButton = document.getElementById("sbmt-form-btn")
                   const loader = document.querySelector(".loader")
-                  const formName = document.getElementById("contact-form")
+                  const formName = document.getElementById("agencies-form")
+                  let formData = new FormData(
+                    document.getElementById("agencies-form")
+                  )
+
+                  for (var value of formData.values()) {
+                    console.log(value)
+                  }
 
                   loader.style.display = "block"
                   submitButton.style.display = "none"
 
                   fetch(formName.getAttribute("action"), {
                     method: "POST",
-                    body: new FormData(document.getElementById("contact-form")),
+                    body: new FormData(
+                      document.getElementById("agencies-form")
+                    ),
                   }).then(res => {
                     console.log(res)
                     if (res.status === 200) {
-                      document.querySelector("#contact-form").style.display =
+                      document.querySelector("#agencies-form").style.display =
                         "none"
                       document.querySelector(
                         ".contact-thank-you"

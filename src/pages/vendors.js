@@ -354,27 +354,27 @@ const VendorPage = () => {
           <Row className="flexed-mobile stretch">
             <Col className="one-half centered-text rel z-index-9 small-width min-height-100">
               <form
-                id="contact-form"
+                id="vendors-form"
                 className="pink-form"
                 method="POST"
-                name="contact-form"
+                name="vendors-form"
                 action="/vendors/#thanks"
                 onSubmit={e => {
                   e.preventDefault()
                   const submitButton = document.getElementById("sbmt-form-btn")
                   const loader = document.querySelector(".loader")
-                  const formName = document.getElementById("contact-form")
+                  const formName = document.getElementById("vendors-form")
 
                   loader.style.display = "block"
                   submitButton.style.display = "none"
 
                   fetch(formName.getAttribute("action"), {
                     method: "POST",
-                    body: new FormData(document.getElementById("contact-form")),
+                    body: new FormData(document.getElementById("vendors-form")),
                   }).then(res => {
                     console.log(res.body)
                     if (res.status === 200) {
-                      document.querySelector("#contact-form").style.display =
+                      document.querySelector("#vendors-form").style.display =
                         "none"
                       document.querySelector(
                         ".contact-thank-you"
