@@ -511,6 +511,9 @@ const IndexPage = () => {
 
                   fetch(formName.getAttribute("action"), {
                     method: "POST",
+                    headers: {
+                      "Content-Type": "application/x-www-form-urlencoded",
+                    },
                     body: new FormData(
                       document.getElementById("agencies-form")
                     ),
@@ -541,7 +544,7 @@ const IndexPage = () => {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" id="bot" />
-
+                <input type="hidden" name="form-name" value="agencies-form" />
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
                   <br />
@@ -600,12 +603,13 @@ const IndexPage = () => {
                     placeholder="Comments"
                   ></textarea>
                 </div>
-                {/* <div className="hide-me field">
+                <div className="hide-me field">
                   <input
                     data-form-type="Consultation"
                     className="formcat"
-                  ></input> */}
-                {/* </div> */}
+                    name="formType"
+                  ></input>
+                </div>
                 <div className="submit-btn">
                   <Loader />
                   <p id="error-msg">
