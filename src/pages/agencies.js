@@ -528,8 +528,8 @@ const IndexPage = () => {
                     }
                   })
                 }}
-                netlify="true"
-                netlify-honeypot="bot-field"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" id="bot" />
 
@@ -591,12 +591,12 @@ const IndexPage = () => {
                     placeholder="Comments"
                   ></textarea>
                 </div>
-                <div className="hide-me field">
+                {/* <div className="hide-me field">
                   <input
                     data-form-type="Consultation"
                     className="formcat"
-                  ></input>
-                </div>
+                  ></input> */}
+                {/* </div> */}
                 <div className="submit-btn">
                   <Loader />
                   <p id="error-msg">
