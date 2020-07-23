@@ -506,7 +506,7 @@ const IndexPage = () => {
                     method: "POST",
                     body: new FormData(document.getElementById("contact-form")),
                   }).then(res => {
-                    console.log(res.body)
+                    console.log(res)
                     if (res.status === 200) {
                       document.querySelector("#contact-form").style.display =
                         "none"
@@ -518,6 +518,13 @@ const IndexPage = () => {
                       document.getElementById("error-msg").style.display =
                         "block"
                       submitButton.style.display = "block"
+
+                      axios.post(
+                        "https://www.tridigitalmarketing.com/.netlify/functions/errorCatcher",
+                        JSON.stringify({
+                          res,
+                        })
+                      )
                     }
                   })
                 }}
