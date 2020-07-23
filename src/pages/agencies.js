@@ -498,13 +498,6 @@ const IndexPage = () => {
                   const submitButton = document.getElementById("sbmt-form-btn")
                   const loader = document.querySelector(".loader")
                   const formName = document.getElementById("agencies-form")
-                  let formData = new FormData(
-                    document.getElementById("agencies-form")
-                  )
-
-                  for (var value of formData.values()) {
-                    console.log(value)
-                  }
 
                   loader.style.display = "block"
                   submitButton.style.display = "none"
@@ -544,7 +537,6 @@ const IndexPage = () => {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" id="bot" />
-                <input type="hidden" name="form-name" value="agencies-form" />
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
                   <br />
