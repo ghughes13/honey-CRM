@@ -232,6 +232,10 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
         href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
         rel="stylesheet"
       ></link>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+      ></link>
       <CookieConsent
         cookieName="myAwesomeCookieName2"
         style={{ background: "#fff", justifyContent: "Center" }}
