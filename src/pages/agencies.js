@@ -491,6 +491,7 @@ const IndexPage = () => {
                 id="agencies-form"
                 className="pink-form"
                 method="POST"
+                enctype="multipart/form-data"
                 name="agencies-form"
                 action="/agencies/#thanks"
                 onSubmit={e => {
@@ -530,11 +531,7 @@ const IndexPage = () => {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" id="bot" />
-                <input
-                  type="hidden"
-                  name="form-name"
-                  value="Archive Notification LP"
-                />
+                <input type="hidden" name="form-name" value="agencies-form" />
 
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
