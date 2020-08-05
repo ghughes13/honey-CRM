@@ -530,6 +530,12 @@ const IndexPage = () => {
                 data-netlify-honeypot="bot-field"
               >
                 <input type="hidden" name="bot-field" id="bot" />
+                <input
+                  type="hidden"
+                  name="form-name"
+                  value="Archive Notification LP"
+                />
+
                 <h3 className="white-text form-title">
                   Request a Demo of Honey’s
                   <br />

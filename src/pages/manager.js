@@ -35,7 +35,7 @@ const IndexPage = () => {
             </Col>
           </Row>
         </Container>
-        <Container className="grey-swish-background container-2 ">
+        <Container className="grey-swish-background container-2">
           <Row className="flexed-mobile">
             <Col className="one-half max-width-480">
               <h3>
