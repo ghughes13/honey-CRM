@@ -36,7 +36,7 @@ const Layout = ({ navTheme = "default", children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} navTheme={navTheme} />
-      <div>
+      <div style={{ overflowX: "hidden" }}>
         <main>{children}</main>
         <footer></footer>
       </div>

@@ -3,6 +3,8 @@ export default (function (w, d, undefined) {
     throw "_honeySettings does not exist!"
   }
 
+  console.log("test run")
+
   if (!w._honeySettings.forms || w._honeySettings.forms.length === 0) {
     throw "_honeySettings does not have any form settings"
   }

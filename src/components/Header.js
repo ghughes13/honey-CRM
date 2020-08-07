@@ -210,21 +210,19 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
           })
       })
     }
-
-    document.addEventListener("load", () => {
-      const honeyInt = document.createElement("script")
-      const honeyVal = document.createElement("script")
-
-      honeyInt.src = require("../scripts/honey-form-integration.js")
-      honeyInt.async = true
-
-      honeyVal.src = require("../scripts/honey-form-validation.js")
-      honeyVal.async = true
-
-      document.body.appendChild(honeyInt)
-      document.body.appendChild(honeyVal)
-    })
   })
+
+  const honeyInt = document.createElement("script")
+  const honeyVal = document.createElement("script")
+
+  honeyInt.src = require("../scripts/honey-form-integration.js")
+  honeyInt.async = true
+
+  // honeyVal.src = require("../scripts/honey-form-validation.js")
+  // honeyVal.async = true
+
+  document.body.appendChild(honeyInt)
+  // document.body.appendChild(honeyVal)
 
   return (
     <header className={`fixed ${opaque ? "end-transparency" : ""}`}>
