@@ -212,18 +212,6 @@ const Header = ({ navTheme, siteTitle, opaque, headerVersion }) => {
     }
   })
 
-  const honeyInt = document.createElement("script")
-  const honeyVal = document.createElement("script")
-
-  honeyInt.src = require("../scripts/honey-form-integration.js")
-  honeyInt.async = true
-
-  // honeyVal.src = require("../scripts/honey-form-validation.js")
-  // honeyVal.async = true
-
-  document.body.appendChild(honeyInt)
-  // document.body.appendChild(honeyVal)
-
   return (
     <header className={`fixed ${opaque ? "end-transparency" : ""}`}>
       <link
